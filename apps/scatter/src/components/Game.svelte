@@ -31,7 +31,7 @@
 	import FreeSpinCounter from './FreeSpinCounter.svelte';
 	import FreeSpinOutro from './FreeSpinOutro.svelte';
 	import Transition from './Transition.svelte';
-	import I18nTest from './I18nTest.svelte';
+	
 
 	const context = getContext();
 
@@ -87,12 +87,12 @@
 
 		<UI>
 			{#snippet gameName()}
-				<UiGameName name="SCATTER GAME" />
+				<UiGameName name="GLADIATOR 5000X" />
 			{/snippet}
 			{#snippet logo()}
 				<Text
 					anchor={{ x: 1, y: 0 }}
-					text="ADD YOUR LOGO"
+					text="ONLY SPINS STUDIOS"
 					style={{
 						fontFamily: 'proxima-nova',
 						fontSize: REM * 1.5,
@@ -111,7 +111,7 @@
 		<FreeSpinOutro />
 		<Transition />
 
-		<I18nTest />
+		
 	{/if}
 </App>
 
