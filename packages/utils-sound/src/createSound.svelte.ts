@@ -27,6 +27,13 @@ function createSound<TSoundName extends string>() {
 		// loadedAudio
 		loadedAudio = loadedAudioValue;
 
+		if (!loadedAudio || !loadedAudio.src || !loadedAudio.sprite) {
+			console.warn('[createSound] Missing or invalid loadedAudio:', loadedAudio);
+			return {
+				destroy: () => {},
+			};
+		}
+
 		const howl = new Howl({
 			src: loadedAudio.src,
 			sprite: loadedAudio.sprite,
