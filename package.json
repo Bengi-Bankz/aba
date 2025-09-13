@@ -2,7 +2,7 @@
   "name": "twist-turbo",
   "version": "0.0.0",
   "private": true,
-	"license": "MIT",
+  "license": "MIT",
   "scripts": {
     "lint": "turbo run lint",
     "format": "turbo run format",
@@ -32,5 +32,9 @@
       "esbuild",
       "svelte-preprocess"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "tailwindcss": "^4.1.13"
   }
 }
