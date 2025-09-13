@@ -19,7 +19,7 @@
 	);
 	const textProps = {
 		style: {
-			fontFamily: 'Roboto, proxima-nova',
+			   fontFamily: 'Roboto, sans-serif',
 			fontSize: REM * 1.5,
 			fontWeight: '600',
 			lineHeight: REM * 2,

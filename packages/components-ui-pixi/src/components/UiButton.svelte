@@ -68,7 +68,7 @@
 				align: 'center',
 				wordWrap: true,
 				wordWrapWidth: buttonProps.sizes.width - 20,
-				fontFamily: 'Roboto, proxima-nova',
+				   fontFamily: 'Roboto, sans-serif',
 				fontWeight: '600',
 				fontSize: UI_BASE_FONT_SIZE * 0.9,
 				fill: textColor(),

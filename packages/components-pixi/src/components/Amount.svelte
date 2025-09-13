@@ -71,7 +71,7 @@
 			y={stacked ? labelTextSizes.height * 0.5 : amountTextSizes.height * 0.5}
 			text={label}
 			style={{
-				fontFamily: 'proxima-nova',
+				   fontFamily: 'Roboto, sans-serif',
 				fontSize: REM,
 				fontWeight: '600',
 				fill: disabled ? GREY : WHITE,
