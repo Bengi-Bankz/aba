@@ -151,8 +151,9 @@ export const bookEventHandlerMap: BookEventHandlerMap<BookEvent, BookEventContex
 		const winLevelData = winLevelMap[bookEvent.winLevel as WinLevel];
 
 		await eventEmitter.broadcastAsync({ type: 'uiHide' });
-		// Extra safeguard: force reset to basegame
+		// Extra safeguard: force reset to basegame and bet mode
 		forceResetToBaseGame();
+		stateBet.activeBetModeKey = 'BASE';
 		eventEmitter.broadcast({ type: 'boardFrameGlowHide' });
 		eventEmitter.broadcast({ type: 'globalMultiplierHide' });
 		eventEmitter.broadcast({ type: 'freeSpinOutroShow' });
