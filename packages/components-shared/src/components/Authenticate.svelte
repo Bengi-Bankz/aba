@@ -33,6 +33,15 @@
 				stateBet.balanceAmount = authenticateData.balance.amount / API_AMOUNT_MULTIPLIER;
 			}
 
+			// Set default bet amount if no active round and defaultBetLevel is present
+			if (
+				authenticateData?.config?.defaultBetLevel &&
+				(!authenticateData?.round || !authenticateData.round.amount)
+			) {
+				stateBet.betAmount = authenticateData.config.defaultBetLevel / API_AMOUNT_MULTIPLIER;
+				stateBet.wageredBetAmount = authenticateData.config.defaultBetLevel / API_AMOUNT_MULTIPLIER;
+			}
+
 			// config
 			if (authenticateData?.config) {
 				// Example of authenticateData.config

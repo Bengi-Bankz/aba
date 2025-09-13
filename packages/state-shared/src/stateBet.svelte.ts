@@ -21,12 +21,31 @@ export const stateBet = $state({
 	isTurbo: false,
 });
 
-const correctBetAmount = (value: number) => {
-	if (value <= 0) return 0;
+import { stateConfig } from './stateConfig.svelte';
+
+const getMinBet = () => {
+	// If betAmountOptions is set from RGS config, use the minimum, else fallback to 1
+	if (Array.isArray(stateConfig.betAmountOptions) && stateConfig.betAmountOptions.length > 0) {
+		return Math.min(...stateConfig.betAmountOptions);
+	}
+	return 1;
+};
+
+const getMaxBet = () => {
+	// If betAmountOptions is set from RGS config, use the maximum, else fallback to balance
+	if (Array.isArray(stateConfig.betAmountOptions) && stateConfig.betAmountOptions.length > 0) {
+		return Math.max(...stateConfig.betAmountOptions);
+	}
+	// fallback: max is balance/costMultiplier
 	const costMultiplier = betCostMultiplier();
-	if (costMultiplier === 0) return 0;
-	const max = stateBet.balanceAmount / costMultiplier;
-	if (value >= max) return max;
+	return costMultiplier > 0 ? stateBet.balanceAmount / costMultiplier : stateBet.balanceAmount;
+};
+
+const correctBetAmount = (value: number) => {
+	const min = getMinBet();
+	const max = getMaxBet();
+	if (value < min) return min;
+	if (value > max) return max;
 	return value;
 };
 
