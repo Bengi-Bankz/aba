@@ -36,6 +36,14 @@
 		resumeBet: () => gameActor.send({ type: 'RESUME_BET' }),
 		forceResult: () => gameActor.send({ type: 'FORCE_RESULT' }),
 	});
+
+	function handleSpinOrStop() {
+		if (context.stateXstateDerived.isIdle()) {
+			context.eventEmitter.broadcast({ type: 'bet' });
+		} else {
+			context.eventEmitter.broadcast({ type: 'stopButtonClick' });
+		}
+	}
 </script>
 
 {#if props.debug}
@@ -46,3 +54,4 @@
 		text={JSON.stringify(context.stateXstate.value, undefined, 2)}
 	/>
 {/if}
+

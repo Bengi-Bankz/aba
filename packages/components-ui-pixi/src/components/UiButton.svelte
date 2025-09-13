@@ -67,7 +67,7 @@
 			style={{
 				align: 'center',
 				wordWrap: true,
-				wordWrapWidth: buttonProps.sizes.width - 20,
+				wordWrapWidth: buttonProps.sizes.width + 20,
 				   fontFamily: 'Roboto, sans-serif',
 				fontWeight: '600',
 				fontSize: UI_BASE_FONT_SIZE * 0.9,

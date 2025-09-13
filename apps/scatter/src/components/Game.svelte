@@ -31,7 +31,7 @@
 	import FreeSpinCounter from './FreeSpinCounter.svelte';
 	import FreeSpinOutro from './FreeSpinOutro.svelte';
 	import Transition from './Transition.svelte';
-	
+
 
 	const context = getContext();
 
@@ -67,6 +67,8 @@
 			<BoardFrame />
 		</MainContainer>
 
+	
+
 		<MainContainer>
 			<Board />
 			<Anticipations />
@@ -83,8 +85,7 @@
 		<MainContainer>
 			<MultiplierBoard />
 			<MultiplierTotal />
-		</MainContainer>
-
+		</MainContainer> 
 		<UI>
 			{#snippet gameName()}
 				<UiGameName name="GLADIATOR 5000X" />
@@ -103,6 +104,7 @@
 				/>
 			{/snippet}
 		</UI>
+
 		<Win />
 		<FreeSpinIntro />
 		{#if ['desktop', 'landscape'].includes(context.stateLayoutDerived.layoutType())}
@@ -111,7 +113,7 @@
 		<FreeSpinOutro />
 		<Transition />
 
-		
+	
 	{/if}
 </App>
 

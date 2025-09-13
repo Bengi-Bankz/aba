@@ -26,9 +26,18 @@
 		stateBetDerived.hasAutoBetCounter() ? stopAutoSpin() : openModal();
 	};
 </script>
-
-<UiButton {...props} {sizes} {active} {onpress} {disabled} icon="autoSpin">
-	<Container x={sizes.width * 0.5} y={sizes.height * 0.5}>
-		<ButtonBetAutoSpinsCounter />
-	</Container>
-</UiButton>
+<div class="inline-block rounded-full shadow-lg bg-blue-600 hover:bg-blue-700 transition">
+  <UiButton
+    {...props}
+    {sizes}
+    {active}
+    {onpress}
+    {disabled}
+    icon="autoSpin"
+    class="w-full h-full text-white"
+  >
+    <Container x={sizes.width * 0.5} y={sizes.height * 0.5}>
+      <ButtonBetAutoSpinsCounter />
+    </Container>
+  </UiButton>
+</div>

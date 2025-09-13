@@ -56,30 +56,10 @@
 		}
 	});
 
-	// Calculate border properties
-	const computedBorderColor = $derived(() => {
-		if (borderColor !== undefined) return borderColor;
-		if (!showBorder) return undefined;
 
-		if (state === 'disabled') return DISABLED_PRIMARY;
-
-		switch (variant) {
-			case 'light':
-				return BORDER_LIGHT;
-			case 'accent':
-				return BORDER_ACCENT;
-			case 'bonus-active':
-				return BORDER_BONUS_ACTIVE;
-			case 'dark':
-			default:
-				return BORDER_DARK;
-		}
-	});
-
-	const computedBorderWidth = $derived(() => {
-		if (borderWidth !== undefined) return borderWidth;
-		return showBorder ? 2 : 0;
-	});
+    // Force a constant 4px white border
+    const computedBorderColor = $derived(() => '#fff');
+    const computedBorderWidth = $derived(() => 4);
 </script>
 
 <Rectangle
