@@ -126,6 +126,7 @@
 		font-size: 1rem;
 		font-weight: 500;
 		text-align: center;
+		font-family: 'BungeeSpice', cursive;
 	}
 
 	@media (max-width: 700px) {

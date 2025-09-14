@@ -17,7 +17,7 @@
 
 <style>
 	:global(h2, h3, p, li) {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'BungeeSpice', cursive;
 		color: #ececec;
 	}
 	h2 {
