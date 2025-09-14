@@ -34,7 +34,7 @@
     {onpress}
     {disabled}
     icon="autoSpin"
-    class="w-full h-full text-white"
+    class="w-full h-full rounded-full"
   >
     <Container x={sizes.width * 0.5} y={sizes.height * 0.5}>
       <ButtonBetAutoSpinsCounter />

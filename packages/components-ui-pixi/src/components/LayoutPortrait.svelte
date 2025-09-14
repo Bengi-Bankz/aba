@@ -10,60 +10,13 @@
 	import { waitForResolve } from 'utils-shared/wait';
 
 	import LabelFreeSpinCounter from './LabelFreeSpinCounter.svelte';
-	import ButtonDrawer from './ButtonDrawer.svelte';
 	import type { LayoutUiProps } from '../types';
 	import { getContext } from '../context';
 
 	const props: LayoutUiProps = $props();
 	const context = getContext();
 
-	const DRAWER_Y = {
-		unfold: 0,
-		fold: 550,
-	};
-	const drawerTween = new Tween(stateUi.drawerFold ? DRAWER_Y.fold : DRAWER_Y.unfold, {
-		easing: cubicInOut,
-	});
-
-	const DRAWER_BUTTON_Y = {
-		unfold: 0,
-		fold: 50,
-	};
-	const drawerButtonTween = new Tween(
-		stateUi.drawerFold ? DRAWER_BUTTON_Y.fold : DRAWER_BUTTON_Y.unfold,
-		{
-			easing: cubicInOut,
-		},
-	);
-
-	let drawerButtonFadeComplete = $state(() => {});
-
-	context.eventEmitter.subscribeOnMount({
-		drawerButtonShow: async () => {
-			if (!stateUi.drawerButtonShow) {
-				stateUi.drawerButtonShow = true;
-				await waitForResolve((resolve) => (drawerButtonFadeComplete = resolve));
-			}
-		},
-		drawerButtonHide: async () => {
-			if (stateUi.drawerButtonShow) {
-				stateUi.drawerButtonShow = false;
-				await waitForResolve((resolve) => (drawerButtonFadeComplete = resolve));
-			}
-		},
-		drawerUnfold: async () => {
-			if (stateUi.drawerFold) {
-				drawerButtonTween.set(DRAWER_BUTTON_Y.unfold);
-				await drawerTween.set(DRAWER_Y.unfold);
-			}
-		},
-		drawerFold: async () => {
-			if (!stateUi.drawerFold) {
-				drawerButtonTween.set(DRAWER_BUTTON_Y.fold);
-				await drawerTween.set(DRAWER_Y.fold);
-			}
-		},
-	});
+	
 </script>
 
 <Container x={20}>
@@ -72,59 +25,55 @@
 
 
 
+
 <MainContainer standard alignVertical="bottom">
-	<!-- drawer container -->
-	<Container y={drawerTween.current}>
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
-		>
-			{@render props.buttonMenu({ anchor: 0.5 })}
-		</Container>
-
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
-		>
-			{@render props.buttonBuyBonus({ anchor: 0.5 })}
-		</Container>
-
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
-		>
-			{@render props.buttonBet({ anchor: 0.5 })}
-		</Container>
-
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 180}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
-		>
-			{@render props.buttonAutoSpin({ anchor: 0.5 })}
-		</Container>
-
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 180}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
-		>
-			{@render props.buttonTurbo({ anchor: 0.5 })}
-		</Container>
-
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 270}
-		>
-			{@render props.amountBalance({ stacked: true })}
-		</Container>
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+	>
+		{@render props.buttonMenu({ anchor: 0.5 })}
 	</Container>
 
-	<Container y={Math.min(drawerTween.current, 350)}>
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 1800}
-		>
-			{@render props.amountWin({ stacked: true })}
-		</Container>
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 440}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+	>
+		{@render props.buttonBuyBonus({ anchor: 0.5 })}
+	</Container>
+
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+	>
+		{@render props.buttonBet({ anchor: 0.5 })}
+	</Container>
+
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 180}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+	>
+		{@render props.buttonAutoSpin({ anchor: 0.5 })}
+	</Container>
+
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 180}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+	>
+		{@render props.buttonTurbo({ anchor: 0.5 })}
+	</Container>
+
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 270}
+	>
+		{@render props.amountBalance({ stacked: true })}
+	</Container>
+
+	<Container
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 1800}
+	>
+		{@render props.amountWin({ stacked: true })}
 	</Container>
 </MainContainer>
 
@@ -159,20 +108,6 @@
 		</Container>
 	{/if}
 
-	<!-- drawer button -->
-	<FadeContainer
-		persistent
-		show={stateUi.drawerButtonShow}
-		oncomplete={drawerButtonFadeComplete}
-		y={drawerButtonTween.current}
-	>
-		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 105}
-		>
-			<ButtonDrawer disabled={!stateUi.drawerButtonShow} anchor={0.5} />
-		</Container>
-	</FadeContainer>
 </MainContainer>
 
 {#if stateUi.menuOpen}

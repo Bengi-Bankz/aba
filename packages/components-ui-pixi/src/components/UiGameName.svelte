@@ -19,7 +19,7 @@
 	);
 	const textProps = {
 		style: {
-			   fontFamily: 'Roboto, sans-serif',
+			   fontFamily: 'bungeeSpice',
 			fontSize: REM * 1.5,
 			fontWeight: '600',
 			lineHeight: REM * 2,

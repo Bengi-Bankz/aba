@@ -36,7 +36,7 @@
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={LANDSCAPE_BASE_SIZE * 0.1 - 220} x={1520 + 20} scale={0.8}>
+		<Container y={LANDSCAPE_BASE_SIZE * 0.1 - 200} x={1670 + 20} scale={0.7}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
@@ -52,11 +52,11 @@
 			{@render props.amountBet({ stacked: true })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={750} scale={0.65}>
+		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={750} scale={0.35}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={1050} scale={0.65}>
+		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={1050} scale={0.35}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
@@ -72,15 +72,15 @@
 			},
 		})}
 	>
-		<Container x={LANDSCAPE_BASE_SIZE * 0.5} y={LANDSCAPE_BASE_SIZE * 0.5 - 140} scale={0.5}>
+		<Container x={LANDSCAPE_BASE_SIZE * -1} y={LANDSCAPE_BASE_SIZE * -1.5 + 140} scale={0.5}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container x={LANDSCAPE_BASE_SIZE * 0.5} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
+		<Container x={LANDSCAPE_BASE_SIZE * 1 - 110} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
-		<Container x={LANDSCAPE_BASE_SIZE * 0.5} y={LANDSCAPE_BASE_SIZE * 0.5 + 140} scale={0.5}>
+		<Container x={LANDSCAPE_BASE_SIZE * -.3} y={LANDSCAPE_BASE_SIZE * -1.5 + 140} scale={0.5}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 	</Container>

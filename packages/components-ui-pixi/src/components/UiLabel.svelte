@@ -15,13 +15,13 @@
 	const props: Props = $props();
 
 	const labelStyle = {
-		fontFamily: 'Roboto, sans-serif',
+		fontFamily: 'bungeeSpice',
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
 	} as const;
 
 	const valueStyle = {
-		fontFamily: 'Roboto, sans-serif',
+		fontFamily: 'bungeeSpice',
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
 	} as const;
