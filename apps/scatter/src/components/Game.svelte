@@ -53,7 +53,12 @@
 	<Background />
 
 	{#if context.stateLayout.showLoadingScreen}
-		<LoadingScreen onloaded={() => (context.stateLayout.showLoadingScreen = false)} />
+		<LoadingScreen onloaded={async () => {
+			// Wait for BungeeSpice font to load before hiding loading screen
+			await document.fonts.load('1em BungeeSpice');
+			await document.fonts.ready;
+			context.stateLayout.showLoadingScreen = false;
+		}} />
 	{:else}
 		<ResumeBet />
 		<!--
@@ -95,7 +100,7 @@
 					anchor={{ x: 1, y: 0 }}
 					text="ONLY SPINS STUDIOS"
 					style={{
-						fontFamily: 'proxima-nova',
+						fontFamily: 'BungeeSpice, sans-serif',
 						fontSize: REM * 1.5,
 						fontWeight: '600',
 						lineHeight: REM * 2,

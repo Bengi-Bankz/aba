@@ -40,36 +40,35 @@
 			{@render props.amountWin({ stacked: true })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0} x={1080 + 550} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * .25} x={820 + 520} scale={0.6}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
-
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={220} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={220} scale={0.8}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * -1.5} x={670 + 990} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={220 + 150} scale={0.8}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * -1.5} x={950 + 155 * 4} scale={0.5}>
-			{@render props.buttonAutoSpin({ anchor: 1 })}
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={160 + 150 * 4} scale={0.4}>
+			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * -3} x={260 + 290 * 5} scale={0.9}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={160 + 150 * 5} scale={0.8}>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * -3} x={555 + 155 * 6} scale={0.5}>
-			{@render props.buttonTurbo({ anchor: -0.1 })}
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={160 + 150 * 6} scale={0.4}>
+			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.1} x={1500} scale={0.5}>
-			{@render props.buttonDecrease({ anchor: 0.3 })}
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1240} scale={0.3}>
+			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.1} x={1500 + 220} scale={0.5}>
-			{@render props.buttonIncrease({ anchor: 0.3 })}
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1440 } scale={0.3}>
+			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
 </MainContainer>
@@ -78,7 +77,7 @@
 	<Rectangle
 		eventMode="static"
 		cursor="pointer"
-		alpha={0.7}
+		alpha={0.5}
 		anchor={0.5}
 		backgroundColor={BLACK}
 		width={context.stateLayoutDerived.canvasSizes().width}
@@ -93,23 +92,23 @@
 			x={298}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - DESKTOP_BASE_SIZE - 10}
 		>
-			<Container scale={0.4} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 3}>
+			<Container scale={0.8} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 3}>
 				{@render props.buttonPayTable({ anchor: 0.5 })}
 			</Container>
 
-			<Container scale={0.4} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 2}>
+			<Container scale={0.8} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 2}>
 				{@render props.buttonGameRules({ anchor: 0.5 })}
 			</Container>
 
-			<Container scale={0.5} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 1}>
+			<Container scale={0.8} y={DESKTOP_BASE_SIZE * 0.5 - 150 - 170 * 1}>
 				{@render props.buttonSettings({ anchor: 0.5 })}
 			</Container>
 
-			<Container scale={0.5} y={DESKTOP_BASE_SIZE * 0.5 - 150}>
+			<Container scale={0.8} y={DESKTOP_BASE_SIZE * 0.5 - 150}>
 				{@render props.buttonSoundSwitch({ anchor: 0.5 })}
 			</Container>
 
-			<Container scale={0.6} y={DESKTOP_BASE_SIZE * 0.5}>
+			<Container scale={0.8} y={DESKTOP_BASE_SIZE * 0.5}>
 				{@render props.buttonMenuClose({ anchor: 0.5 })}
 			</Container>
 		</Container>

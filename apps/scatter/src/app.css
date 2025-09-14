@@ -1,3 +1,20 @@
 @use "tailwindcss";
 
 /* Add your custom styles below */
+
+/* This class is used to trigger a repaint when the font is loaded */
+body.font-loaded {
+	/* No styles needed, just triggers a repaint */
+}
+
+@font-face {
+	font-family: 'BungeeSpice';
+	src: url('/assets/fonts/BungeeSpice-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: 'BungeeSpice', sans-serif;
+}

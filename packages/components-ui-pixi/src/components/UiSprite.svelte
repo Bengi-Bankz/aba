@@ -63,7 +63,7 @@
 </script>
 
 <Rectangle
-	borderRadius={12}
+	borderRadius={18}
 	backgroundColor={computedBackgroundColor()}
 	borderColor={computedBorderColor()}
 	borderWidth={computedBorderWidth()}

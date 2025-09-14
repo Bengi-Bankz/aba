@@ -76,15 +76,13 @@
 		<Text
 			{...center}
 			anchor={0.5}
-			text={state === 'active' ? i18nDerived.disable() : i18nDerived.buyBonus()}
+			text={'\uf686'}
 			style={{
 				align: 'center',
-				wordWrap: true,
-				wordWrapWidth: sizes.width - 20,
-				   fontFamily: 'Roboto, sans-serif',
-				fontWeight: '600',
-				fontSize: UI_BASE_FONT_SIZE * 0.9,
+				fontFamily: 'Material Symbols Outlined',
+				fontSize: UI_BASE_SIZE * 0.7,
 				fill: textColor(),
+				dropShadow: true,
 			}}
 		/>
 	{/snippet}
