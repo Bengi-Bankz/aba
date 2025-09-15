@@ -92,7 +92,7 @@
 		</MainContainer>
 		<UI>
 			{#snippet gameName()}
-				<UiGameName name="GLADIATOR 5000X" />
+				<UiGameName name="GLADIATORS 5000X" />
 			{/snippet}
 			{#snippet logo()}
 				<Text
