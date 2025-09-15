@@ -60,46 +60,46 @@
                         showBorder={false}
                         showShadow={false}
                     />
-                    {#if ['spin_default', 'spin_disabled'].includes(key)}
-                        <Text
-                            anchor={0.5}
-                            y={BUTTON_SIZE * 0.13}
-                            text={'\ue863'}
-                            style={{
-                                align: 'center',
-                                fontFamily: 'Material Symbols Outlined',
-                                fontSize: BUTTON_SIZE * 0.9,
-                                fill: textColor(),
-                                dropShadow: true,
-                            }}
-                        />
-                    {:else if key === 'bonus-active'}
-                        <Text
-                            anchor={0.5}
-                            y={BUTTON_SIZE * 0.13}
-                            text={'\uf686'}
-                            style={{
-                                align: 'center',
-                                fontFamily: 'Material Symbols Outlined',
-                                fontSize: BUTTON_SIZE * 0.9,
-                                fill: textColor(),
-                                dropShadow: true,
-                            }}
-                        />
-                    {:else}
-                        <Text
-                            anchor={0.5}
-                            y={BUTTON_SIZE * 0.13}
-                            text={'\ue627'}
-                            style={{
-                                align: 'center',
-                                fontFamily: 'Material Symbols Outlined',
-                                fontSize: BUTTON_SIZE * 0.9,
-                                fill: textColor(),
-                                dropShadow: true,
-                            }}
-                        />
-                    {/if}
+{#if ['spin_default', 'spin_disabled'].includes(key)}
+    <Text
+        anchor={0.5}
+        y={BUTTON_SIZE * 0.13}
+        text="Spin"
+        style={{
+            align: 'center',
+            fontFamily: 'bungeeSpice', // or your preferred font
+            fontSize: BUTTON_SIZE * 0.4,
+            fill: textColor(),
+            dropShadow: true,
+        }}
+    />
+{:else if key === 'bonus-active'}
+    <Text
+        anchor={0.5}
+        y={BUTTON_SIZE * 0.13}
+        text="Bonus"
+        style={{
+            align: 'center',
+            fontFamily: 'bungeeSpice', // or your preferred font
+            fontSize: BUTTON_SIZE * 0.4,
+            fill: textColor(),
+            dropShadow: true,
+        }}
+    />
+{:else}
+    <Text
+        anchor={0.5}
+        y={BUTTON_SIZE * 0.13}
+        text="Stop"
+        style={{
+            align: 'center',
+            fontFamily: 'bungeeSpice', // or your preferred font
+            fontSize: BUTTON_SIZE * 0.4,
+            fill: textColor(),
+            dropShadow: true,
+        }}
+    />
+{/if}
                 </Container>
             {/snippet}
         </Button>

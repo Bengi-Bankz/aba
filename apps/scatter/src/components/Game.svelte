@@ -32,7 +32,6 @@
 	import FreeSpinOutro from './FreeSpinOutro.svelte';
 	import Transition from './Transition.svelte';
 
-
 	const context = getContext();
 
 	onMount(() => (context.stateLayout.showLoadingScreen = true));
@@ -53,12 +52,14 @@
 	<Background />
 
 	{#if context.stateLayout.showLoadingScreen}
-		<LoadingScreen onloaded={async () => {
-			// Wait for BungeeSpice font to load before hiding loading screen
-			await document.fonts.load('1em BungeeSpice');
-			await document.fonts.ready;
-			context.stateLayout.showLoadingScreen = false;
-		}} />
+		<LoadingScreen
+			onloaded={async () => {
+				// Wait for BungeeSpice font to load before hiding loading screen
+				await document.fonts.load('1em BungeeSpice');
+				await document.fonts.ready;
+				context.stateLayout.showLoadingScreen = false;
+			}}
+		/>
 	{:else}
 		<ResumeBet />
 		<!--
@@ -71,8 +72,6 @@
 		<MainContainer>
 			<BoardFrame />
 		</MainContainer>
-
-	
 
 		<MainContainer>
 			<Board />
@@ -90,7 +89,7 @@
 		<MainContainer>
 			<MultiplierBoard />
 			<MultiplierTotal />
-		</MainContainer> 
+		</MainContainer>
 		<UI>
 			{#snippet gameName()}
 				<UiGameName name="GLADIATOR 5000X" />
@@ -117,8 +116,6 @@
 		{/if}
 		<FreeSpinOutro />
 		<Transition />
-
-	
 	{/if}
 </App>
 

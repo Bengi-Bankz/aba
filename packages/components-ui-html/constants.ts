@@ -13,7 +13,6 @@ export const UI_TEXT_STYLES = {
 	amountStyle: {
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
-		fontFamily: 'BungeeSpice',
 	},
 };
 

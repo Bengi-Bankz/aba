@@ -54,4 +54,3 @@
 		text={JSON.stringify(context.stateXstate.value, undefined, 2)}
 	/>
 {/if}
-

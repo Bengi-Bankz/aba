@@ -84,7 +84,7 @@
 			width={sizes.width}
 			height={sizes.height}
 			alpha={0.5}
-			borderWidth={2}
+			borderWidth={20}
 			borderColor={0xffffff}
 		/>
 	{/if}

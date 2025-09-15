@@ -73,17 +73,17 @@
 				: {}}
 		/>
 
-		<Text
-			{...center}
-			anchor={0.5}
-			text={'\uf686'}
-			style={{
-				align: 'center',
-				fontFamily: 'Material Symbols Outlined',
-				fontSize: UI_BASE_SIZE * 0.7,
-				fill: textColor(),
-				dropShadow: true,
-			}}
-		/>
+<Text
+    {...center}
+    anchor={0.5}
+    text="Bonus"
+    style={{
+        align: 'center',
+        fontFamily: 'bungeeSpice', // or your preferred font
+        fontSize: UI_BASE_SIZE * 0.4,
+        fill: textColor(),
+        dropShadow: true,
+    }}
+/>
 	{/snippet}
 </Button>

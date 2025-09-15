@@ -127,7 +127,7 @@
 		font-weight: 900;
 		background-color: transparent;
 		border-color: transparent;
-		line-height: 0px; /* to remove the button style influence */
+		line-height: 12px; /* to remove the button style influence */
 		width: 3rem;
 		height: 3rem;
 	}

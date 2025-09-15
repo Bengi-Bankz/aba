@@ -12,6 +12,6 @@ export default createAsset({
 	spines: {
 		fsIntro,
 		fsIntroNumber,
-		fsOutroNumber
+		fsOutroNumber,
 	},
 });

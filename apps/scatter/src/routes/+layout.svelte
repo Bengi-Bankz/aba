@@ -1,5 +1,5 @@
 <script lang="ts">
-import '../app.css';
+	import '../app.css';
 	import { type Snippet } from 'svelte';
 	import { GlobalStyle } from 'components-ui-html';
 	import { Authenticate, LoaderStakeEngine, LoaderExample, LoadI18n } from 'components-shared';
@@ -20,13 +20,12 @@ import '../app.css';
 	setContext();
 </script>
 
-
 <GlobalStyle>
-   <Authenticate>
-	   <LoadI18n {messagesMap}>
-		   <Game />
-	   </LoadI18n>
-   </Authenticate>
+	<Authenticate>
+		<LoadI18n {messagesMap}>
+			<Game />
+		</LoadI18n>
+	</Authenticate>
 </GlobalStyle>
 
 {@render props.children()}

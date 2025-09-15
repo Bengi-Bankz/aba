@@ -30,7 +30,7 @@
 	}
 
 	.button.debug {
-		border-color: white;
+		border-color: rgb(173, 4, 4);
 		border-width: 2px;
 	}
 

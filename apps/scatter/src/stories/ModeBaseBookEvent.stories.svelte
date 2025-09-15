@@ -19,7 +19,6 @@
 	import { playBookEvent } from '../game/utils';
 	import events from './data/base_events';
 
-	
 	setContext();
 </script>
 
