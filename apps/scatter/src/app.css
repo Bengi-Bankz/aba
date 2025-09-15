@@ -1,6 +1,8 @@
-@use 'tailwindcss';
+@import 'tailwindcss';
 
-
-body {
-	font-family: 'BungeeSpice', sans-serif;
+@font-face {
+  font-family: 'CaesarDressing';
+  src: url('../static/assets/fonts/CaesarDressing-Regular.ttf') format('truetype');
 }
+
+
