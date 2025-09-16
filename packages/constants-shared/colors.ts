@@ -3,7 +3,7 @@ export const WHITE = 0xffffff;
 export const BLACK = 0x000000;
 export const GREY = 0x94a3b8; // slate-400
 
-export const ACCENT_PRIMARY = 0x3b82f6; // blue-500
+export const ACCENT_PRIMARY = 0x0f172a; // blue-500
 export const ACCENT_SECONDARY = 0x22d3ee; // cyan-400
 
 export const BONUS_ACTIVE_PRIMARY = 0xf59e42; // orange-400

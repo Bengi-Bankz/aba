@@ -1,16 +1,11 @@
 <script lang="ts">
-	import { Text } from 'pixi-svelte';
 	import { Button, type ButtonProps } from 'components-pixi';
-
 	import UiSprite from './UiSprite.svelte';
-	import type { ButtonIcon } from '../types';
 	import type { Snippet } from 'svelte';
-	import { i18nDerived } from '../i18n/i18nDerived';
-	import { UI_BASE_FONT_SIZE } from '../constants';
 	import { WHITE, BLACK, DISABLED_SECONDARY } from 'constants-shared/colors';
+	import { UI_BASE_FONT_SIZE } from '../constants';
 
 	type Props = Omit<ButtonProps, 'children'> & {
-		icon: ButtonIcon;
 		sizes: { width: number; height: number };
 		active?: boolean;
 		children?: Snippet;
@@ -18,25 +13,20 @@
 	};
 
 	const {
-		icon,
 		active,
-		variant = 'dark',
+		variant = 'accent',
 		children: childrenFromParent,
 		disabled,
 		...buttonProps
 	}: Props = $props();
 
-	// Calculate text color based on variant and state
 	const textColor = $derived(() => {
 		if (disabled) return DISABLED_SECONDARY;
-		
 		switch (variant) {
-			case 'light':
-				return BLACK;
+			case 'light': return BLACK;
 			case 'dark':
 			case 'accent':
-			default:
-				return WHITE;
+			default: return WHITE;
 		}
 	});
 </script>
@@ -58,21 +48,6 @@
 						borderColor: variant === 'light' ? BLACK : WHITE,
 					}
 				: {}}
-		/>
-
-		<Text
-			{...center}
-			anchor={0.5}
-			text={i18nDerived[icon]()}
-			style={{
-				align: 'center',
-				wordWrap: true,
-				wordWrapWidth: buttonProps.sizes.width + 20,
-				   fontFamily: 'bungeeSpice',
-				fontWeight: '600',
-				fontSize: UI_BASE_FONT_SIZE * .95,
-				fill: textColor(),
-			}}
 		/>
 
 		{@render childrenFromParent?.()}

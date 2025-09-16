@@ -15,7 +15,7 @@
 	const props: Props = $props();
 
 	const labelStyle = {
-		fontFamily: 'bungeeSpice',
+		fontFamily: 'sansationRegular',
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
 	} as const;
