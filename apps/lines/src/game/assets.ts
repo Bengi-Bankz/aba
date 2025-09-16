@@ -285,7 +285,12 @@ export default {
 	},
 	blackfont: {
 		type: 'sprite',
-		src: new URL('../../assets/fonts/blackfont/spin.svg', import.meta.url).href,
+		src: new URL('../../assets/fonts/blackfont/spin.png', import.meta.url).href,
+		preload: true,
+	},
+	bluefont: {
+		type: 'sprite',
+		src: new URL('../../assets/fonts/bluefont/stop.png', import.meta.url).href,
 		preload: true,
 	},
 } as const;

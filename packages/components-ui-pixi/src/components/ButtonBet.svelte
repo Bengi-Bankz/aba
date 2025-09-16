@@ -12,7 +12,7 @@
     const props: Partial<Omit<ButtonProps, 'children'>> = $props();
     const disabled = $derived(!stateBetDerived.isBetCostAvailable());
     // Make the button larger and round
-    const BUTTON_SIZE = UI_BASE_SIZE * 1;
+    const BUTTON_SIZE = UI_BASE_SIZE * 1.5;
     const sizes = { width: BUTTON_SIZE, height: BUTTON_SIZE };
 
     // Check if bonus mode is active (any mode other than 'BASE')
@@ -42,54 +42,66 @@
             class="bet-round-btn"
         >
             {#snippet children({ center, hovered, pressed })}
-                <Container {...center}>
-                    <Sprite
-                        key="blackfont"
-                        width={sizes.width}
-                        height={sizes.height}
-                        anchor={0.5}
-                    />
-{#if ['spin_default', 'spin_disabled'].includes(key)}
-    <Text
-        anchor={0.5}
-        y={BUTTON_SIZE * 0.13}
-        text="Spin"
-        style={{
-            align: 'center',
-            fontFamily: 'bungeeSpice', // or your preferred font
-            fontSize: BUTTON_SIZE * 0.4,
-            fill: textColor(),
-            dropShadow: true,
-        }}
-    />
-{:else if key === 'bonus-active'}
-    <Text
-        anchor={0.5}
-        y={BUTTON_SIZE * 0.13}
-        text="Bonus"
-        style={{
-            align: 'center',
-            fontFamily: 'bungeeSpice', // or your preferred font
-            fontSize: BUTTON_SIZE * 0.4,
-            fill: textColor(),
-            dropShadow: true,
-        }}
-    />
-{:else}
-    <Text
-        anchor={0.5}
-        y={BUTTON_SIZE * 0.13}
-        text="Stop"
-        style={{
-            align: 'center',
-            fontFamily: 'bungeeSpice', // or your preferred font
-            fontSize: BUTTON_SIZE * 0.4,
-            fill: textColor(),
-            dropShadow: true,
-        }}
-    />
-{/if}
-                </Container>
+<Container {...center}>
+    {#if ['spin_default', 'spin_disabled'].includes(key)}
+        <Sprite
+            key="blackfont"
+            width={sizes.width}
+            height={sizes.height}
+            anchor={0.5}
+        />
+        <Text
+            anchor={0.5}
+            y={BUTTON_SIZE * 0.13}
+            text=""
+            style={{
+                align: 'center',
+                fontFamily: 'bungeeSpice',
+                fontSize: BUTTON_SIZE * 0.4,
+                fill: textColor(),
+                dropShadow: true,
+            }}
+        />
+    {:else if key === 'bonus-active'}
+        <Sprite
+            key="blackfont"
+            width={sizes.width}
+            height={sizes.height}
+            anchor={0.5}
+        />
+        <Text
+            anchor={0.5}
+            y={BUTTON_SIZE * 0.13}
+            text="Bonus"
+            style={{
+                align: 'center',
+                fontFamily: 'bungeeSpice',
+                fontSize: BUTTON_SIZE * 0.4,
+                fill: textColor(),
+                dropShadow: true,
+            }}
+        />
+    {:else}
+        <Sprite
+            key="bluefont"
+            width={sizes.width}
+            height={sizes.height}
+            anchor={0.5}
+        />
+        <Text
+            anchor={0.5}
+            y={BUTTON_SIZE * 0.13}
+            text=""
+            style={{
+                align: 'center',
+                fontFamily: 'bungeeSpice',
+                fontSize: BUTTON_SIZE * 0.4,
+                fill: textColor(),
+                dropShadow: true,
+            }}
+        />
+    {/if}
+</Container>
             {/snippet}
         </Button>
     {/snippet}
