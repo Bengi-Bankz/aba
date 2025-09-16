@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Container } from 'pixi-svelte';
+	import { Container, Sprite } from 'pixi-svelte';
 	import type { ButtonProps } from 'components-pixi';
 	import { stateBet, stateBetDerived, stateModal } from 'state-shared';
 
@@ -33,10 +33,9 @@
     {active}
     {onpress}
     {disabled}
-    icon="autoSpin"
-    class="w-full h-full rounded-full"
   >
-    <Container x={sizes.width * 0.5} y={sizes.height * 0.5}>
+    <Sprite key="auto" width={sizes.width} height={sizes.height} anchor={0} />
+    <Container x={sizes.width * 0.4} y={sizes.height * 0.4}>
       <ButtonBetAutoSpinsCounter />
     </Container>
   </UiButton>

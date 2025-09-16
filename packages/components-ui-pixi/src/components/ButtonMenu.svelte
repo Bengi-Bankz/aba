@@ -3,6 +3,7 @@
 	import { stateUi } from 'state-shared';
 
 	import UiButton from './UiButton.svelte';
+	import { Sprite } from 'pixi-svelte';
 	import { UI_BASE_SIZE } from '../constants';
 	import { getContext } from '../context';
 
@@ -16,4 +17,6 @@
 	};
 </script>
 
-<UiButton {...props} {sizes} {onpress} icon="menu" />
+<UiButton {...props} {sizes} {onpress}>
+	<Sprite key="menu" width={sizes.width * 1} height={sizes.height * 1} anchor={-0} />
+</UiButton>
