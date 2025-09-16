@@ -293,4 +293,94 @@ export default {
 		src: new URL('../../assets/fonts/bluefont/stop.png', import.meta.url).href,
 		preload: true,
 	},
+	yen: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/yen.png', import.meta.url).href,
+		preload: true,
+	},
+	yaun: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/yaun.png', import.meta.url).href,
+		preload: true,
+	},
+	decrease: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/decrease.png', import.meta.url).href,
+		preload: true,
+	},
+	euro: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/euro.png', import.meta.url).href,
+		preload: true,
+	},
+	beehive: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/beehive.png', import.meta.url).href,
+		preload: true,
+	},
+	menu: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/menu.png', import.meta.url).href,
+		preload: true,
+	},
+	turboOff: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/turbo-off.png', import.meta.url).href,
+		preload: true,
+	},
+	turboOn: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/turbo-on.png', import.meta.url).href,
+		preload: true,
+	},
+	volOff: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/vol-off.png', import.meta.url).href,
+		preload: true,
+	},
+	volOn: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/vol-on.png', import.meta.url).href,
+		preload: true,
+	},
+	increase: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/increase.png', import.meta.url).href,
+		preload: true,
+	},
+	usd: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/usd.png', import.meta.url).href,
+		preload: true,
+	},
+	auto: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/auto.png', import.meta.url).href,
+		preload: true,
+	},
+	franc: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/franc.png', import.meta.url).href,
+		preload: true,
+	},
+	lira: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/lira.png', import.meta.url).href,
+		preload: true,
+	},
+	pound: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/pound.png', import.meta.url).href,
+		preload: true,
+	},
+	ruble: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/ruble.png', import.meta.url).href,
+		preload: true,
+	},
+	rupee: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/rupee.png', import.meta.url).href,
+		preload: true,
+	},
 } as const;
