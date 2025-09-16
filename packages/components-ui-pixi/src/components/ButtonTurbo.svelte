@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { ButtonProps } from 'components-pixi';
 	import { stateBet, stateBetDerived } from 'state-shared';
-
 	import UiButton from './UiButton.svelte';
 	import { UI_BASE_SIZE } from '../constants';
 	import { getContext } from '../context';
+	import { Sprite } from 'pixi-svelte';
 
 	const props: Partial<Omit<ButtonProps, 'children'>> = $props();
 	const context = getContext();
@@ -23,4 +23,6 @@
 	});
 </script>
 
-<UiButton {...props} {sizes} {active} {onpress} {disabled} icon="turbo" />
+<UiButton {...props} {sizes} {active} {onpress} {disabled}>
+	<Sprite key="turboOn" width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
+</UiButton>
