@@ -1,3 +1,4 @@
+
 <script lang="ts">
     import { Container, Text, Sprite } from 'pixi-svelte';
     import { Button, type ButtonProps } from 'components-pixi';
@@ -12,7 +13,7 @@
     const props: Partial<Omit<ButtonProps, 'children'>> = $props();
     const disabled = $derived(!stateBetDerived.isBetCostAvailable());
     // Make the button larger and round
-    const BUTTON_SIZE = UI_BASE_SIZE * 1.5;
+    const BUTTON_SIZE = UI_BASE_SIZE * 1;
     const sizes = { width: BUTTON_SIZE, height: BUTTON_SIZE };
 
     // Check if bonus mode is active (any mode other than 'BASE')
@@ -42,92 +43,84 @@
             class="bet-round-btn"
         >
             {#snippet children({ center, hovered, pressed })}
-<Container {...center}>
-    {#if ['spin_default', 'spin_disabled'].includes(key)}
-        <Sprite
-            key="blackfont"
-            width={sizes.width}
-            height={sizes.height}
-            anchor={0.5}
-        />
-        <Text
-            anchor={0.5}
-            y={BUTTON_SIZE * 0.13}
-            text=""
-            style={{
-                align: 'center',
-                fontFamily: 'bungeeSpice',
-                fontSize: BUTTON_SIZE * 0.4,
-                fill: textColor(),
-                dropShadow: true,
-            }}
-        />
-    {:else if key === 'bonus-active'}
-        <Sprite
-            key="blackfont"
-            width={sizes.width}
-            height={sizes.height}
-            anchor={0.5}
-        />
-        <Text
-            anchor={0.5}
-            y={BUTTON_SIZE * 0.13}
-            text="Bonus"
-            style={{
-                align: 'center',
-                fontFamily: 'bungeeSpice',
-                fontSize: BUTTON_SIZE * 0.4,
-                fill: textColor(),
-                dropShadow: true,
-            }}
-        />
-    {:else}
-        <Sprite
-            key="bluefont"
-            width={sizes.width}
-            height={sizes.height}
-            anchor={0.5}
-        />
-        <Text
-            anchor={0.5}
-            y={BUTTON_SIZE * 0.13}
-            text=""
-            style={{
-                align: 'center',
-                fontFamily: 'bungeeSpice',
-                fontSize: BUTTON_SIZE * 0.4,
-                fill: textColor(),
-                dropShadow: true,
-            }}
-        />
-    {/if}
-</Container>
+                <Container {...center}>
+                    {#if ['spin_default', 'spin_disabled'].includes(key)}
+                        
+                        <Sprite
+                            key="1"
+                            anchor={0.5}
+                            alpha={.9}
+                            scale={1.4}
+                        />
+                        <Sprite
+                            key="blackfont"
+                            width={sizes.width}
+                            height={sizes.height}
+                            anchor={0.5}
+                        />
+                        <Text
+                            anchor={0.5}
+                            y={BUTTON_SIZE * 0.13}
+                            text=""
+                            style={{
+                                align: 'center',
+                                fontFamily: 'bungeeSpice',
+                                fontSize: BUTTON_SIZE * 0.4,
+                                fill: textColor(),
+                                dropShadow: true,
+                            }}
+                        />
+                    {:else if key === 'bonus-active'}
+                        <Sprite
+                            key="blackfont"
+
+                            anchor={0.5}
+                            scale={.8}
+                        />
+                        <Text
+                            anchor={0.5}
+                            y={BUTTON_SIZE * 0.13}
+                            text="Bonus"
+                            style={{
+                                align: 'center',
+                                fontFamily: 'bungeeSpice',
+                                fontSize: BUTTON_SIZE * 0.4,
+                                fill: textColor(),
+                                dropShadow: true,
+                            }}
+                        />
+                    {:else}
+                        <!-- Sprite "2" as background for stop -->
+                        <Sprite
+                            key="2"
+
+                            anchor={0.5}
+                            alpha={0.9}
+                            scale={1.3}
+                        />
+                        <Sprite
+                            key="bluefont"
+                            width={sizes.width}
+                            height={sizes.height}
+                            anchor={0.5}
+                            scale={3.1}
+                        />
+                        <Text
+                            anchor={0.5}
+                            y={BUTTON_SIZE * 0.13}
+                            text=""
+                            style={{
+                                align: 'center',
+                                fontFamily: 'bungeeSpice',
+                                fontSize: BUTTON_SIZE * 0.4,
+                                fill: textColor(),
+                                dropShadow: true,
+                            }}
+                        />
+                    {/if}
+                </Container>
             {/snippet}
         </Button>
     {/snippet}
 </ButtonBetProvider>
 
-<style>
-:global(.bet-round-btn) {
-    border-radius: 50% !important;
-    width: unset !important;
-    height: unset !important;
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25), 0 1.5px 6px 0 rgba(0,0,0,0.18);
-    background: linear-gradient(135deg, #ffb347 0%, #ffcc33 100%);
-    transition: box-shadow 0.18s, transform 0.12s, background 0.18s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 !important;
-}
-:global(.bet-round-btn:hover:not(:disabled)) {
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.32), 0 2px 8px 0 rgba(0,0,0,0.22);
-    background: linear-gradient(135deg, #ffd700 0%, #ffe066 100%);
-    transform: scale(1.06);
-}
-:global(.bet-round-btn:active:not(:disabled)) {
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
-    background: linear-gradient(135deg, #ffb347 0%, #ffcc33 100%);
-    transform: scale(0.96);
-}
-</style>

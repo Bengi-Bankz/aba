@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Text } from 'pixi-svelte';
+	import { Text, Sprite } from 'pixi-svelte';
 	import { Button, type ButtonProps } from 'components-pixi';
 	import { stateModal, stateBet, stateBetDerived } from 'state-shared';
 
@@ -73,17 +73,26 @@
 				: {}}
 		/>
 
-<Text
-    {...center}
-    anchor={0.5}
-    text="Bonus"
-    style={{
-        align: 'center',
-        fontFamily: 'bungeeSpice', // or your preferred font
-        fontSize: UI_BASE_SIZE * 0.4,
-        fill: textColor(),
-        dropShadow: true,
-    }}
-/>
+		<Sprite
+			key="beehive"
+			width={sizes.width * 0.5}
+			height={sizes.height * 0.5}
+			anchor={-.5}
+			y={-sizes.height * 0.15}
+		/>
+
+		<Text
+			{...center}
+			anchor={0.5}
+			y={sizes.height * 0.78}
+			text="Bonus"
+			style={{
+				align: 'center',
+				fontFamily: 'bungeeSpice',
+				fontSize: UI_BASE_SIZE * 0.35,
+				fill: textColor(),
+				dropShadow: true,
+			}}
+		/>
 	{/snippet}
 </Button>

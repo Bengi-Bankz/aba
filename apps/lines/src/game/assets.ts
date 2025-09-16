@@ -383,4 +383,14 @@ export default {
 		src: new URL('../../static/assets/icons/rupee.png', import.meta.url).href,
 		preload: true,
 	},
+	1: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/1.png', import.meta.url).href,
+		preload: true,
+	},
+	2: {
+		type: 'sprite',
+		src: new URL('../../static/assets/icons/2.png', import.meta.url).href,
+		preload: true,
+	},
 } as const;
