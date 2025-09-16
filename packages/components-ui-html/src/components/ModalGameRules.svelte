@@ -7,14 +7,14 @@
 
 	import BaseContent from './BaseContent.svelte';
 	import BaseScrollable from './BaseScrollable.svelte';
-	import autoImg from '../../assets/auto.png';
-	import bonusImg from '../../assets/bonus.png';
-	import decreaseImg from '../../assets/decrease.png';
-	import increaseImg from '../../assets/increase.png';
-	import menuImg from '../../assets/menu.png';
-	import playImg from '../../assets/play.png';  
-	import stopImg from '../../assets/stop.png';
-	import turboImg from '../../assets/turbo.png';
+	import img12 from '../../assets/12.png';
+	import img13 from '../../assets/13.png';
+	import img14 from '../../assets/14.png';
+	import img15 from '../../assets/15.png';
+	import img16 from '../../assets/16.png';
+	import img17 from '../../assets/17.png';
+	import img18 from '../../assets/18.png';
+	import img19 from '../../assets/19.png';
 
 	type Props = {
 		children: Snippet;
@@ -115,23 +115,23 @@
     <h3>Game Controls & Buttons</h3>
     <ul class="button-list">
         <li>
-            <img src={playImg} alt="Spin" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
+            <img src={img17} alt="Spin" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
             <b>Spin</b> – Starts a single round of play at the chosen stake.
         </li>
         <li>
-            <img src={autoImg} alt="Autoplay" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
+            <img src={img12} alt="Autoplay" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
             <b>Autoplay</b> – Allows multiple rounds to play automatically without pressing spin each time.
         </li>
         <li>
-            <img src={turboImg} alt="Turbo" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
+            <img src={img19} alt="Turbo" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
             <b>Turbo</b> – Speeds up the spin animations for faster gameplay.
         </li>
         <li>
-            <img src={bonusImg} alt="Bonus Buy" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
+            <img src={img13} alt="Bonus Buy" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
             <b>Bonus Buy</b> – Instantly purchases entry into the bonus feature for 200x the base play amount.
         </li>
         <li>
-            <img src={menuImg} alt="Menu" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
+            <img src={img16} alt="Menu" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
             <b>Menu</b> – Opens additional options, including sound settings, help, and game history.
         </li>
     </ul>

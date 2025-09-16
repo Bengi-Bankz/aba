@@ -12,13 +12,12 @@
 	import h1Img from '../../assets/3.png';
 	import h2Img from '../../assets/4.png';
 	import h3Img from '../../assets/5.png';
-	'import h3_2Img from '../../assets/6.png;
+	import h3_2Img from '../../assets/6.png';
 	import h4Img from '../../assets/7.png';
 	import l1Img from '../../assets/8.png';
 	import l2Img from '../../assets/9.png';
 	import l3Img from '../../assets/10.png';
 	import l4Img from '../../assets/11.png';
-import h3_2Img from '../../assets/6.png
 	type Props = {
 		children: Snippet;
 	};
