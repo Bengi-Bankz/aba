@@ -44,7 +44,7 @@ const DEFAULT_BET_MODE_META = {
 		text: {
 			title: 'BONUS',
 			dialog:
-				'Triggers FREE SPINS feature when activated for 100x the player bet amount. The Global Multiplier can reach up to 64x and remains active for the duration of FREE SPINS.',
+				'Triggers FREE SPINS feature when activated for 200x the player bet amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
 			description: 'Each spin may have a random multiplier applied to winning lines.',
 			button: 'BUY',
 			tickerIdle: 'PLACE YOUR BET',
