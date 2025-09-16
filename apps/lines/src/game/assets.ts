@@ -283,4 +283,9 @@ export default {
 		src: new URL('../../assets/audio/sounds.json', import.meta.url).href,
 		preload: true,
 	},
+	blackfont: {
+		type: 'sprite',
+		src: new URL('../../assets/fonts/blackfont/spin.svg', import.meta.url).href,
+		preload: true,
+	},
 } as const;

@@ -62,8 +62,9 @@ export const preloadFont = () =>
 	new Promise<void>((resolve) => {
 		try {
 			WebFont.load({
-				typekit: {
-					id: 'aba0ebl',
+				custom: {
+					families: ['CaesarDressing'],
+					urls: ['apps/lines/static/assets/fonts/caesar.css'], // Adjust path if needed
 				},
 				active: () => {
 					resolve();
@@ -78,7 +79,7 @@ export const preloadFont = () =>
 			resolve();
 		}
 	});
-
+	
 export function propsSyncEffect<TProps extends object, TTarget>({
 	props,
 	target,
