@@ -47,7 +47,7 @@
                     {#if ['spin_default', 'spin_disabled'].includes(key)}
                         
                         <Sprite
-                            key="1"
+                            key="playbehind"
                             anchor={0.5}
                             alpha={.9}
                             scale={1.4}
@@ -90,9 +90,8 @@
                             }}
                         />
                     {:else}
-                        <!-- Sprite "2" as background for stop -->
                         <Sprite
-                            key="2"
+                            key="stopbehind"
 
                             anchor={0.5}
                             alpha={0.9}

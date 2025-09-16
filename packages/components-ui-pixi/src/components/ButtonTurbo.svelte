@@ -24,5 +24,5 @@
 </script>
 
 <UiButton {...props} {sizes} {active} {onpress} {disabled}>
-	<Sprite key="turboOn" width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
+	<Sprite key="turboon" width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
 </UiButton>
