@@ -115,7 +115,7 @@
 				{@render props.buttonSoundSwitch({ anchor: 0.5 })}
 			</Container>
 
-			<Container scale={0.8} y={LANDSCAPE_BASE_SIZE * 0.5}>
+			<Container scale={1} y={LANDSCAPE_BASE_SIZE * 0.5}>
 				{@render props.buttonMenuClose({ anchor: 0.5 })}
 			</Container>
 		</Container>
