@@ -12,13 +12,8 @@
 	const context = getContext();
 </script>
 
-<Container x={20}>
-	{@render props.gameName()}
-</Container>
 
-<Container x={context.stateLayoutDerived.canvasSizes().width - 20}>
-	{@render props.logo()}
-</Container>
+
 
 <MainContainer standard alignVertical="bottom">
 	<Container
@@ -32,31 +27,29 @@
 			},
 		})}
 	>
-		<Container y={LANDSCAPE_BASE_SIZE * 0.5 - 90} x={85 + 20} scale={0.8}>
+		<Container y={LANDSCAPE_BASE_SIZE * 0.6 - 90} x={85 + 20} scale={1}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={LANDSCAPE_BASE_SIZE * 0.1 - 200} x={1670 + 20} scale={0.7}>
+		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 420} x={270 + 20} scale={1}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={LANDSCAPE_BASE_SIZE * -4.6} x={220} scale={0.8}>
+		<Container y={LANDSCAPE_BASE_SIZE * -5} x={160} scale={1.2}>
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
 
-		<Container y={LANDSCAPE_BASE_SIZE * -5} x={910} scale={0.6}>
-			{@render props.amountWin({ stacked: true })}
-		</Container>
 
-		<Container y={LANDSCAPE_BASE_SIZE * 0.5} x={900} scale={0.75}>
+
+		<Container y={LANDSCAPE_BASE_SIZE * -.5} x={1628} scale={0.75}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={750} scale={0.35}>
+		<Container  y={LANDSCAPE_BASE_SIZE * -.30} x={1520} scale={0.35}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * 0.7} x={1050} scale={0.35}>
+		<Container  y={LANDSCAPE_BASE_SIZE * -.30} x={1735} scale={0.35}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
@@ -72,15 +65,16 @@
 			},
 		})}
 	>
-		<Container x={LANDSCAPE_BASE_SIZE * -1} y={LANDSCAPE_BASE_SIZE * -1.5 + 140} scale={0.5}>
+		
+
+		<Container x={LANDSCAPE_BASE_SIZE * 1 - 165} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
+			{@render props.buttonBet({ anchor: 0.5 })}
+		</Container>		
+				<Container x={LANDSCAPE_BASE_SIZE * .85} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container x={LANDSCAPE_BASE_SIZE * 1 - 110} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
-			{@render props.buttonBet({ anchor: 0.5 })}
-		</Container>
-
-		<Container x={LANDSCAPE_BASE_SIZE * -.3} y={LANDSCAPE_BASE_SIZE * -1.5 + 140} scale={0.5}>
+		<Container x={LANDSCAPE_BASE_SIZE * 1 - 290} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 	</Container>
