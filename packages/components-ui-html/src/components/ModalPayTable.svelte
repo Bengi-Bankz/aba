@@ -60,12 +60,12 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(255, 0, 0, 0.5);
 		z-index: 9;
 	}
 
 	.paytable-modal-inner {
-		background: #fff;
+		background: #050505;
 		border-radius: 18px;
 		box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
 		max-width: 700px;
@@ -104,7 +104,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: #f7f9fc;
+		background: #020202;
 		border-radius: 12px;
 		margin-bottom: 24px;
 		padding: 20px 12px 16px 12px;
@@ -117,15 +117,16 @@
 		height: 90px;
 		border-radius: 10px;
 		box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.07);
-		background: #ececec;
+		background: #323dda;
 		margin-bottom: 12px;
 	}
 	.paytable-desc {
-		color: #222;
+		color: #f1f1f1;
 		font-size: 1rem;
 		font-weight: 500;
 		text-align: center;
-		font-family: 'BungeeSpice', cursive;
+		font-family: 'DiplomataSC, sans-serif';
+		line-height: 1.4;
 	}
 
 	@media (max-width: 700px) {
@@ -144,4 +145,4 @@
 			height: 70px;
 		}
 	}
-</style>
+</style>;

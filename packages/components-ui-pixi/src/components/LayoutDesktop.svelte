@@ -12,13 +12,6 @@
 	const context = getContext();
 </script>
 
-<Container x={20}>
-	{@render props.gameName()}
-</Container>
-
-<Container x={context.stateLayoutDerived.canvasSizes().width - 20}>
-	{@render props.logo()}
-</Container>
 
 <MainContainer standard alignVertical="bottom">
 	<Container
@@ -32,42 +25,42 @@
 			},
 		})}
 	>
-		<Container y={DESKTOP_BASE_SIZE * 0.5 - 940} x={900 - 755} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5 - 990} x={840 - 755} scale={1.2}>
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
 
 
 
-		<Container y={DESKTOP_BASE_SIZE * .25} x={820 + 520} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * .25} x={1130 + 520} scale={0.6}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={220} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={60} scale={0.8}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={220 + 150} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={80 + 150} scale={0.8}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
 
-		<Container y={DESKTOP_BASE_SIZE * 0.3} x={160 + 150 * 5} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * -1} x={885 + 150 * 5} scale={0.75}>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
 		
-		<Container y={DESKTOP_BASE_SIZE * 0.3} x={160 + 150 * 4.1} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * -1} x={873 + 150 * 5.9} scale={0.4}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.3} x={160 + 150 * 5.9} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * -1} x={623 + 150 * 5.9} scale={0.4}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1240} scale={0.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1560} scale={0.3}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1440 } scale={.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1740 } scale={.3}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>

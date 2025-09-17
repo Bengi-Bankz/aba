@@ -90,7 +90,7 @@
 		</MainContainer>
 		<UI>
 			{#snippet gameName()}
-				<UiGameName name="Diplomata" />
+				<UiGameName name="" />
 			{/snippet}
 			{#snippet logo()}
 				<Text
