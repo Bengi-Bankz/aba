@@ -25,7 +25,7 @@
 
 <style>
 	:global(h2, h3, p, li) {
-		font-family: 'BungeeSpice', cursive;
+		font-family: 'DiplomataSC-Regular', sans-serif;
 		color: #ececec;
 	}
 	h2 {

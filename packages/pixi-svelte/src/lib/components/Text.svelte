@@ -16,8 +16,7 @@
 
 	const props: Props = $props();
 	const parentContext = getContextParent();
-	// Merge default fontFamily 'BungeeSpice' unless overridden
-	const defaultStyle = { fontFamily: 'BungeeSpice', ...(props.style || {}) };
+	const defaultStyle = { fontFamily: '"DiplomataSC-Regular", sans-serif', ...(props.style || {}) };
 	const text = new PIXI.Text({ text: props.text, style: defaultStyle });
 
 	propsSyncEffect({ props, target: text, ignore: ['onresize'] });

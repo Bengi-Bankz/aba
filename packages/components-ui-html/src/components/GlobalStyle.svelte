@@ -2,7 +2,6 @@
 	import type { Snippet } from 'svelte';
 
 		import './global.scss';
-		import './global.css';
 
 	type Props = {
 		children: Snippet;

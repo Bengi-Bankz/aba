@@ -63,8 +63,8 @@ export const preloadFont = () =>
 		try {
 			WebFont.load({
 				custom: {
-					families: ['CaesarDressing'],
-					urls: ['apps/lines/static/assets/fonts/caesar.css'], // Adjust path if needed
+					families: ['"DiplomataSC-Regular", sans-serif'],
+					urls: ['DiplomataSC-Regular.ttf'],
 				},
 				active: () => {
 					resolve();

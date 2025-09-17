@@ -36,9 +36,7 @@
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5 - 975} x={585} scale={0.5}>
-			{@render props.amountWin({ stacked: true })}
-		</Container>
+
 
 		<Container y={DESKTOP_BASE_SIZE * .25} x={820 + 520} scale={0.6}>
 			{@render props.amountBet({ stacked: true })}

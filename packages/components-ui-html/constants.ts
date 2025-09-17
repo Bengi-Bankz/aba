@@ -8,7 +8,6 @@ export const UI_TEXT_STYLES = {
 	labelStyle: {
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
-		fontFamily: 'BungeeSpice',
 	},
 	amountStyle: {
 		fontSize: UI_BASE_FONT_SIZE,

@@ -76,7 +76,7 @@
 					anchor={{ x: 1, y: 0 }}
 					text="ADD YOUR LOGO"
 					style={{
-						fontFamily: 'CaesarDressing',
+						fontFamily: '"DiplomataSC-Regular.ttf", sans-serif',
 						fontSize: REM * 1.5,
 						fontWeight: '600',
 						lineHeight: REM * 2,

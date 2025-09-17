@@ -51,23 +51,21 @@
 
 	<Background />
 
-	{#if context.stateLayout.showLoadingScreen}
-		<LoadingScreen
-			onloaded={async () => {
-				// Wait for BungeeSpice font to load before hiding loading screen
-				await document.fonts.load('1em BungeeSpice');
-				await document.fonts.ready;
-				context.stateLayout.showLoadingScreen = false;
-			}}
-		/>
-	{:else}
-		<ResumeBet />
-		<!--
-			The reason why <Sound /> is rendered after clicking the loading screen:
-			"Autoplay with sound is allowed if: The user has interacted with the domain (click, tap, etc.)."
-			Ref: https://developer.chrome.com/blog/autoplay
-		-->
-		<Sound />
+{#if context.stateLayout.showLoadingScreen}
+    <LoadingScreen
+        onloaded={() => {
+            context.stateLayout.showLoadingScreen = false;
+        }}
+    />
+{:else}
+    <ResumeBet />
+    <!--
+        The reason why <Sound /> is rendered after clicking the loading screen:
+        "Autoplay with sound is allowed if: The user has interacted with the domain (click, tap, etc.)."
+        Ref: https://developer.chrome.com/blog/autoplay
+    -->
+    <Sound />
+
 
 		<MainContainer>
 			<BoardFrame />
@@ -92,19 +90,14 @@
 		</MainContainer>
 		<UI>
 			{#snippet gameName()}
-				<UiGameName name="GLADIATORS 5000X" />
+				<UiGameName name="Diplomata" />
 			{/snippet}
 			{#snippet logo()}
 				<Text
 					anchor={{ x: 1, y: 0 }}
-					text="ONLY SPINS STUDIOS"
 					style={{
-						fontFamily: 'BungeeSpice, sans-serif',
-						fontSize: REM * 1.5,
-						fontWeight: '600',
-						lineHeight: REM * 2,
-						fill: 0xffffff,
-					}}
+    fontFamily: "DiplomataSC, sans-serif",
+}}
 				/>
 			{/snippet}
 		</UI>

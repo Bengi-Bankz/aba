@@ -4,8 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				bungeespice: ['BungeeSpice', 'sans-serif'],
-				'material-symbols': ['Material Symbols Outlined', 'sans-serif'],
+				custom: ['DiplomataSC', 'sans-serif'],
 			},
 		},
 	},
