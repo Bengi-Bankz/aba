@@ -19,7 +19,8 @@ export function createContextParent(value: PIXI.Container) {
 	const addToParent = (node: PIXI.ContainerChild) => {
 		onMount(() => {
 			context.parent.addChild(node);
-			context.parent.sortChildren();
+			// Remove this deprecated line:
+			// context.parent.sortChildren();
 
 			return () => {
 				if (node) node.destroy(); // Equivalent to onDestroy(); Leave this comment for searching.

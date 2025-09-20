@@ -1,55 +1,64 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+    // NUCLEAR OPTION - Disable ALL console output
+    if (typeof window !== 'undefined') {
+        console.warn = () => {};
+        console.log = () => {};
+        console.error = () => {};
+        console.info = () => {};
+        console.debug = () => {};
+    }
 
-	import { EnablePixiExtension } from 'components-pixi';
-	import { EnableHotkey } from 'components-shared';
-	import { MainContainer } from 'components-layout';
-	import { App, Text, REM } from 'pixi-svelte';
-	import { stateModal } from 'state-shared';
+    import { onMount } from 'svelte';
 
-	import { UI, UiGameName } from 'components-ui-pixi';
-	import { GameVersion, Modals } from 'components-ui-html';
+    import { EnablePixiExtension } from 'components-pixi';
+    import { EnableHotkey } from 'components-shared';
+    import { MainContainer } from 'components-layout';
+    import { App, Text, REM } from 'pixi-svelte';
+    import { stateModal } from 'state-shared';
 
-	import { getContext } from '../game/context';
-	import EnableSound from './EnableSound.svelte';
-	import EnableGameActor from './EnableGameActor.svelte';
-	import ResumeBet from './ResumeBet.svelte';
-	import Sound from './Sound.svelte';
-	import Background from './Background.svelte';
-	import LoadingScreen from './LoadingScreen.svelte';
-	import BoardFrame from './BoardFrame.svelte';
-	import Board from './Board.svelte';
-	import Anticipations from './Anticipations.svelte';
-	import ClusterWinAmounts from './ClusterWinAmounts.svelte';
-	import TumbleBoard from './TumbleBoard.svelte';
-	import TumbleWinAmount from './TumbleWinAmount.svelte';
-	import GlobalMultiplier from './GlobalMultiplier.svelte';
-	import MultiplierBoard from './MultiplierBoard.svelte';
-	import MultiplierTotal from './MultiplierTotal.svelte';
-	import Win from './Win.svelte';
-	import FreeSpinIntro from './FreeSpinIntro.svelte';
-	import FreeSpinCounter from './FreeSpinCounter.svelte';
-	import FreeSpinOutro from './FreeSpinOutro.svelte';
-	import Transition from './Transition.svelte';
+    import { UI, UiGameName } from 'components-ui-pixi';
+    import { GameVersion, Modals } from 'components-ui-html';
 
-	const context = getContext();
+    import { getContext } from '../game/context';
+    import EnableSound from './EnableSound.svelte';
+    import EnableGameActor from './EnableGameActor.svelte';
+    import ResumeBet from './ResumeBet.svelte';
+    import Sound from './Sound.svelte';
+    import Background from './Background.svelte';
+    import LoadingScreen from './LoadingScreen.svelte';
+    import BoardFrame from './BoardFrame.svelte';
+    import Board from './Board.svelte';
+    import Anticipations from './Anticipations.svelte';
+    import ClusterWinAmounts from './ClusterWinAmounts.svelte';
+    import TumbleBoard from './TumbleBoard.svelte';
+    import TumbleWinAmount from './TumbleWinAmount.svelte';
+    import GlobalMultiplier from './GlobalMultiplier.svelte';
+    import MultiplierBoard from './MultiplierBoard.svelte';
+    import MultiplierTotal from './MultiplierTotal.svelte';
+    import Win from './Win.svelte';
+    import FreeSpinIntro from './FreeSpinIntro.svelte';
+    import FreeSpinCounter from './FreeSpinCounter.svelte';
+    import FreeSpinOutro from './FreeSpinOutro.svelte';
+    import Transition from './Transition.svelte';
 
-	onMount(() => (context.stateLayout.showLoadingScreen = true));
+    const context = getContext();
 
-	context.eventEmitter.subscribeOnMount({
-		buyBonusConfirm: () => {
-			stateModal.modal = { name: 'buyBonusConfirm' };
-		},
-	});
+    onMount(() => (context.stateLayout.showLoadingScreen = true));
+
+    context.eventEmitter.subscribeOnMount({
+        buyBonusConfirm: () => {
+            stateModal.modal = { name: 'buyBonusConfirm' };
+        },
+    });
 </script>
 
 <App>
-	<EnableSound />
-	<EnableHotkey />
-	<EnableGameActor />
-	<EnablePixiExtension />
+    <EnableSound />
+    <EnableHotkey />
+    <EnableGameActor />
+    <EnablePixiExtension />
 
-	<Background />
+    <Background />
 
 {#if context.stateLayout.showLoadingScreen}
     <LoadingScreen
@@ -67,53 +76,53 @@
     <Sound />
 
 
-		<MainContainer>
-			<BoardFrame />
-		</MainContainer>
+        <MainContainer>
+            <BoardFrame />
+        </MainContainer>
 
-		<MainContainer>
-			<Board />
-			<Anticipations />
-			<TumbleWinAmount />
-			<GlobalMultiplier />
-		</MainContainer>
+        <MainContainer>
+            <Board />
+            <Anticipations />
+            <TumbleWinAmount />
+            <GlobalMultiplier />
+        </MainContainer>
 
-		<MainContainer>
-			<TumbleBoard />
-			<!-- <TumbleAnticipations /> -->
-			<ClusterWinAmounts />
-		</MainContainer>
+        <MainContainer>
+            <TumbleBoard />
+            <!-- <TumbleAnticipations /> -->
+            <ClusterWinAmounts />
+        </MainContainer>
 
-		<MainContainer>
-			<MultiplierBoard />
-			<MultiplierTotal />
-		</MainContainer>
-		<UI>
-			{#snippet gameName()}
-				<UiGameName name="" />
-			{/snippet}
-			{#snippet logo()}
-				<Text
-					anchor={{ x: 1, y: 0 }}
-					style={{
+        <MainContainer>
+            <MultiplierBoard />
+            <MultiplierTotal />
+        </MainContainer>
+        <UI>
+            {#snippet gameName()}
+                <UiGameName name="" />
+            {/snippet}
+            {#snippet logo()}
+                <Text
+                    anchor={{ x: 1, y: 0 }}
+                    style={{
     fontFamily: "DiplomataSC, sans-serif",
 }}
-				/>
-			{/snippet}
-		</UI>
+                />
+            {/snippet}
+        </UI>
 
-		<Win />
-		<FreeSpinIntro />
-		{#if ['desktop', 'landscape'].includes(context.stateLayoutDerived.layoutType())}
-			<FreeSpinCounter />
-		{/if}
-		<FreeSpinOutro />
-		<Transition />
-	{/if}
+        <Win />
+        <FreeSpinIntro />
+        {#if ['desktop', 'landscape'].includes(context.stateLayoutDerived.layoutType())}
+            <FreeSpinCounter />
+        {/if}
+        <FreeSpinOutro />
+        <Transition />
+    {/if}
 </App>
 
 <Modals>
-	{#snippet version()}
-		<GameVersion version="0.0.0" />
-	{/snippet}
+    {#snippet version()}
+        <GameVersion version="0.0.0" />
+    {/snippet}
 </Modals>

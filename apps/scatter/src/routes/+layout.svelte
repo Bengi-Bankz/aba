@@ -1,4 +1,34 @@
 <script lang="ts">
+	const originalWarn = console.warn;
+	const originalLog = console.log;
+	
+	console.warn = (...args) => {
+		const message = args[0];
+		if (typeof message === 'string' && (
+			message.includes('PixiJS Deprecation Warning') ||
+			message.includes('PixiJS Warning') ||
+			message.includes('[Cache] already has key') ||
+			message.includes('AudioContext was not allowed') ||
+			message.includes('Mixed Content:') ||
+			message.includes('powerPreference option is currently ignored')
+		)) {
+			return; // Suppress these warnings
+		}
+		originalWarn.apply(console, args);
+	};
+
+	// Also suppress console.log for some messages
+	console.log = (...args) => {
+		const message = args[0];
+		if (typeof message === 'string' && (
+			message.includes('PixiJS') ||
+			message.includes('webgpu')
+		)) {
+			return; // Suppress PixiJS info logs
+		}
+		originalLog.apply(console, args);
+	};
+
 	import { type Snippet } from 'svelte';
 	import { GlobalStyle } from 'components-ui-html';
 	import { Authenticate, LoaderStakeEngine, LoaderExample, LoadI18n } from 'components-shared';
