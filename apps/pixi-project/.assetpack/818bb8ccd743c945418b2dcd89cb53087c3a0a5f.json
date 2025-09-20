@@ -1,0 +1,784 @@
+{
+    "assets": {
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets": {
+            "isFolder": true,
+            "metaData": {},
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1758240933567,
+                "duration": 17.051799999999275,
+                "success": true
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}": {
+            "isFolder": true,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets",
+            "metaData": {
+                "m": true
+            },
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1758240933568,
+                "duration": 17.475000000000364,
+                "success": true
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}": {
+            "isFolder": true,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}",
+            "metaData": {
+                "tps": true
+            },
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933568,
+                "duration": 1162.6002000000008,
+                "success": true
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/button.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "QYZY5A"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (1).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "ViybRA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (2).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "lY2KBg"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (3).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "5G8WeQ"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (4).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "mNjVLQ"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (5).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "fE0D"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (6).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "j_pytg"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (7).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "pc2XiA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/explosion-animation (8).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "YpiRDA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/h1.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "NwhF9A"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/h2.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "aIKOuA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/h3.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "fgDwZA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/h5.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "qLNAtA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/icon-pause (1).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "xs04xw"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/icon-pause (4).png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "SHYpSA"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/icon-settings.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "OCOHFg"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/l1.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "5M-D-A"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/l2.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "FwfxDw"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/l3.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "5o2Lww"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}/S.png": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {},
+            "hash": "tx4krw"
+        },
+        ".assetpack/texture-packer/main{m}/animated@0.5x.png": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {
+                "mIgnore": true,
+                "nomip": true
+            },
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/compress/main{m}/animated@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated@0.5x.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/main{m}/animated@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/compress/main{m}/animated@0.5x.webp": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated@0.5x.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated@0.5x.webp": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/main{m}/animated@0.5x.webp",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/texture-packer/main{m}/animated@0.5x.json": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/texture-packer-compress/main{m}/animated@0.5x.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated@0.5x.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/json/main{m}/animated@0.5x.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer-compress/main{m}/animated@0.5x.png.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated@0.5x.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/json/main{m}/animated@0.5x.png.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/texture-packer-compress/main{m}/animated@0.5x.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated@0.5x.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/json/main{m}/animated@0.5x.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer-compress/main{m}/animated@0.5x.webp.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated@0.5x.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/json/main{m}/animated@0.5x.webp.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/texture-packer/main{m}/animated.png": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {
+                "mIgnore": true,
+                "nomip": true
+            },
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/compress/main{m}/animated.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated.png": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/main{m}/animated.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/compress/main{m}/animated.webp": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated.png",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated.webp": {
+            "isFolder": false,
+            "transformParent": ".assetpack/compress/main{m}/animated.webp",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true,
+                "mIgnore": true,
+                "nomip": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/texture-packer/main{m}/animated.json": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/animated{tps}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/texture-packer-compress/main{m}/animated.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/json/main{m}/animated.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer-compress/main{m}/animated.png.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated.png.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/json/main{m}/animated.png.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/texture-packer-compress/main{m}/animated.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer/main{m}/animated.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        ".assetpack/json/main{m}/animated.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/texture-packer-compress/main{m}/animated.webp.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/animated.webp.json": {
+            "isFolder": false,
+            "transformParent": ".assetpack/json/main{m}/animated.webp.json",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true,
+                "tps": true
+            },
+            "transformData": {
+                "page": 0
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/logo-white.svg": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933574,
+                "duration": 12.421699999999873,
+                "success": true
+            },
+            "hash": "Wq9lMw"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/logo-white.svg": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/logo-white.svg",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds": {
+            "isFolder": true,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933584,
+                "duration": 1.8134000000000015,
+                "success": true
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/bgm-main.mp3": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933585,
+                "duration": 966.5797000000002,
+                "success": true
+            },
+            "hash": "IXGL8w"
+        },
+        ".assetpack/audio/main{m}/sounds/bgm-main.mp3": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/bgm-main.mp3",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/bgm-main.mp3": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/bgm-main.mp3",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/audio/main{m}/sounds/bgm-main.ogg": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/bgm-main.mp3",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/bgm-main.ogg": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/bgm-main.ogg",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-hover.wav": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933586,
+                "duration": 638.3382000000001,
+                "success": true
+            },
+            "hash": "P9yd"
+        },
+        ".assetpack/audio/main{m}/sounds/sfx-hover.mp3": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-hover.wav",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/sfx-hover.mp3": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/sfx-hover.mp3",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/audio/main{m}/sounds/sfx-hover.ogg": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-hover.wav",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/sfx-hover.ogg": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/sfx-hover.ogg",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-press.wav": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933586,
+                "duration": 634.3666000000003,
+                "success": true
+            },
+            "hash": "59LMfg"
+        },
+        ".assetpack/audio/main{m}/sounds/sfx-press.mp3": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-press.wav",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/sfx-press.mp3": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/sfx-press.mp3",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        ".assetpack/audio/main{m}/sounds/sfx-press.ogg": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/main{m}/sounds/sfx-press.wav",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/main/sounds/sfx-press.ogg": {
+            "isFolder": false,
+            "transformParent": ".assetpack/audio/main{m}/sounds/sfx-press.ogg",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/preload{m}": {
+            "isFolder": true,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets",
+            "metaData": {
+                "m": true
+            },
+            "inheritedMetaData": {},
+            "transformData": {},
+            "stats": {
+                "date": 1758240933586,
+                "duration": 0.0452000000004773,
+                "success": true
+            }
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/preload{m}/logo.svg": {
+            "isFolder": false,
+            "parent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/preload{m}",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {},
+            "stats": {
+                "date": 1758240933586,
+                "duration": 7.874300000000403,
+                "success": true
+            },
+            "hash": "LmftHw"
+        },
+        "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/public/assets/preload/logo.svg": {
+            "isFolder": false,
+            "transformParent": "C:/Users/PC/...a/web-sdk-main/apps/pixi-project/raw-assets/preload{m}/logo.svg",
+            "metaData": {},
+            "inheritedMetaData": {
+                "m": true
+            },
+            "transformData": {}
+        }
+    }
+}
