@@ -1,4 +1,3 @@
-
 <script lang="ts">
     import { Container, Text, Sprite } from 'pixi-svelte';
     import { Button, type ButtonProps } from 'components-pixi';
@@ -45,13 +44,6 @@
             {#snippet children({ center, hovered, pressed })}
                 <Container {...center}>
                     {#if ['spin_default', 'spin_disabled'].includes(key)}
-                        
-                        <Sprite
-                            key="playbehind"
-                            anchor={0.5}
-                            alpha={.9}
-                            scale={1.4}
-                        />
                         <Sprite
                             key="blackfont"
                             width={sizes.width}
@@ -73,7 +65,6 @@
                     {:else if key === 'bonus-active'}
                         <Sprite
                             key="blackfont"
-
                             anchor={0.5}
                             scale={.8}
                         />
@@ -90,13 +81,6 @@
                             }}
                         />
                     {:else}
-                        <Sprite
-                            key="stopbehind"
-
-                            anchor={0.5}
-                            alpha={0.9}
-                            scale={1.3}
-                        />
                         <Sprite
                             key="bluefont"
                             width={sizes.width}

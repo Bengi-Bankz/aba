@@ -1,3 +1,4 @@
+
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
@@ -9,11 +10,8 @@
 	import BaseScrollable from './BaseScrollable.svelte';
 	import img12 from '../../assets/12.png';
 	import img13 from '../../assets/13.png';
-	import img14 from '../../assets/14.png';
-	import img15 from '../../assets/15.png';
 	import img16 from '../../assets/16.png';
 	import img17 from '../../assets/17.png';
-	import img18 from '../../assets/18.png';
 	import img19 from '../../assets/19.png';
 
 	type Props = {
@@ -37,7 +35,8 @@
 		margin-top: 16px;
 		font-weight: 500;
 	}
-	p, li {
+	p,
+	li {
 		font-size: 0.95rem;
 		line-height: 1.5;
 	}
@@ -51,6 +50,11 @@
 	.button-list li {
 		margin-bottom: 6px;
 	}
+	.button-list img {
+		height: 40px;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
 	.modal-rules-scroll {
 		max-height: 70vh;
 		overflow-y: auto;
@@ -62,13 +66,22 @@
 		width: 100%;
 		max-width: 600px;
 		display: block;
+		scrollbar-width: none; /* Firefox */
 	}
+	.modal-rules-scroll::-webkit-scrollbar {
+		display: none; /* Chrome, Safari */
+	}
+
 	@media (max-width: 700px) {
 		.modal-rules-scroll {
 			max-height: 80vh;
 			margin: 16px 0;
-			padding: 16px 4px;
+			padding: 16px 8px;
 			border-radius: 8px;
+		}
+		.button-list img {
+			height: 32px;
+			margin-right: 6px;
 		}
 	}
 </style>
@@ -77,76 +90,87 @@
 	<Popup zIndex={zIndex.modal} onclose={() => (stateModal.modal = null)}>
 		<BaseContent maxWidth="100%">
 			<BaseScrollable type="column">
-				   <div class="modal-rules-scroll">
+				<div class="modal-rules-scroll">
 					<h2>Gladiator 5000X – Game Information</h2>
 
 					<section>
 						<h3>Theoretical RTP (Return to Player)</h3>
 						<p>
-							This game features a theoretical Return to Player (RTP) of <b>97%</b>.
-							This value is calculated over extended play. Actual results may vary
-							as all outcomes are determined by chance.
+							The RTP (Return to Player) represents the expected average return
+							over long-term play. All outcomes are determined by chance, so
+							individual sessions may vary.
 						</p>
+						<p><b>RTP Base Game:</b> 97%</p>
+						<p><b>RTP Bonus Mode:</b> 97%</p>
 					</section>
 
 					<section>
 						<h3>Bonus Feature</h3>
 						<p>The bonus round is triggered by scatter symbols:</p>
 						<ul>
-							<li>4 Scatters = 8 Free Spins</li>
-							<li>5 Scatters = 10 Free Spins</li>
-							<li>6 Scatters = 12 Free Spins</li>
+							<li>4 Scatters → 8 Free Spins</li>
+							<li>5 Scatters → 10 Free Spins</li>
+							<li>6 Scatters → 12 Free Spins</li>
 						</ul>
 						<p>
-							Players also have the option to purchase the bonus game directly
-							for <b>200x</b> the base play amount.
+							Players can also purchase direct entry into the bonus feature
+							for <b>200× the stake</b>.
 						</p>
 					</section>
 
 					<section>
 						<h3>Maximum Win</h3>
 						<p>
-							The maximum payout available in the game is capped at
-							<b>5,000x</b> the base play amount.
+							The maximum possible win is capped at <b>5,000× the stake</b>.
 						</p>
+						<p><b>Max Win Base Game:</b> 5,000×</p>
+						<p><b>Max Win Bonus Mode:</b> 5,000×</p>
 					</section>
 
-<section>
-    <h3>Game Controls & Buttons</h3>
-    <ul class="button-list">
-        <li>
-            <img src={img17} alt="Spin" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
-            <b>Spin</b> – Starts a single round of play at the chosen stake.
-        </li>
-        <li>
-            <img src={img12} alt="Autoplay" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
-            <b>Autoplay</b> – Allows multiple rounds to play automatically without pressing spin each time.
-        </li>
-        <li>
-            <img src={img19} alt="Turbo" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
-            <b>Turbo</b> – Speeds up the spin animations for faster gameplay.
-        </li>
-        <li>
-            <img src={img13} alt="Bonus Buy" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
-            <b>Bonus Buy</b> – Instantly purchases entry into the bonus feature for 200x the base play amount.
-        </li>
-        <li>
-            <img src={img16} alt="Menu" style="height: 60px; vertical-align: middle; margin-right: 8px;" />
-            <b>Menu</b> – Opens additional options, including sound settings, help, and game history.
-        </li>
-    </ul>
-</section>
+					<section>
+						<h3>Game Controls</h3>
+						<ul class="button-list">
+							<li>
+								<img src={img17} alt="Spin" />
+								<b>Spin</b> – Plays a single round at the chosen stake.
+							</li>
+							<li>
+								<img src={img12} alt="Autoplay" />
+								<b>Autoplay</b> – Plays multiple rounds automatically.
+							</li>
+							<li>
+								<img src={img19} alt="Turbo" />
+								<b>Turbo</b> – Speeds up animations for faster play.
+							</li>
+							<li>
+								<img src={img13} alt="Bonus Buy" />
+								<b>Bonus Buy</b> – Instantly enters the bonus feature for 200× the stake.
+							</li>
+							<li>
+								<img src={img16} alt="Menu" />
+								<b>Menu</b> – Opens sound settings, help, and game history.
+							</li>
+						</ul>
+					</section>
 
 					<section>
 						<h3>Important Notice</h3>
 						<ul>
-							<li>Malfunction voids all plays.</li>
-							<li>A stable internet connection is required. In case of disconnection, reload the game to resume any incomplete rounds.</li>
-							<li>Theoretical values (such as RTP) are averages over time and do not guarantee individual results.</li>
+							<li>Malfunctions void all results.</li>
+							<li>
+								A stable internet connection is required. If disconnected, reload the game
+								to continue incomplete rounds.
+							</li>
+							<li>
+								Theoretical values (such as RTP) are averages and do not guarantee
+								individual outcomes.
+							</li>
 						</ul>
 					</section>
 
-					<div style="margin-top: 24px; text-align: right; font-size: 0.95rem; color: #888;">
+					<div
+						style="margin-top: 24px; text-align: right; font-size: 0.95rem; color: #888;"
+					>
 						Only Spins Studios
 					</div>
 
