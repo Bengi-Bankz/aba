@@ -11,6 +11,7 @@
 	const sizes = { width: UI_BASE_SIZE, height: UI_BASE_SIZE };
 	const active = $derived(stateBet.isTurbo);
 	const disabled = $derived(stateBet.isSpaceHold);
+	const spriteKey = $derived(active ? "turboon" : "turbooff");
 
 	const onpress = () => {
 		context.eventEmitter.broadcast({ type: 'soundPressGeneral' });
@@ -24,5 +25,5 @@
 </script>
 
 <UiButton {...props} {sizes} {active} {onpress} {disabled}>
-	<Sprite key="turboon" width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
+	<Sprite key={spriteKey} width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
 </UiButton>

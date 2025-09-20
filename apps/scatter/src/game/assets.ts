@@ -334,4 +334,9 @@ export default {
 		src: new URL('../../assets/fonts/menu/menu.png', import.meta.url).href,
 		preload: true,
 	},
+	turbooff: {
+		type: 'sprite',
+		src: new URL('../../assets/fonts/turbooff/turbooff.png', import.meta.url).href,
+		preload: true,
+	},
 } as const;
