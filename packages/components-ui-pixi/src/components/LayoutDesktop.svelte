@@ -29,41 +29,49 @@
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
 
+<Rectangle
+    backgroundColor={0x000000}
+    alpha={0.8}
+    width={DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0)}
+    height={DESKTOP_BASE_SIZE}
+    x={-DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0) * -0}
+    y={0}
+/>
 
-
-		<Container y={DESKTOP_BASE_SIZE * .25} x={1130 + 520} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * .25} x={930 + 520} scale={0.6}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={60} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={60} scale={0.6}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={80 + 150} scale={0.8}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={80 + 150} scale={0.6}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
 
-		<Container y={DESKTOP_BASE_SIZE * -1} x={885 + 150 * 5} scale={0.75}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={150 + 150 * 5} scale={0.75}>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
 		
-		<Container y={DESKTOP_BASE_SIZE * -1} x={873 + 150 * 5.9} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={87 + 100 * 5.9} scale={0.4}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * -1} x={623 + 150 * 5.9} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={3 + 80 * 5.9} scale={0.4}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1560} scale={0.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1360} scale={0.3}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1740 } scale={.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1540 } scale={.3}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
+	
 </MainContainer>
 
 {#if stateUi.menuOpen}

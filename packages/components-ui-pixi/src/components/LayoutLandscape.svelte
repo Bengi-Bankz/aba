@@ -27,36 +27,52 @@
 			},
 		})}
 	>
-		<Container y={LANDSCAPE_BASE_SIZE * 0.6 - 90} x={85 + 20} scale={1}>
-			{@render props.buttonMenu({ anchor: 0.5 })}
-		</Container>
-
-		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 420} x={270 + 20} scale={1}>
-			{@render props.buttonBuyBonus({ anchor: 0.5 })}
-		</Container>
 
 		<Container y={LANDSCAPE_BASE_SIZE * -5} x={160} scale={1.2}>
 			{@render props.amountBalance({ stacked: true })}
 		</Container>
 
+		    <!-- Add background rectangle behind all buttons -->
+        <Rectangle
+            backgroundColor={0x000000}
+            alpha={0.8}
+            width={LANDSCAPE_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0)}
+            height={LANDSCAPE_BASE_SIZE}
+            x={-LANDSCAPE_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0) * 0}
+            y={0}
+        />
 
 
-		<Container y={LANDSCAPE_BASE_SIZE * -.5} x={1628} scale={0.75}>
+
+
+		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 495} x={85 + 20} scale={0.8}>
+			{@render props.buttonMenu({ anchor: 0.5 })}
+		</Container>
+
+		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 495} x={270 + 20} scale={0.8}>
+			{@render props.buttonBuyBonus({ anchor: 0.5 })}
+		</Container>
+
+
+
+
+
+		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 460} x={948} scale={0.75}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * -.30} x={1520} scale={0.35}>
+		<Container  y={LANDSCAPE_BASE_SIZE * -2.5 + 494} x={840} scale={0.35}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container  y={LANDSCAPE_BASE_SIZE * -.30} x={1735} scale={0.35}>
+		<Container  y={LANDSCAPE_BASE_SIZE * -2.5 + 494} x={1055} scale={0.35}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
 
 	<Container
-		x={context.stateLayoutDerived.mainLayoutStandard().width - 60}
-		y={context.stateLayoutDerived.mainLayoutStandard().height * 0.5}
+		x={context.stateLayoutDerived.mainLayoutStandard().width - 660}
+		y={context.stateLayoutDerived.mainLayoutStandard().height * .88}
 		pivot={anchorToPivot({
 			anchor: { x: 1, y: 0.5 },
 			sizes: {
@@ -67,14 +83,15 @@
 	>
 		
 
-		<Container x={LANDSCAPE_BASE_SIZE * 1 - 165} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
+		<Container x={LANDSCAPE_BASE_SIZE * -2.5 + 1045} y={LANDSCAPE_BASE_SIZE * 0.5} scale={0.8}>
 			{@render props.buttonBet({ anchor: 0.5 })}
-		</Container>		
-				<Container x={LANDSCAPE_BASE_SIZE * .85} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
+		</Container>
+
+		<Container x={LANDSCAPE_BASE_SIZE * -2.5 + 845} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container x={LANDSCAPE_BASE_SIZE * 1 - 290} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
+		<Container x={LANDSCAPE_BASE_SIZE *  -2.5 + 695} y={LANDSCAPE_BASE_SIZE * -.35 + 140} scale={0.5}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 	</Container>
