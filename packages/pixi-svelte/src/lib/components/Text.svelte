@@ -16,7 +16,7 @@
 
 	const props: Props = $props();
 	const parentContext = getContextParent();
-	const defaultStyle = { fontFamily: '"DiplomataSC-Regular", sans-serif', ...(props.style || {}) };
+	const defaultStyle = { fontFamily: '"TradeWinds-Regular-Regular", sans-serif', ...(props.style || {}) };
 	const text = new PIXI.Text({ text: props.text, style: defaultStyle });
 
 	propsSyncEffect({ props, target: text, ignore: ['onresize'] });

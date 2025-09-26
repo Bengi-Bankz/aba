@@ -99,13 +99,13 @@
         </MainContainer>
         <UI>
             {#snippet gameName()}
-                <UiGameName name="" />
+                <UiGameName name="WORK" />
             {/snippet}
             {#snippet logo()}
                 <Text
                     anchor={{ x: 1, y: 0 }}
                     style={{
-    fontFamily: "DiplomataSC, sans-serif",
+    fontFamily: "TradeWinds-Regular, sans-serif",
 }}
                 />
             {/snippet}

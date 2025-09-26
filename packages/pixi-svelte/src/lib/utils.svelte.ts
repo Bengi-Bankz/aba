@@ -63,8 +63,8 @@ export const preloadFont = () =>
 		try {
 			WebFont.load({
 				custom: {
-					families: ['"DiplomataSC-Regular", sans-serif'],
-					urls: ['DiplomataSC-Regular.ttf'],
+					families: ['"TradeWinds-Regular-Regular", sans-serif'],
+					urls: ['TradeWinds-Regular-Regular.ttf'],
 				},
 				active: () => {
 					resolve();
@@ -79,7 +79,7 @@ export const preloadFont = () =>
 			resolve();
 		}
 	});
-	
+
 export function propsSyncEffect<TProps extends object, TTarget>({
 	props,
 	target,

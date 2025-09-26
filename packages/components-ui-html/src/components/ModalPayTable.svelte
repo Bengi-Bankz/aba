@@ -125,7 +125,7 @@
 		font-size: 1rem;
 		font-weight: 500;
 		text-align: center;
-		font-family: 'DiplomataSC, sans-serif';
+		font-family: 'TradeWinds-Regular, sans-serif';
 		line-height: 1.4;
 	}
 

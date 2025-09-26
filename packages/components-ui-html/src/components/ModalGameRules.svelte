@@ -23,7 +23,7 @@
 
 <style>
 	:global(h2, h3, p, li) {
-		font-family: 'DiplomataSC-Regular', sans-serif;
+		font-family: 'TradeWinds-Regular', sans-serif;
 		color: #ececec;
 	}
 	h2 {

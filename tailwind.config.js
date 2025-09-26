@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				custom: ['DiplomataSC', 'sans-serif'],
+				custom: ['TradeWinds-Regular', 'sans-serif'],
 			},
 		},
 	},
