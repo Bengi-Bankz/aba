@@ -28,9 +28,6 @@
 		})}
 	>
 
-		<Container y={LANDSCAPE_BASE_SIZE * -5} x={160} scale={1.2}>
-			{@render props.amountBalance({ stacked: true })}
-		</Container>
 
 		    <!-- Add background rectangle behind all buttons -->
         <Rectangle
@@ -43,7 +40,9 @@
         />
 
 
-
+		<Container y={LANDSCAPE_BASE_SIZE * +0.2} x={560} scale={1}>
+			{@render props.amountBalance({ stacked: true })}
+		</Container>
 
 		<Container y={LANDSCAPE_BASE_SIZE * -2.5 + 495} x={85 + 20} scale={0.8}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
