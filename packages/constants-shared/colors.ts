@@ -16,8 +16,8 @@ export const BORDER_LIGHT = 0xf1f5f9; // slate-100
 
 export const DARK_BUTTON_HOVER = 0x1e293b; // slate-800
 export const DARK_BUTTON_PRIMARY = 0x0f172a; // slate-900
-export const DISABLED_PRIMARY = 0x9ca3af; // gray-400
+export const DISABLED_PRIMARY = 0x0f172a; // gray-400
 
 export const LIGHT_BUTTON_HOVER = 0xf1f5f9; // slate-100
 export const LIGHT_BUTTON_PRIMARY = 0xe0e7ef; // slate-200
-export const DISABLED_SECONDARY = 0xcbd5e1; // slate-300
+export const DISABLED_SECONDARY = 0x0f172a; // slate-300

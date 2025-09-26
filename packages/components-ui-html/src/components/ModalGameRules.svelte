@@ -61,7 +61,7 @@
 		padding: 24px 16px;
 		box-sizing: border-box;
 		margin: 48px auto 24px auto;
-		background: rgba(20, 20, 20, 0.98);
+		background: rgba(0, 0, 0, 0.5);
 		border-radius: 16px;
 		width: 100%;
 		max-width: 600px;
@@ -80,7 +80,7 @@
 			border-radius: 8px;
 		}
 		.button-list img {
-			height: 32px;
+			height: 66px;
 			margin-right: 6px;
 		}
 	}
