@@ -36,7 +36,7 @@
 							onclick={() => (stateModal.modal = null)}
 							aria-label="Close">&times;</button
 						>
-						{#each [{ name: 'w', src: wildImg, text: `Counts as any symbol\nbesides scatter\n or multiplier` }, { name: 's', src: scatterImg, text: `4-8fs\n5-10fs\n6-12fs` }, { name: 'h1', src: h1Img, text: `8-9 = 4x\n10-11 = 5x\n12+ = 10x` }, { name: 'h2', src: h2Img, text: `8-9 = 3x\n10-11 = 4x\n12+ = 5x` }, { name: 'h3', src: h3Img, text: `8-9 = 1x\n10-11 = 2x\n12+ = 4x` }, { name: 'h3-2', src: h3_2Img, text: `8-9 = 1x\n10-11 = 2x\n12+ = 4x` }, { name: 'h4', src: h4Img, text: `8-9 = 0.7x\n10-11 = 1.5x\n12+ = 3x` }, { name: 'l1', src: l1Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l2', src: l2Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l3', src: l3Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l4', src: l4Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }] as symbol}
+						{#each [{ name: 'w', src: wildImg, text: `Is wild and counts as any symbol\nbesides scatter\n or multiplier` }, { name: 's', src: scatterImg, text: `4-8fs\n5-10fs\n6-12fs` }, { name: 'h1', src: h1Img, text: `8-9 = 4x\n10-11 = 5x\n12+ = 10x` }, { name: 'h2', src: h2Img, text: `8-9 = 3x\n10-11 = 4x\n12+ = 5x` }, { name: 'h3', src: h3Img, text: `8-9 = 1x\n10-11 = 2x\n12+ = 4x` }, { name: 'h3-2', src: h3_2Img, text: `8-9 = 1x\n10-11 = 2x\n12+ = 4x` }, { name: 'h4', src: h4Img, text: `8-9 = 0.7x\n10-11 = 1.5x\n12+ = 3x` }, { name: 'l1', src: l1Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l2', src: l2Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l3', src: l3Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }, { name: 'l4', src: l4Img, text: `8-9 = .3x\n10-11 = .8x\n12+ = 1x` }] as symbol}
 							<div class="paytable-section">
 								<img class="paytable-symbol-img" src={symbol.src} alt={symbol.name} />
 								<div class="paytable-desc" style="white-space: pre-line">{symbol.text}</div>
@@ -122,10 +122,10 @@
 	}
 	.paytable-desc {
 		color: #f1f1f1;
-		font-size: 1rem;
+		font-size: 2rem;
 		font-weight: 500;
 		text-align: center;
-		font-family: 'TradeWinds-Regular, sans-serif';
+		font-family: 'TradeWinds-Regular', sans-serif;
 		line-height: 1.4;
 	}
 

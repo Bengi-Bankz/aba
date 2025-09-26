@@ -13,7 +13,7 @@ export const i18nDerived = {
 	numberOfRounds: () => stateI18nDerived.translate('NUMBER OF ROUNDS'),
 	advanced: () => stateI18nDerived.translate('ADVANCED'),
 	singleWinLimit: () => stateI18nDerived.translate('SINGLE WIN LIMIT'),
-	lossLimit: () => stateI18nDerived.translate('LOSS LIMIT'),
+	lossLimit: () => stateI18nDerived.translate('LIMIT'),
 	startAutoplay: () => stateI18nDerived.translate('START AUTOPLAY'),
 	notification: () => stateI18nDerived.translate('NOTIFICATION'),
 	autoSpinsStopInfo: () => stateI18nDerived.translate('AUTO PLAY HAS STOPPED DUE TO'),
@@ -21,7 +21,7 @@ export const i18nDerived = {
 		stateI18nDerived.translate(
 			'INSUFFICIENT FUNDS TO PLACE THIS SPIN. PLEASE ADD FUNDS TO YOUR ACCOUNT OR LOWER THE SPIN AMOUNT.',
 		),
-	lossLimitReached: () => stateI18nDerived.translate('LOSS LIMIT REACHED'),
+	lossLimitReached: () => stateI18nDerived.translate('LIMIT REACHED'),
 	singleWinLimitReached: () => stateI18nDerived.translate('SINGLE WIN LIMIT REACHED'),
 	settings: () => stateI18nDerived.translate('SETTINGS'),
 };
