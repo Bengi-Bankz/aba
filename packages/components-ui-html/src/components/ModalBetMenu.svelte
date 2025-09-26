@@ -25,9 +25,11 @@
 				{i18nDerived.betMenu()}
 			</BaseTitle>
 			<BaseScrollable type="column">
-				<span>{i18nDerived.selectYourBet()}</span>
-				<BetMenuAmountToggle />
-				<BetMenuAmountGrid />
+				<div class="bet-menu-scroll">
+					<span>{i18nDerived.selectYourBet()}</span>
+					<BetMenuAmountToggle />
+					<BetMenuAmountGrid />
+				</div>
 			</BaseScrollable>
 			<BaseButtonWrap type="full-width">
 				<Button data-test="confirm-button" onclick={confirm}>
@@ -40,3 +42,31 @@
 		</BaseContent>
 	</Popup>
 {/if}
+
+<style lang="scss">
+	.bet-menu-scroll {
+		max-height: 70vh;
+		overflow-y: auto;
+		padding: 16px 8px;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		scrollbar-width: none; /* Firefox */
+
+		&::-webkit-scrollbar {
+			display: none; /* Chrome, Safari */
+		}
+
+		@media (max-width: 700px) {
+			max-height: 80vh;
+			padding: 12px 4px;
+		}
+
+		@media (max-height: 600px) {
+			max-height: 60vh;
+		}
+	}
+</style>
