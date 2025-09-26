@@ -25,9 +25,6 @@
 			},
 		})}
 	>
-		<Container y={DESKTOP_BASE_SIZE * 0.5 - 990} x={840 - 755} scale={1.2}>
-			{@render props.amountBalance({ stacked: true })}
-		</Container>
 
 <Rectangle
     backgroundColor={0x000000}
@@ -38,36 +35,41 @@
     y={0}
 />
 
-		<Container y={DESKTOP_BASE_SIZE * .25} x={930 + 520} scale={0.6}>
+<Container y={DESKTOP_BASE_SIZE * 0.5 - 50} x={840 - 545} scale={.8}>
+			{@render props.amountBalance({ stacked: true })}
+		</Container>
+
+
+		<Container y={DESKTOP_BASE_SIZE * .25} x={380 + 520} scale={0.7}>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={60} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={90} scale={0.7}>
 			{@render props.buttonMenu({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={80 + 150} scale={0.6}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={80 + 1200} scale={0.7}>
 			{@render props.buttonBuyBonus({ anchor: 0.5 })}
 		</Container>
 
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={150 + 150 * 5} scale={0.75}>
+		<Container y={DESKTOP_BASE_SIZE * 0.5} x={820 + 150 * 5} scale={1.1}>
 			{@render props.buttonBet({ anchor: 0.5 })}
 		</Container>
 
 		
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={87 + 100 * 5.9} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * 0.25} x={820 + 120 * 5} scale={0.35}>
 			{@render props.buttonAutoSpin({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={3 + 80 * 5.9} scale={0.4}>
+		<Container y={DESKTOP_BASE_SIZE * 0.75}  x={820 + 120 * 5} scale={0.35}>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1360} scale={0.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.75} x={1700} scale={0.35}>
 			{@render props.buttonDecrease({ anchor: 0.5 })}
 		</Container>
 
-		<Container y={DESKTOP_BASE_SIZE * 0.5} x={1540 } scale={.3}>
+		<Container y={DESKTOP_BASE_SIZE * 0.25} x={1700} scale={0.35}>
 			{@render props.buttonIncrease({ anchor: 0.5 })}
 		</Container>
 	</Container>
