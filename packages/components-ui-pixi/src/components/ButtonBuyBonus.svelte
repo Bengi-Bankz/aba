@@ -20,6 +20,12 @@
 		return disabled ? DISABLED_SECONDARY : WHITE;
 	});
 
+	// Calculate button variant based on active state
+	const buttonVariant = $derived(() => {
+		if (disabled) return 'dark';
+		return active ? 'glow-orange' : 'glow-purple';
+	});
+
 	const openModal = () => (stateModal.modal = { name: 'buyBonus' });
 	const disableActiveBetMode = () => (stateBet.activeBetModeKey = 'BASE');
 	const onpress = () => {
@@ -61,14 +67,15 @@
 			anchor={0.5}
 			width={sizes.width}
 			height={sizes.height}
-			variant="accent"
+			variant={buttonVariant()}
 			state={disabled ? 'disabled' : pressed ? 'pressed' : hovered ? 'hover' : 'normal'}
 			showBorder={true}
 			showShadow={true}
+			borderRadius={18}
 			{...active
 				? {
-						borderWidth: 4,
-						borderColor: WHITE,
+						borderWidth: 6,
+						borderColor: '#ffd700',
 					}
 				: {}}
 		/>
@@ -88,8 +95,8 @@
 			text="Bonus"
 			style={{
 				align: 'center',
-				fontFamily: 'bungeeSpice',
-				fontSize: UI_BASE_SIZE * 0.35,
+				fontFamily: 'TradeWinds-Regular',
+				fontSize: UI_BASE_SIZE * 0.25,
 				fill: textColor(),
 				dropShadow: true,
 			}}

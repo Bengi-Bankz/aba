@@ -17,6 +17,6 @@
 	};
 </script>
 
-<UiButton {...props} {sizes} {onpress}>
+<UiButton {...props} {sizes} {onpress} variant="glow-blue">
 	<Sprite key="menu" width={sizes.width * 1} height={sizes.height * 1} anchor={-0} />
 </UiButton>

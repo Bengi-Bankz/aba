@@ -14,7 +14,7 @@
 		sizes: { width: number; height: number };
 		active?: boolean;
 		children?: Snippet;
-		variant?: 'dark' | 'light' | 'accent';
+		variant?: 'dark' | 'light' | 'accent' | 'glow-green' | 'glow-blue' | 'glow-purple' | 'glow-orange' | 'glow-pink';
 	};
 
 	const {
@@ -29,6 +29,9 @@
 	// Calculate text color based on variant and state
 	const textColor = $derived(() => {
 		if (disabled) return DISABLED_SECONDARY;
+		
+		// For glow variants, use white text
+		if (variant.startsWith('glow-')) return WHITE;
 		
 		switch (variant) {
 			case 'light':

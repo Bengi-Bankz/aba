@@ -5,6 +5,7 @@
     import { stateBet, stateBetDerived } from 'state-shared';
 
     import ButtonBetProvider from './ButtonBetProvider.svelte';
+    import UiSprite from './UiSprite.svelte';
     import { UI_BASE_FONT_SIZE, UI_BASE_SIZE } from '../constants';
     import { i18nDerived } from '../i18n/i18nDerived';
     import { WHITE, DISABLED_SECONDARY } from 'constants-shared/colors';
@@ -27,8 +28,12 @@
 
     // Calculate button variant based on bonus state
     const buttonVariant = $derived(() => {
-        return isBonusActive() ? 'bonus-active' : 'accent';
+        if (disabled) return 'dark';
+        return isBonusActive() ? 'glow-orange' : 'glow-green';
     });
+
+    // Make the button perfectly round
+    const borderRadius = $derived(() => BUTTON_SIZE / 2);
 </script>
 
 <ButtonBetProvider>
@@ -42,6 +47,18 @@
             class="bet-round-btn"
         >
             {#snippet children({ center, hovered, pressed })}
+                <!-- Glowing round background -->
+                <UiSprite
+                    {...center}
+                    anchor={0.5}
+                    width={sizes.width}
+                    height={sizes.height}
+                    borderRadius={borderRadius()}
+                    variant={buttonVariant()}
+                    state={disabled ? 'disabled' : pressed ? 'pressed' : hovered ? 'hover' : 'normal'}
+                />
+                
+                <!-- Icon and text content -->
                 <Container {...center}>
                     {#if ['spin_default', 'spin_disabled'].includes(key)}
                         <Sprite

@@ -1,51 +1,80 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-
-	type Props = {
-		debug?: boolean;
-		disabled?: boolean;
-		onclick: () => any;
-		children: Snippet;
-		'data-test'?: string;
+	interface Props {
 		/**
-		 * Button variant/style
+		 * The content to display inside the button
 		 */
-		variant?: 'green' | 'blue' | 'purple' | 'orange' | 'red';
+		children?: import('svelte').Snippet;
 		/**
-		 * Button size
+		 * Button click handler
+		 */
+		onclick?: () => void;
+		/**
+		 * Whether the button is disabled
+		 */
+		disabled?: boolean;
+		/**
+		 * Additional CSS classes
+		 */
+		class?: string;
+		/**
+		 * Button size variant
 		 */
 		size?: 'small' | 'medium' | 'large';
 		/**
-		 * Button shape
+		 * Color theme variant
+		 */
+		variant?: 'green' | 'blue' | 'purple' | 'orange' | 'red';
+		/**
+		 * Shape variant
 		 */
 		shape?: 'default' | 'round' | 'square' | 'pill' | 'rounded-square';
+	}
+
+	let {
+		children,
+		onclick,
+		disabled = false,
+		class: className = '',
+		size = 'medium',
+		variant = 'green',
+		shape = 'default'
+	}: Props = $props();
+
+	const sizeClasses = {
+		small: 'glow-button--small',
+		medium: 'glow-button--medium',
+		large: 'glow-button--large'
 	};
 
-	const { 
-		debug, 
-		disabled = false, 
-		onclick, 
-		children, 
-		variant = 'green',
-		size = 'medium',
-		shape = 'default',
-		...rest 
-	}: Props = $props();
+	const variantClasses = {
+		green: 'glow-button--green',
+		blue: 'glow-button--blue',
+		purple: 'glow-button--purple',
+		orange: 'glow-button--orange',
+		red: 'glow-button--red'
+	};
+
+	const shapeClasses = {
+		default: '',
+		round: 'glow-button--round',
+		square: 'glow-button--square',
+		pill: 'glow-button--pill',
+		'rounded-square': 'glow-button--rounded-square'
+	};
 </script>
 
-<button 
-	class="glow-button glow-button--{size} glow-button--{variant} {shape !== 'default' ? `glow-button--${shape}` : ''}" 
-	class:debug 
-	class:glow-button--disabled={disabled}
-	{disabled} 
-	{onclick} 
-	{...rest}
+<button
+	class="glow-button {sizeClasses[size]} {variantClasses[variant]} {shapeClasses[shape]} {className}"
+	{onclick}
+	{disabled}
+	type="button"
 >
-	{@render children()}
+	{#if children}
+		{@render children()}
+	{/if}
 </button>
 
-<style lang="scss">
-	/* Glow Button Styles */
+<style>
 	.glow-button {
 		font-size: 15px;
 		padding: 0.7em 2.7em;
@@ -63,19 +92,15 @@
 		cursor: pointer;
 		font-weight: 600;
 		text-transform: uppercase;
-		width: 100%;
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
 	}
 
-	.glow-button--disabled {
-		cursor: not-allowed !important;
-		opacity: 0.5 !important;
+	.glow-button:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
 		pointer-events: none;
 	}
 
-	.glow-button:hover:not(.glow-button--disabled) {
+	.glow-button:hover:not(:disabled) {
 		color: var(--glow-color-hover);
 		box-shadow: inset 0 0 10px var(--glow-shadow-inner-hover), 0 0 9px 3px var(--glow-shadow-outer-hover);
 	}
@@ -91,13 +116,8 @@
 		background: linear-gradient(to right, transparent 1%, var(--glow-sweep-start) 40%, var(--glow-sweep-end) 60%, transparent 100%);
 	}
 
-	.glow-button:hover:not(.glow-button--disabled):before {
+	.glow-button:hover:not(:disabled):before {
 		transform: translateX(15em);
-	}
-
-	.glow-button:active:not(.glow-button--disabled) {
-		transform: scale(0.98);
-		box-shadow: inset 0 0 15px var(--glow-shadow-inner-hover), 0 0 5px 1px var(--glow-shadow-outer-hover);
 	}
 
 	/* Size variants */
@@ -119,7 +139,7 @@
 		border-radius: 0.8em;
 	}
 
-	/* Green variant (default) */
+	/* Green variant (original) */
 	.glow-button--green {
 		--glow-color: #1BFD9C;
 		--glow-color-hover: #82ffc9;
@@ -189,29 +209,37 @@
 		--glow-sweep-end: rgba(253, 27, 27, 0.1);
 	}
 
+	/* Active/pressed state */
+	.glow-button:active:not(:disabled) {
+		transform: scale(0.98);
+		box-shadow: inset 0 0 15px var(--glow-shadow-inner-hover), 0 0 5px 1px var(--glow-shadow-outer-hover);
+	}
+
 	/* Shape variants */
 	.glow-button--round {
-		border-radius: 50% !important;
+		border-radius: 50%;
 		padding: 1em;
 		min-width: 3em;
 		min-height: 3em;
-		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.glow-button--square {
-		border-radius: 0 !important;
+		border-radius: 0;
 		padding: 1em;
 		min-width: 3em;
 		min-height: 3em;
 	}
 
 	.glow-button--pill {
-		border-radius: 2em !important;
+		border-radius: 2em;
 		padding: 0.7em 2em;
 	}
 
 	.glow-button--rounded-square {
-		border-radius: 0.2em !important;
+		border-radius: 0.2em;
 		padding: 1em;
 		min-width: 3em;
 		min-height: 3em;
@@ -241,11 +269,5 @@
 		padding: 1.5em;
 		min-width: 4em;
 		min-height: 4em;
-	}
-
-	/* Debug styles */
-	.glow-button.debug {
-		border-color: rgb(173, 4, 4) !important;
-		border-width: 3px !important;
 	}
 </style>

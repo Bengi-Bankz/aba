@@ -16,4 +16,8 @@
 	};
 </script>
 
-<UiButton {...props} {sizes} {onpress} icon="payTable" variant="light" />
+<!-- Change from this: -->
+
+
+<!-- To this for blue glow: -->
+<UiButton {...props} {sizes} {onpress} icon="payTable" variant="glow-blue" />

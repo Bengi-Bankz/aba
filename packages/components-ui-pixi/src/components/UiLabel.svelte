@@ -10,18 +10,20 @@
 		value: string;
 		tiled?: boolean;
 		stacked?: boolean;
+		glowVariant?: 'glow-green' | 'glow-blue' | 'glow-purple' | 'glow-orange' | 'glow-pink' | 'dark';
+		state?: 'normal' | 'hover' | 'pressed' | 'disabled';
 	};
 
 	const props: Props = $props();
 
 	const labelStyle = {
-		fontFamily: 'sansationRegular',
+		fontFamily: 'TradeWinds-Regular',
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
 	} as const;
 
 	const valueStyle = {
-		fontFamily: 'bungeeSpice',
+		fontFamily: 'TradeWinds-Regular',
 		fontSize: UI_BASE_FONT_SIZE,
 		fill: WHITE,
 	} as const;
@@ -36,6 +38,8 @@
 			width={UI_BASE_FONT_SIZE * 3 * (246 / 73)}
 			height={UI_BASE_FONT_SIZE * 3}
 			borderRadius={35}
+			variant={props.glowVariant || 'dark'}
+			state={props.state || 'normal'}
 		/>
 	{/if}
 	<Text anchor={{ x: 0.5, y: 0 }} text={props.label} style={labelStyle} />
@@ -49,6 +53,8 @@
 			width={UI_BASE_FONT_SIZE * 3 * (326 / 73)}
 			height={UI_BASE_FONT_SIZE * 3}
 			borderRadius={35}
+			variant={props.glowVariant || 'dark'}
+			state={props.state || 'normal'}
 		/>
 	{/if}
 	<Text anchor={{ x: 0, y: 0.5 }} text={props.label} style={labelStyle} />

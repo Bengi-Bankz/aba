@@ -16,4 +16,5 @@
 	};
 </script>
 
-<UiButton {...props} {sizes} {onpress} icon="settings" variant="light" />
+<!-- To this for blue glow: -->
+<UiButton {...props} {sizes} {onpress} icon="settings" variant="glow-blue" />
