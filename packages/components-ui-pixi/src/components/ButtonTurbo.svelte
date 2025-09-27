@@ -18,12 +18,18 @@
 		stateBetDerived.updateIsTurbo(!stateBet.isTurbo, { persistent: true });
 	};
 
+	// Calculate glow variant based on turbo state
+	const buttonVariant = $derived(() => {
+		if (disabled) return 'dark';
+		return active ? 'glow-orange' : 'glow-blue';
+	});
+
 	context.eventEmitter.subscribeOnMount({
 		stopButtonClick: () => stateBetDerived.updateIsTurbo(true, { persistent: false }),
 		stopButtonEnable: () => stateBetDerived.updateIsTurbo(false, { persistent: false }),
 	});
 </script>
 
-<UiButton {...props} {sizes} {active} {onpress} {disabled}>
+<UiButton {...props} {sizes} {active} {onpress} {disabled} variant={buttonVariant()}>
 	<Sprite key={spriteKey} width={sizes.width * 1} height={sizes.height * 1} anchor={0} />
 </UiButton>

@@ -4,6 +4,7 @@
 	import { MainContainer } from 'components-layout';
 	import { Container, Rectangle, anchorToPivot } from 'pixi-svelte';
 
+	import UiSprite from './UiSprite.svelte';
 	import { DESKTOP_BASE_SIZE, DESKTOP_BACKGROUND_WIDTH_LIST } from '../constants';
 	import { getContext } from '../context';
 	import type { LayoutUiProps } from '../types';
@@ -26,13 +27,19 @@
 		})}
 	>
 
-<Rectangle
-    backgroundColor={0x000000}
-    alpha={0.8}
-    width={DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0)}
-    height={DESKTOP_BASE_SIZE}
-    x={-DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0) * -0}
-    y={0}
+<UiSprite
+	width={DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0)}
+	height={DESKTOP_BASE_SIZE}
+	x={-DESKTOP_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0) * -0}
+	y={0}
+	variant="dark"
+	state="normal"
+	borderRadius={12}
+	showBorder={true}
+	showShadow={false}
+	borderColor="#2563eb"
+	borderWidth={2}
+	backgroundColor="#000000"
 />
 
 <Container y={DESKTOP_BASE_SIZE * 0.5 - 50} x={840 - 545} scale={.8}>

@@ -4,6 +4,7 @@
 	import { MainContainer } from 'components-layout';
 	import { Container, Rectangle, anchorToPivot } from 'pixi-svelte';
 
+	import UiSprite from './UiSprite.svelte';
 	import { LANDSCAPE_BASE_SIZE, LANDSCAPE_BACKGROUND_WIDTH_LIST } from '../constants';
 	import type { LayoutUiProps } from '../types';
 	import { getContext } from '../context';
@@ -30,13 +31,19 @@
 
 
 		    <!-- Add background rectangle behind all buttons -->
-        <Rectangle
-            backgroundColor={0x000000}
-            alpha={0.8}
+        <UiSprite
             width={LANDSCAPE_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0)}
             height={LANDSCAPE_BASE_SIZE}
             x={-LANDSCAPE_BACKGROUND_WIDTH_LIST.reduce((sum, width) => sum + width, 0) * 0}
             y={0}
+            variant="dark"
+            state="normal"
+            borderRadius={12}
+            showBorder={true}
+            showShadow={false}
+            borderColor="#2563eb"
+            borderWidth={2}
+            backgroundColor="#000000"
         />
 
 

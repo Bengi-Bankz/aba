@@ -25,18 +25,23 @@
 		context.eventEmitter.broadcast({ type: 'soundPressGeneral' });
 		stateBetDerived.hasAutoBetCounter() ? stopAutoSpin() : openModal();
 	};
+
+	// Calculate glow variant based on auto spin state
+	const buttonVariant = $derived(() => {
+		if (disabled) return 'dark';
+		return active ? 'glow-pink' : 'glow-purple';
+	});
 </script>
-<div class="inline-block rounded-full shadow-lg bg-blue-600 hover:bg-blue-700 transition">
-  <UiButton
-    {...props}
-    {sizes}
-    {active}
-    {onpress}
-    {disabled}
-  >
-    <Sprite key="auto" width={sizes.width} height={sizes.height} anchor={0} />
-    <Container x={sizes.width * 0.4} y={sizes.height * 0.4}>
-      <ButtonBetAutoSpinsCounter />
-    </Container>
-  </UiButton>
-</div>
+<UiButton
+	{...props}
+	{sizes}
+	{active}
+	{onpress}
+	{disabled}
+	variant={buttonVariant()}
+>
+	<Sprite key="auto" width={sizes.width} height={sizes.height} anchor={0} />
+	<Container x={sizes.width * 0.4} y={sizes.height * 0.4}>
+		<ButtonBetAutoSpinsCounter />
+	</Container>
+</UiButton>

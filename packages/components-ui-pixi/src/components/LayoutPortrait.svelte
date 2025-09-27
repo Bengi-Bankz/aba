@@ -9,6 +9,7 @@
 	import { Container, Rectangle } from 'pixi-svelte';
 	import { waitForResolve } from 'utils-shared/wait';
 
+	import UiSprite from './UiSprite.svelte';
 	import LabelFreeSpinCounter from './LabelFreeSpinCounter.svelte';
 	import type { LayoutUiProps } from '../types';
 	import { getContext } from '../context';
@@ -31,7 +32,24 @@
 >
     {@render props.amountBalance({ stacked: true })}
 </Container>
-	
+
+	<!-- Full-width background behind all UI buttons -->
+	<UiSprite
+		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}
+		y={context.stateLayoutDerived.mainLayoutStandard().height - 200}
+		width={context.stateLayoutDerived.mainLayoutStandard().width}
+		height={300}
+		anchor={0.5}
+		variant="dark"
+		state="normal"
+		borderRadius={12}
+		showBorder={true}
+		showShadow={false}
+		borderColor="#2563eb"
+		borderWidth={2}
+		backgroundColor="#000000"
+		zIndex={-1}
+	/>
 	
 	<Container
 		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
@@ -92,7 +110,7 @@
 		</Container>
 
 <Container
-    x={context.stateLayoutDerived.mainLayoutStandard().width * 0.95 }
+    x={context.stateLayoutDerived.mainLayoutStandard().width * 0.96 }
     y={context.stateLayoutDerived.mainLayoutStandard().height - 105}
     scale={0.45}  
 >
@@ -100,7 +118,7 @@
 </Container>
 
 <Container
-    x={context.stateLayoutDerived.mainLayoutStandard().width * 0.95}
+    x={context.stateLayoutDerived.mainLayoutStandard().width * 0.96}
     y={context.stateLayoutDerived.mainLayoutStandard().height - 185}
     scale={0.45}
 >

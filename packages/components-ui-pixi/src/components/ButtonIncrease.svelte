@@ -24,6 +24,6 @@
     };
 </script>
 
-<UiButton {...props} {sizes} {onpress} {disabled}>
+<UiButton {...props} {sizes} {onpress} {disabled} variant="glow-green">
     <Sprite key="increase" width={sizes.width * 1} height={sizes.height * 1} anchor={-0.} />
 </UiButton>
