@@ -23,7 +23,7 @@
 >
 	{#snippet children({ disabledDown, disabledUp, toggleDown, toggleUp })}
 		<div class="toggle-wrap">
-			<Button data-test="down-button" disabled={disabledDown} onclick={toggleDown}>
+			<Button variant="blue" size="small" shape="rounded" data-test="down-button" disabled={disabledDown} onclick={toggleDown}>
 				<BaseIcon width={iconSize} height={iconSize} />
 				<BaseButtonContent>
 					<span style="font-size: 2rem;">-</span>
@@ -32,7 +32,7 @@
 
 			<span class="amount">{numberToCurrencyString(stateBet.betAmount)}</span>
 
-			<Button data-test="up-button" disabled={disabledUp} onclick={toggleUp}>
+			<Button variant="blue" size="small" shape="rounded" data-test="up-button" disabled={disabledUp} onclick={toggleUp}>
 				<BaseIcon width={iconSize} height={iconSize} />
 				<BaseButtonContent>
 					<span style="font-size: 2rem;">+</span>
@@ -48,5 +48,12 @@
 		flex-direction: row;
 		align-items: center;
 		gap: 0.5rem;
+	}
+
+	.amount {
+		font-family: 'TradeWinds-Regular', sans-serif;
+		font-size: 1.2rem;
+		font-weight: bold;
+		text-shadow: 0 0 10px rgba(100, 149, 237, 0.5);
 	}
 </style>

@@ -32,7 +32,13 @@
 				</div>
 			</BaseScrollable>
 			<BaseButtonWrap type="full-width">
-				<Button data-test="confirm-button" onclick={confirm}>
+				<Button 
+					data-test="confirm-button" 
+					variant="blue" 
+					size="large" 
+					shape="pill"
+					onclick={confirm}
+				>
 					<BaseIcon width="100%" height="3rem" />
 					<BaseButtonContent>
 						<span style="font-size: 1rem;">{i18nDerived.confirm()}</span>

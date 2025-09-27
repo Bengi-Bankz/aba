@@ -41,6 +41,9 @@
 			</BaseScrollable>
 			<BaseButtonWrap type="max-width">
 				<Button
+					variant="green"
+					size="large" 
+					shape="pill"
 					data-test="confirm-button"
 					onclick={() => {
 						confirm();

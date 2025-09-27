@@ -24,6 +24,9 @@
 		<!-- button -->
 		<div class="button-wrap">
 			<Button
+				variant="purple"
+				size="medium"
+				shape="rounded"
 				onclick={() => {
 					eventEmitter.broadcast({ type: 'soundPressGeneral' });
 					if (value === 0) {

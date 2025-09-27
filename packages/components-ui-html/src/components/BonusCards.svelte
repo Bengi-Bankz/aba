@@ -43,6 +43,9 @@
 
 			{#snippet button()}
 				<Button
+					variant="orange"
+					size="medium"
+					shape="rounded"
 					onclick={() => {
 						stateBonus.selectedBetModeKey = betModeData.mode;
 						eventEmitter.broadcast({ type: 'buyBonusConfirm' });
@@ -66,6 +69,7 @@
 		font-size: 1rem;
 		line-height: 1rem;
 		text-align: center;
+		font-family: 'TradeWinds-Regular', sans-serif;
 	}
 
 	.description {
@@ -75,6 +79,7 @@
 		white-space: pre-line;
 		display: inline-flex;
 		align-items: center;
+		font-family: 'TradeWinds-Regular', sans-serif;
 	}
 
 	.description:empty {

@@ -29,7 +29,13 @@
 	};
 </script>
 
-<Button disabled={!stateBetDerived.isBetCostAvailable()} onclick={startAutoBet}>
+<Button 
+	disabled={!stateBetDerived.isBetCostAvailable()} 
+	variant="green"
+	size="large"
+	shape="pill"
+	onclick={startAutoBet}
+>
 	<BaseIcon width="100%" height="3rem" />
 	<BaseButtonContent>
 		<span style="font-size: 1rem;">{i18nDerived.startAutoplay()}</span>
