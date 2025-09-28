@@ -147,7 +147,7 @@ const h1Static = { type: 'sprite', assetKey: 'h1.webp', sizeRatios: { width: 1, 
 const h1CharacterAnimation = {
 	type: 'characterAnimation',
 	component: 'H1CharacterAnimation',
-	sizeRatios: { width: 0.056, height: 0.052 }, // Scale from ~1791x1909 to ~100x100
+	sizeRatios: { width: 1, height: 1 }, // Native 100x100 size
 };
 const h2Static = { type: 'sprite', assetKey: 'h2.webp', sizeRatios: { width: 1, height: 1 } };
 const h3Static = { type: 'sprite', assetKey: 'h3.webp', sizeRatios: { width: 1, height: 1 } };
