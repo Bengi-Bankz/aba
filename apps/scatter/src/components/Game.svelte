@@ -40,6 +40,7 @@
     import FreeSpinCounter from './FreeSpinCounter.svelte';
     import FreeSpinOutro from './FreeSpinOutro.svelte';
     import Transition from './Transition.svelte';
+    import CharacterAnimation from './CharacterAnimation.svelte';
 
     const context = getContext();
 
@@ -78,6 +79,12 @@
 
         <MainContainer>
             <BoardFrame />
+            <!-- Character animation positioned to the side of the board -->
+            <CharacterAnimation
+                x={context.stateLayoutDerived.mainLayout().width * 0.15}
+                y={context.stateLayoutDerived.mainLayout().height * 0.6}
+                scale={{ x: 0.24, y: 0.24 }}
+            />
         </MainContainer>
 
         <MainContainer>

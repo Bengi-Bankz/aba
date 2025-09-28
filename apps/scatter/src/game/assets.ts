@@ -339,4 +339,70 @@ export default {
 		src: new URL('../../assets/fonts/turbooff/turbooff.png', import.meta.url).href,
 		preload: true,
 	},
+	// Character animation frames
+	charAnimate1: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/1.png', import.meta.url).href,
+	},
+	charAnimate2: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/2.png', import.meta.url).href,
+	},
+	charAnimate3: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/3.png', import.meta.url).href,
+	},
+	charAnimate4: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/4.png', import.meta.url).href,
+	},
+	charAnimate5: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/5.png', import.meta.url).href,
+	},
+	charAnimate6: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/6.png', import.meta.url).href,
+	},
+	charAnimate7: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/7.png', import.meta.url).href,
+	},
+	charAnimate8: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/8.png', import.meta.url).href,
+	},
+	// H1 character animation frames (14-21)
+	h1CharAnimate14: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/14.png', import.meta.url).href,
+	},
+	h1CharAnimate15: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/15.png', import.meta.url).href,
+	},
+	h1CharAnimate16: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/16.png', import.meta.url).href,
+	},
+	h1CharAnimate17: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/17.png', import.meta.url).href,
+	},
+	h1CharAnimate18: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/18.png', import.meta.url).href,
+	},
+	h1CharAnimate19: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/19.png', import.meta.url).href,
+	},
+	h1CharAnimate20: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/20.png', import.meta.url).href,
+	},
+	h1CharAnimate21: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-14-21/21.png', import.meta.url).href,
+	},
 } as const;
