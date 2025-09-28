@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	import { BitmapText, Container, Sprite, type Sizes } from 'pixi-svelte';
+	import { BitmapText, Container, Sprite, Graphics, type Sizes } from 'pixi-svelte';
 
 	import { SYMBOL_SIZE } from '../game/constants';
 
@@ -25,12 +25,78 @@
 		width: PANEL_HEIGHT * PANEL_RATIO,
 		height: PANEL_HEIGHT,
 	};
+
+	// Background styling constants (matching BoardFrame)
+	const NEON_GREEN = 0x1BFD9C;
+	const BLACK_BACKGROUND = 0x000000;
+	const BORDER_WIDTH = 3;
+	const CORNER_RADIUS = 8;
+
+	// Function to draw the neon background for main panel
+	function drawMainBackground(graphics: any) {
+		graphics.clear();
+		
+		// Draw black background
+		graphics.roundRect(
+			-PANEL_SIZES.width / 2,
+			-PANEL_SIZES.height / 2,
+			PANEL_SIZES.width,
+			PANEL_SIZES.height,
+			CORNER_RADIUS
+		);
+		graphics.fill({ color: BLACK_BACKGROUND, alpha: 0.9 });
+		
+		// Draw neon border
+		graphics.roundRect(
+			-PANEL_SIZES.width / 2,
+			-PANEL_SIZES.height / 2,
+			PANEL_SIZES.width,
+			PANEL_SIZES.height,
+			CORNER_RADIUS
+		);
+		graphics.stroke({ 
+			width: BORDER_WIDTH, 
+			color: NEON_GREEN, 
+			alpha: 0.8 
+		});
+	}
+
+	// Function to draw the neon background for title
+	function drawTitleBackground(graphics: any) {
+		graphics.clear();
+		
+		// Draw black background
+		graphics.roundRect(
+			-TITLE_SIZES.width / 2,
+			-TITLE_SIZES.height / 2,
+			TITLE_SIZES.width,
+			TITLE_SIZES.height,
+			CORNER_RADIUS / 2
+		);
+		graphics.fill({ color: BLACK_BACKGROUND, alpha: 0.9 });
+		
+		// Draw neon border
+		graphics.roundRect(
+			-TITLE_SIZES.width / 2,
+			-TITLE_SIZES.height / 2,
+			TITLE_SIZES.width,
+			TITLE_SIZES.height,
+			CORNER_RADIUS / 2
+		);
+		graphics.stroke({ 
+			width: BORDER_WIDTH - 1, 
+			color: NEON_GREEN, 
+			alpha: 0.8 
+		});
+	}
 </script>
 
-<Sprite anchor={0.5} key={PANEL_KEY} {...PANEL_SIZES} />
+<!-- Main panel background -->
+<Graphics draw={drawMainBackground} />
 
 <Container y={-TITLE_HEIGHT * 1.2}>
-	<Sprite anchor={0.5} key={TITLE_KEY} {...TITLE_SIZES} />
+	<!-- Title background -->
+	<Graphics draw={drawTitleBackground} />
 	<BitmapText
 		anchor={0.5}
 		y={-TITLE_HEIGHT * 0.025}

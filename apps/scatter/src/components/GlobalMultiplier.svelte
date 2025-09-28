@@ -15,6 +15,7 @@
 		SpineProvider,
 		SpineSlot,
 		SpineTrack,
+		Sprite,
 	} from 'pixi-svelte';
 	import { FadeContainer } from 'components-pixi';
 	import { stateBetDerived } from 'state-shared';
@@ -76,6 +77,12 @@
 <FadeContainer {show}>
 	<BoardContainer>
 		<Container {...position} {scale}>
+			<Sprite 
+				key="globalMultiplierBackground" 
+				anchor={{ x: 0.5, y: 0.5 }}
+				position={{ x: 0, y: 0 }}
+				scale={{ x: 0.5, y: 0.5 }}
+			/>
 			<SpineProvider key="globalMultiplier" width={PANEL_WIDTH}>
 				<SpineTrack
 					trackIndex={0}
@@ -93,7 +100,7 @@
 							anchor={0.5}
 							text={`${Math.round(previousMultiplier.current)}×`}
 							style={{
-								fontFamily: 'gold',
+								fontFamily: 'purple',
 								fontSize: SYMBOL_SIZE * 5.2,
 							}}
 						/>
@@ -103,7 +110,7 @@
 							anchor={0.5}
 							text={`${multiplier}×`}
 							style={{
-								fontFamily: 'gold',
+								fontFamily: 'purple',
 								fontSize: SYMBOL_SIZE * 5.2,
 							}}
 						/>

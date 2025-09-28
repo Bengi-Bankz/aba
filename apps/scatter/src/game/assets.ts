@@ -405,4 +405,9 @@ export default {
 		type: 'sprite',
 		src: new URL('../../static/assets/sprites/char-animate-14-21/21.png', import.meta.url).href,
 	},
+	globalMultiplierBackground: {
+		type: 'sprite',
+		src: new URL('../../static/assets/spines/globalMultiplier/multiframe2.webp', import.meta.url).href,
+		preload: true,
+	},
 } as const;
