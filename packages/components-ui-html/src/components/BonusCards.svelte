@@ -4,9 +4,7 @@
 	import { getContextEventEmitter } from 'utils-event-emitter';
 	import { numberToCurrencyString } from 'utils-shared/amount';
 
-	import BaseIcon from './BaseIcon.svelte';
 	import BonusCard from './BonusCard.svelte';
-	import BaseButtonContent from './BaseButtonContent.svelte';
 	import { stateBonus } from '../stateBonus.svelte';
 	import type { EmitterEventModal } from '../types';
 
@@ -54,10 +52,7 @@
 					disabled={stateBet.betAmount <= 0 ||
 						stateBet.balanceAmount < stateBet.betAmount * betModeData.costMultiplier}
 				>
-					<BaseIcon width="100%" height="2rem" border="2px solid white;" />
-					<BaseButtonContent>
-						<span style="font-size: 1rem;">{betModeData.text.button}</span>
-					</BaseButtonContent>
+					<span style="font-size: 1rem; font-weight: bold;">{betModeData.text.button}</span>
 				</Button>
 			{/snippet}
 		</BonusCard>

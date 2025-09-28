@@ -7,6 +7,9 @@
 		value: TValue;
 		options: Readonly<TValue[]>;
 		miniSize?: boolean;
+		variant?: 'green' | 'blue' | 'purple' | 'orange' | 'pink';
+		size?: 'small' | 'medium' | 'large';
+		shape?: 'rounded' | 'pill' | 'square';
 		onchange: (value: TValue) => void;
 		option: Snippet<[{ option: TValue; index: number }]>;
 	};
@@ -19,6 +22,9 @@
 		<div class="grid" class:miniSize={props.miniSize}>
 			{#each props.options as option, index (option)}
 				<Button
+					variant={props.variant || 'green'}
+					size={props.size || 'medium'}
+					shape={props.shape || 'rounded'}
 					onclick={() => {
 						props.onchange(option);
 					}}

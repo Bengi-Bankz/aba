@@ -3,12 +3,10 @@
 	import { zIndex } from 'constants-shared/zIndex';
 	import { stateModal } from 'state-shared';
 
-	import BaseIcon from './BaseIcon.svelte';
 	import BaseTitle from './BaseTitle.svelte';
 	import BaseContent from './BaseContent.svelte';
 	import BaseScrollable from './BaseScrollable.svelte';
 	import BaseButtonWrap from './BaseButtonWrap.svelte';
-	import BaseButtonContent from './BaseButtonContent.svelte';
 	import BetMenuAmountToggle from './BetMenuAmountToggle.svelte';
 	import BetMenuAmountGrid from './BetMenuAmountGrid.svelte';
 	import { i18nDerived } from '../i18n/i18nDerived';
@@ -39,10 +37,7 @@
 					shape="pill"
 					onclick={confirm}
 				>
-					<BaseIcon width="100%" height="3rem" />
-					<BaseButtonContent>
-						<span style="font-size: 1rem;">{i18nDerived.confirm()}</span>
-					</BaseButtonContent>
+					<span style="font-size: 1rem; font-weight: bold;">{i18nDerived.confirm()}</span>
 				</Button>
 			</BaseButtonWrap>
 		</BaseContent>

@@ -4,8 +4,6 @@
 	import { getContextEventEmitter } from 'utils-event-emitter';
 	import { Button } from 'components-shared';
 
-	import BaseIcon from './BaseIcon.svelte';
-	import BaseButtonContent from './BaseButtonContent.svelte';
 	import type { EmitterEventModal } from '../types';
 
 	type Props = {
@@ -36,10 +34,7 @@
 					}
 				}}
 			>
-				<BaseIcon width="3rem" height="3rem" />
-				<BaseButtonContent>
-					<span>{value > 0 ? 'ON' : 'OFF'}</span>
-				</BaseButtonContent>
+				<span style="font-weight: bold;">{value > 0 ? 'ON' : 'OFF'}</span>
 			</Button>
 		</div>
 

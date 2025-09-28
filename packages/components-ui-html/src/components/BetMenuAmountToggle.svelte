@@ -4,13 +4,9 @@
 	import { getContextEventEmitter } from 'utils-event-emitter';
 	import { numberToCurrencyString } from 'utils-shared/amount';
 
-	import BaseIcon from './BaseIcon.svelte';
-	import BaseButtonContent from './BaseButtonContent.svelte';
 	import type { EmitterEventModal } from '../types';
 
 	const { eventEmitter } = getContextEventEmitter<EmitterEventModal>();
-
-	const iconSize = '2.5rem';
 </script>
 
 <OptionsToggle
@@ -24,19 +20,13 @@
 	{#snippet children({ disabledDown, disabledUp, toggleDown, toggleUp })}
 		<div class="toggle-wrap">
 			<Button variant="blue" size="small" shape="rounded" data-test="down-button" disabled={disabledDown} onclick={toggleDown}>
-				<BaseIcon width={iconSize} height={iconSize} />
-				<BaseButtonContent>
-					<span style="font-size: 2rem;">-</span>
-				</BaseButtonContent>
+				<span style="font-size: 1.5rem; font-weight: bold;">-</span>
 			</Button>
 
 			<span class="amount">{numberToCurrencyString(stateBet.betAmount)}</span>
 
 			<Button variant="blue" size="small" shape="rounded" data-test="up-button" disabled={disabledUp} onclick={toggleUp}>
-				<BaseIcon width={iconSize} height={iconSize} />
-				<BaseButtonContent>
-					<span style="font-size: 2rem;">+</span>
-				</BaseButtonContent>
+				<span style="font-size: 1.5rem; font-weight: bold;">+</span>
 			</Button>
 		</div>
 	{/snippet}
