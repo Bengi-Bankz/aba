@@ -407,7 +407,8 @@ export default {
 	},
 	globalMultiplierBackground: {
 		type: 'sprite',
-		src: new URL('../../static/assets/spines/globalMultiplier/multiframe2.webp', import.meta.url).href,
+		src: new URL('../../static/assets/spines/globalMultiplier/multiframe2.webp', import.meta.url)
+			.href,
 		preload: true,
 	},
 } as const;
