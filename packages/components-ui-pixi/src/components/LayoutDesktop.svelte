@@ -13,6 +13,14 @@
 	const context = getContext();
 </script>
 
+<Container x={20} y={20}>
+	{@render props.gameName()}
+</Container>
+
+<Container x={context.stateLayoutDerived.canvasSizes().width - 20} y={20} scale={0.4}>
+	{@render props.logo()}
+</Container>
+
 
 <MainContainer standard alignVertical="bottom">
 	<Container

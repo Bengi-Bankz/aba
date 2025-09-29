@@ -13,7 +13,7 @@
     import { EnablePixiExtension } from 'components-pixi';
     import { EnableHotkey } from 'components-shared';
     import { MainContainer } from 'components-layout';
-    import { App, Text, REM } from 'pixi-svelte';
+    import { App, Text, REM, Sprite } from 'pixi-svelte';
     import { stateModal } from 'state-shared';
 
     import { UI, UiGameName } from 'components-ui-pixi';
@@ -109,11 +109,10 @@
                 <UiGameName name="WORK" />
             {/snippet}
             {#snippet logo()}
-                <Text
+                <Sprite
+                    key="gamelogo"
                     anchor={{ x: 1, y: 0 }}
-                    style={{
-    fontFamily: "TradeWinds-Regular, sans-serif",
-}}
+                    scale={{ x: 0.6, y: 0.6 }}
                 />
             {/snippet}
         </UI>

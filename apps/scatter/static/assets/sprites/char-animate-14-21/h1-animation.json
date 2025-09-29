@@ -1,0 +1,55 @@
+{
+	"frames": {
+		"14.png": {
+			"frame": { "x": 0, "y": 0, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"15.png": {
+			"frame": { "x": 100, "y": 0, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"16.png": {
+			"frame": { "x": 200, "y": 0, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"17.png": {
+			"frame": { "x": 300, "y": 0, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"18.png": {
+			"frame": { "x": 0, "y": 100, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"19.png": {
+			"frame": { "x": 100, "y": 100, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"20.png": {
+			"frame": { "x": 200, "y": 100, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		},
+		"21.png": {
+			"frame": { "x": 300, "y": 100, "w": 100, "h": 100 },
+			"sourceSize": { "w": 100, "h": 100 },
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 }
+		}
+	},
+	"animations": {
+		"h1_idle": ["14.png", "15.png", "16.png", "17.png", "18.png", "19.png", "20.png", "21.png"]
+	},
+	"meta": {
+		"app": "H1 Character Animation",
+		"version": "1.0",
+		"image": "h1-spritesheet.png",
+		"format": "RGBA8888",
+		"size": { "w": 400, "h": 200 },
+		"scale": "1"
+	}
+}

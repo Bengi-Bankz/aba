@@ -143,11 +143,10 @@ const explosion = {
 	sizeRatios: { width: 1, height: 1 },
 };
 
-const h1Static = { type: 'sprite', assetKey: 'h1.webp', sizeRatios: { width: 1, height: 1 } };
-const h1CharacterAnimation = {
-	type: 'characterAnimation',
-	component: 'H1CharacterAnimation',
-	sizeRatios: { width: 1, height: 1 }, // Native 100x100 size
+const h1Static = {
+	type: 'sprite',
+	assetKey: 'h1.webp',
+	sizeRatios: { width: 1, height: 1 },
 };
 const h2Static = { type: 'sprite', assetKey: 'h2.webp', sizeRatios: { width: 1, height: 1 } };
 const h3Static = { type: 'sprite', assetKey: 'h3.webp', sizeRatios: { width: 1, height: 1 } };
@@ -273,7 +272,7 @@ const backgroundHigh = {
 export const SYMBOL_INFO_MAP = {
 	H1: {
 		explosion,
-		win: h1CharacterAnimation,
+		win: h1Static,
 		postWinStatic: h1Static,
 		static: h1Static,
 		spin: h1Static,

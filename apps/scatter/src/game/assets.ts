@@ -318,6 +318,11 @@ export default {
 		src: new URL('../../assets/fonts/beehive/beehive.png', import.meta.url).href,
 		preload: true,
 	},
+	gamelogo: {
+		type: 'sprite',
+		src: new URL('../../static/assets/fonts/gamelogo/gamelogo.png', import.meta.url).href,
+		preload: true,
+	},
 
 	increase: {
 		type: 'sprite',

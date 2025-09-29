@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SymbolSpine from './SymbolSpine.svelte';
 	import SymbolSprite from './SymbolSprite.svelte';
-	import H1CharacterAnimation from './H1CharacterAnimation.svelte';
+	import AnimatedSymbolSprite from './AnimatedSymbolSprite.svelte';
 	import { getSymbolBackgroundInfo, getSymbolInfo } from '../game/utils';
 	import type { SymbolState, RawSymbol } from '../game/types';
 	import { getContext } from '../game/context';
@@ -19,21 +19,11 @@
 	const context = getContext();
 	const symbolInfo = $derived(getSymbolInfo({ rawSymbol: props.rawSymbol, state: props.state }));
 	const isSprite = $derived(symbolInfo.type === 'sprite');
-	const isCharacterAnimation = $derived(symbolInfo.type === 'characterAnimation');
+	const isAnimatedSprite = $derived(symbolInfo.type === 'animatedSprite');
 </script>
 
-{#if isCharacterAnimation}
-	<H1CharacterAnimation 
-		x={props.x} 
-		y={props.y} 
-		scale={{ 
-			x: symbolInfo.sizeRatios?.width ?? 1, 
-			y: symbolInfo.sizeRatios?.height ?? 1 
-		}} 
-	/>
-	{#if props.oncomplete}
-		{setTimeout(props.oncomplete, 2000)}
-	{/if}
+{#if isAnimatedSprite}
+	<AnimatedSymbolSprite {symbolInfo} x={props.x} y={props.y} oncomplete={props.oncomplete} />
 {:else if isSprite}
 	<SymbolSprite {symbolInfo} x={props.x} y={props.y} oncomplete={props.oncomplete} />
 {:else}

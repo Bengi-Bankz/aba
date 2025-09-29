@@ -1,66 +1,31 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { Sprite } from 'pixi-svelte';
+	import { SYMBOL_SIZE } from '../game/constants';
 
 	type Props = {
 		x?: number;
 		y?: number;
-		scale?: { x: number; y: number };
+		symbolInfo: { sizeRatios: { width: number; height: number } };
 		alpha?: number;
 	};
 
 	const {
 		x = 0,
 		y = 0,
-		scale = { x: 1, y: 1 },
+		symbolInfo,
 		alpha = 1,
 	}: Props = $props();
 
-	// H1 character animation frame asset keys (frames 14-21)
-	const frameKeys = [
-		'h1CharAnimate14',
-		'h1CharAnimate15',
-		'h1CharAnimate16',
-		'h1CharAnimate17',
-		'h1CharAnimate18',
-		'h1CharAnimate19',
-		'h1CharAnimate20',
-		'h1CharAnimate21',
-	] as const;
-
-	let currentFrame = $state(0);
-	let intervalId: number | undefined;
-
-	// Animation speed: 8 FPS (125ms per frame)
-	const frameDuration = 125;
-
-	function startAnimation() {
-		intervalId = setInterval(() => {
-			currentFrame = (currentFrame + 1) % frameKeys.length;
-		}, frameDuration);
-	}
-
-	// Auto-start animation when component mounts
-	onMount(() => {
-		startAnimation();
-
-		// Cleanup interval on component destroy
-		return () => {
-			if (intervalId) {
-				clearInterval(intervalId);
-			}
-		};
-	});
-
-	// Get current frame key
-	const currentFrameKey = $derived(frameKeys[currentFrame]);
+	// Just render the first frame of H1 character animation (frame 14)
+	const staticFrameKey = 'h1CharAnimate14';
 </script>
 
 <Sprite
-	key={currentFrameKey}
-	{x}
-	{y}
-	anchor={{ x: 0.5, y: 0.5 }}
-	{scale}
+	key={staticFrameKey}
+	x={x}
+	y={y}
+	anchor={0.5}
+	width={SYMBOL_SIZE * symbolInfo.sizeRatios.width}
+	height={SYMBOL_SIZE * symbolInfo.sizeRatios.height}
 	{alpha}
 />
