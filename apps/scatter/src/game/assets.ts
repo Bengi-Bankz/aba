@@ -138,9 +138,9 @@ export default {
 		type: 'font',
 		src: new URL('../../assets/fonts/goldFont/mm_gold.xml', import.meta.url).href,
 	},
-	goldBlur: {
+	DollarBill: {
 		type: 'font',
-		src: new URL('../../assets/fonts/goldBlur/miningfont_gold_blur.xml', import.meta.url).href,
+		src: new URL('../../assets/fonts/DollarBill/DollarBill.xml', import.meta.url).href,
 	},
 	silverFont: {
 		type: 'font',
