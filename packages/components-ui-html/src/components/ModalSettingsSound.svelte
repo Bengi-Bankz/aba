@@ -23,8 +23,8 @@
 		<div class="button-wrap">
 			<Button
 				variant="purple"
-				size="medium"
-				shape="rounded"
+				size="small"
+				shape="round"
 				onclick={() => {
 					eventEmitter.broadcast({ type: 'soundPressGeneral' });
 					if (value === 0) {
@@ -34,7 +34,7 @@
 					}
 				}}
 			>
-				<span style="font-weight: bold;">{value > 0 ? 'ON' : 'OFF'}</span>
+				<span style="font-weight: bold; font-size: 0.7rem;">{value > 0 ? 'ON' : 'OFF'}</span>
 			</Button>
 		</div>
 
