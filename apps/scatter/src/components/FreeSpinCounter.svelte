@@ -48,40 +48,7 @@
 	});
 	const counterPosition = $derived({ x: titleSizes.width / 2, y: titleSizes.height });
 
-	// Background styling constants (matching BoardFrame)
-	const NEON_GREEN = 0x1BFD9C;
-	const BLACK_BACKGROUND = 0x000000;
-	const BORDER_WIDTH = 3;
-	const CORNER_RADIUS = 8;
 
-	// Function to draw the neon background
-	function drawBackground(graphics: any) {
-		graphics.clear();
-		
-		// Draw black background
-		graphics.roundRect(
-			-panelSizes.width / 2,
-			-panelSizes.height / 2,
-			panelSizes.width,
-			panelSizes.height,
-			CORNER_RADIUS
-		);
-		graphics.fill({ color: BLACK_BACKGROUND, alpha: 0.9 });
-		
-		// Draw neon border
-		graphics.roundRect(
-			-panelSizes.width / 2,
-			-panelSizes.height / 2,
-			panelSizes.width,
-			panelSizes.height,
-			CORNER_RADIUS
-		);
-		graphics.stroke({ 
-			width: BORDER_WIDTH, 
-			color: NEON_GREEN, 
-			alpha: 0.8 
-		});
-	}
 
 	context.eventEmitter.subscribeOnMount({
 		freeSpinCounterShow: () => (show = true),
@@ -95,8 +62,6 @@
 
 <MainContainer>
 	<FadeContainer {show} {...position} {scale}>
-		<!-- Neon background -->
-		<Graphics draw={drawBackground} />
 		<Container
 			x={panelSizes.width * 0.5}
 			y={panelSizes.height * 0.48}
