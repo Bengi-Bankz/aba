@@ -12,7 +12,7 @@
 	const props: Props = $props();
 	const TITLE_KEY = 'Frame_TumbleWin.png';
 	const TITLE_RATIO = 532 / 143;
-	const TITLE_HEIGHT = SYMBOL_SIZE * 0.28;
+	const TITLE_HEIGHT = SYMBOL_SIZE * 0.24;
 	const TITLE_SIZES = {
 		width: TITLE_HEIGHT * TITLE_RATIO,
 		height: TITLE_HEIGHT,
@@ -20,7 +20,7 @@
 
 	const PANEL_KEY = 'Frame_Tumble.png';
 	const PANEL_RATIO = 1442 / 374;
-	const PANEL_HEIGHT = SYMBOL_SIZE * 0.8;
+	const PANEL_HEIGHT = SYMBOL_SIZE * 0.7;
 	const PANEL_SIZES = {
 		width: PANEL_HEIGHT * PANEL_RATIO,
 		height: PANEL_HEIGHT,
@@ -96,11 +96,10 @@
 
 <Container y={-TITLE_HEIGHT * 1.2}>
 	<!-- Title background -->
-	<Graphics draw={drawTitleBackground} />
 	<BitmapText
 		anchor={0.5}
 		y={-TITLE_HEIGHT * 0.025}
-		text="TUMBLE WIN"
+		text=""
 		style={{ fontFamily: 'DollarBill', fontSize: TITLE_HEIGHT * 0.45 }}
 	/>
 </Container>

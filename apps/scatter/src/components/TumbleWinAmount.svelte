@@ -16,14 +16,14 @@
 
 	const context = getContext();
 
-	let show = $state(false);
+	let show = $state(true);
 	let amount = $state(0);
 	let animate = $state(false);
 	let oncomplete = $state(() => {});
 
 	context.eventEmitter.subscribeOnMount({
-		tumbleWinAmountShow: () => (show = true),
-		tumbleWinAmountHide: () => (show = false),
+		tumbleWinAmountShow: () => {}, // No longer needed since always visible
+		tumbleWinAmountHide: () => {}, // Ignored - component stays visible
 		tumbleWinAmountReset: () => {
 			amount = 0;
 			animate = false;
