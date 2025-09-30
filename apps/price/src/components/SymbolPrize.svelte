@@ -20,7 +20,7 @@
 	anchor={0.5}
 	text={bookEventAmountToCurrencyString(props.prize)}
 	style={{
-		fontFamily: 'gold',
+		fontFamily: 'DollarBill',
 		fontSize: SYMBOL_SIZE * 0.3,
 	}}
 />

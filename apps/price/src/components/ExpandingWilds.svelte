@@ -123,7 +123,7 @@
 						anchor={0.5}
 						text={`${expandingWild.wild.mult}X`}
 						style={{
-							fontFamily: 'gold',
+							fontFamily: 'DollarBill',
 							fontSize: 0.5 * SYMBOL_SIZE,
 							wordWrap: false,
 						}}

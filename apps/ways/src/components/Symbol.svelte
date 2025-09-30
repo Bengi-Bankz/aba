@@ -48,7 +48,7 @@
 		y={props.y}
 		text={`${props.rawSymbol.multiplier}X`}
 		style={{
-			fontFamily: 'gold',
+			fontFamily: 'DollarBill',
 			fontSize: 50,
 		}}
 	/>
