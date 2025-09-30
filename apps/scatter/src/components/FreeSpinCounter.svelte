@@ -119,7 +119,7 @@
 				{...counterPosition}
 				anchor={{ x: 0.5, y: 0 }}
 				style={{
-					fontFamily: 'gold',
+					fontFamily: 'silver',
 					fontSize,
 				}}
 				onresize={(sizes) => (counterSizes = sizes)}

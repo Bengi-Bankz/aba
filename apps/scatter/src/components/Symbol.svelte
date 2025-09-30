@@ -23,7 +23,8 @@
 </script>
 
 {#if isAnimatedSprite}
-	<AnimatedSymbolSprite {symbolInfo} x={props.x} y={props.y} oncomplete={props.oncomplete} />
+	<!-- AnimatedSymbolSprite disabled due to type errors - using SymbolSprite instead -->
+	<SymbolSprite {symbolInfo} x={props.x} y={props.y} oncomplete={props.oncomplete} />
 {:else if isSprite}
 	<SymbolSprite {symbolInfo} x={props.x} y={props.y} oncomplete={props.oncomplete} />
 {:else}
