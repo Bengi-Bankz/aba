@@ -416,4 +416,8 @@ export default {
 			.href,
 		preload: true,
 	},
+	trump: {
+		type: 'spriteSheet',
+		src: new URL('../../assets/sprites/trump/spritesheet.json', import.meta.url).href,
+	},
 } as const;

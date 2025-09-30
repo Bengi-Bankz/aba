@@ -132,7 +132,7 @@
 				
 				// Text scale pulse on each tick
 				textScale.set(1.3, { duration: 150 / stateBetDerived.timeScale() })
-					.then(() => textScale.set(1.0, { duration: 150 / stateBetDerived.timeScale() }));
+					.then(() => textScale.set(0.85, { duration: 150 / stateBetDerived.timeScale() }));
 				
 				// Check if we've reached target
 				if (currentTickValue >= props.multiplierValue) {

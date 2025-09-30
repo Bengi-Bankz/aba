@@ -97,7 +97,7 @@ export const INITIAL_SYMBOL_STATE: SymbolState = 'static';
 const M_SIZE = 0.3;
 const HIGH_SYMBOL_SIZE = 0.9;
 const LOW_SYMBOL_SIZE = 0.9;
-const SPECIAL_SYMBOL_SIZE = 1;
+const SPECIAL_SYMBOL_SIZE = 1.2;
 
 const SPIN_OPTIONS_SHARED = {
 	reelFallInDelay: 80,
@@ -346,26 +346,26 @@ export const SYMBOL_INFO_MAP = {
 		win: { type: 'spine', assetKey: 'W', animationName: 'wild_dynamite', sizeRatios: wSizeRatios },
 		land: {
 			type: 'spine',
-			assetKey: 'W',
-			animationName: 'wild_dynamite_land',
+			assetKey: 'S',
+			animationName: 'scatter_land',
 			sizeRatios: wSizeRatios,
 		},
 	},
 	S: {
 		explosion,
-		postWinStatic: sStatic,
-		static: sStatic,
-		spin: {
+		postWinStatic: wStatic,
+		static: wStatic,
+		spin: wStatic,
+		win: {
 			type: 'spine',
-			assetKey: 'S',
-			animationName: 'scatter_spin',
+			assetKey: 'W',
+			animationName: 'wild_dynamite_land',
 			sizeRatios: sSizeRatios,
 		},
-		win: { type: 'spine', assetKey: 'S', animationName: 'scatter_win', sizeRatios: sSizeRatios },
 		land: {
 			type: 'spine',
-			assetKey: 'S',
-			animationName: 'scatter_land',
+			assetKey: 'W',
+			animationName: 'wild_dynamite_land',
 			sizeRatios: sSizeRatios,
 		},
 	},

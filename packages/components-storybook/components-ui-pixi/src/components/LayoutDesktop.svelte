@@ -16,10 +16,6 @@
 	{@render props.gameName()}
 </Container>
 
-<Container x={context.stateLayoutDerived.canvasSizes().width - 20}>
-	{@render props.logo()}
-</Container>
-
 <MainContainer standard alignVertical="bottom">
 	<Container
 		x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5}

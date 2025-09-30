@@ -1,13 +1,8 @@
 <script lang="ts">
-	import { Tween } from 'svelte/motion';
-	import { cubicInOut } from 'svelte/easing';
-
 	import { stateUi } from 'state-shared';
 	import { BLACK } from 'constants-shared/colors';
-	import { FadeContainer } from 'components-pixi';
 	import { MainContainer } from 'components-layout';
 	import { Container, Rectangle } from 'pixi-svelte';
-	import { waitForResolve } from 'utils-shared/wait';
 
 	import UiSprite from './UiSprite.svelte';
 	import LabelFreeSpinCounter from './LabelFreeSpinCounter.svelte';
@@ -16,13 +11,11 @@
 
 	const props: LayoutUiProps = $props();
 	const context = getContext();
-
-	
 </script>
 
-
-
-
+<Container x={20} scale={0.8}>
+	{@render props.gameName()}
+</Container>
 
 <MainContainer standard alignVertical="bottom">
 	<Container
@@ -104,7 +97,7 @@
 	{:else}
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.7}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 545}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 525}
 		>
 			{@render props.amountBet({ stacked: true })}
 		</Container>
@@ -144,7 +137,7 @@
 
 	<MainContainer standard alignVertical="bottom">
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 350}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 110}
 		>
 			<Container y={-190 - 210 * 3}>

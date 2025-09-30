@@ -81,9 +81,9 @@
             <BoardFrame />
             <!-- Character animation positioned to the side of the board -->
             <CharacterAnimation
-                x={context.stateLayoutDerived.mainLayout().width * 0.15}
+                x={context.stateLayoutDerived.mainLayout().width * 0.85}
                 y={context.stateLayoutDerived.mainLayout().height * 0.3}
-                scale={{ x: 0.81, y: 0.81 }}
+                scale={{ x: -0.71, y: 0.71 }}
             />
         </MainContainer>
 

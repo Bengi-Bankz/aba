@@ -66,7 +66,7 @@
 	});
 </script>
 
-<Container x={20}>
+<Container x={20} scale={0.8}>
 	{@render props.gameName()}
 </Container>
 
@@ -76,7 +76,7 @@
 	<!-- drawer container -->
 	<Container y={drawerTween.current}>
 		<Container
-			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
+			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.7 - 440}
 			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
 		>
 			{@render props.buttonMenu({ anchor: 0.5 })}
@@ -105,7 +105,7 @@
 
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 + 180}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 200}
 		>
 			{@render props.buttonTurbo({ anchor: 0.5 })}
 		</Container>
@@ -192,13 +192,13 @@
 	<MainContainer standard alignVertical="bottom">
 		<Container
 			x={context.stateLayoutDerived.mainLayoutStandard().width * 0.5 - 440}
-			y={context.stateLayoutDerived.mainLayoutStandard().height - 400}
+			y={context.stateLayoutDerived.mainLayoutStandard().height - 300}
 		>
 			<Container y={-190 - 210 * 3}>
 				{@render props.buttonPayTable({ anchor: 0.5 })}
 			</Container>
 
-			<Container y={-190 - 210 * 2}>
+			<Container y={-10 - 210 * 2}>
 				{@render props.buttonGameRules({ anchor: 0.5 })}
 			</Container>
 
@@ -206,7 +206,7 @@
 				{@render props.buttonSettings({ anchor: 0.5 })}
 			</Container>
 
-			<Container y={-190}>
+			<Container y={-230}>
 				{@render props.buttonSoundSwitch({ anchor: 0.5 })}
 			</Container>
 
