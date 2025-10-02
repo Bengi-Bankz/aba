@@ -60,14 +60,14 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.6);
 		z-index: 9;
 	}
 
 	.paytable-modal-inner {
 		background: #050505;
 		border-radius: 18px;
-		box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.18);
+		box-shadow: 0 4px 32px #228B22;
 		max-width: 700px;
 		width: 95vw;
 		max-height: 90vh;
@@ -91,7 +91,7 @@
 		background: none;
 		border: none;
 		font-size: 2.5rem;
-		color: #888;
+		color:#228B22;
 		cursor: pointer;
 		z-index: 2;
 		transition: color 0.2s;
@@ -116,12 +116,12 @@
 		width: 190px;
 		height: 190px;
 		border-radius: 10px;
-		box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.07);
+		box-shadow: 0 3px 6px 0 #228B22;
 		background: #020202;
 		margin-bottom: 12px;
 	}
 	.paytable-desc {
-		color: #f1f1f1;
+		color: #228B22;
 		font-size: 2rem;
 		font-weight: 500;
 		text-align: center;

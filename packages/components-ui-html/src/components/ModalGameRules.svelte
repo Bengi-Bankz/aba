@@ -23,7 +23,8 @@
 
 <style>
 	:global(h2, h3, p, li) {
-		font-family: 'DollarBill',;
+		font-family: 'TradeWinds-Regular', sans-serif;
+		color: #228B22;
 	}
 	h2 {
 		font-size: 1.5rem;
