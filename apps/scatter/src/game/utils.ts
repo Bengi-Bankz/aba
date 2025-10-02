@@ -55,8 +55,18 @@ export const convertTorResumableBet = (lastBetData: Bet) => {
 };
 
 // other utils
-export const getSymbolX = (reelIndex: number) => SYMBOL_SIZE * (reelIndex + REEL_PADDING);
-export const getSymbolY = (symbolIndexOfBoard: number) => (symbolIndexOfBoard + 0.5) * SYMBOL_SIZE;
+export const getSymbolX = (reelIndex: number, customSize?: number) => {
+	const symbolSize = customSize || SYMBOL_SIZE;
+	return symbolSize * (reelIndex + REEL_PADDING);
+};
+
+export const getSymbolY = (symbolIndexOfBoard: number, customSize?: number) => {
+	const symbolSize = customSize || SYMBOL_SIZE;
+	return (symbolIndexOfBoard + 0.5) * symbolSize;
+};
+
+// New: Get scaled symbol size for custom animations
+export const getScaledSymbolSize = (scaleFactor: number = 1) => SYMBOL_SIZE * scaleFactor;
 
 export const getSymbolKey = ({ rawSymbol }: { rawSymbol: RawSymbol }) => {
 	if (rawSymbol.multiplier !== undefined) {

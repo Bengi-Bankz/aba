@@ -97,7 +97,7 @@ export const INITIAL_SYMBOL_STATE: SymbolState = 'static';
 const M_SIZE = 0.3;
 const HIGH_SYMBOL_SIZE = 0.9;
 const LOW_SYMBOL_SIZE = 0.9;
-const SPECIAL_SYMBOL_SIZE = 1.2;
+const SPECIAL_SYMBOL_SIZE = 0.8;
 
 const SPIN_OPTIONS_SHARED = {
 	reelFallInDelay: 80,
@@ -163,17 +163,17 @@ const wStatic = { type: 'sprite', assetKey: 'w.png', sizeRatios: { width: 1.12, 
 
 const m2Static = {
 	type: 'sprite',
-	assetKey: 'm1_2x.png',
+	assetKey: 'w.png',
 	sizeRatios: { width: 0.88, height: 0.88 },
 };
 const m4Static = {
 	type: 'sprite',
-	assetKey: 'm1_4x.png',
+	assetKey: 'w.png',
 	sizeRatios: { width: 0.88, height: 0.88 },
 };
-const m5Static = { type: 'sprite', assetKey: 'm2_5x.png', sizeRatios: { width: 1, height: 1 } };
-const m7Static = { type: 'sprite', assetKey: 'm2_7x.png', sizeRatios: { width: 1, height: 1 } };
-const m10Static = { type: 'sprite', assetKey: 'm3_10x.png', sizeRatios: { width: 1, height: 1 } };
+const m5Static = { type: 'sprite', assetKey: 'w.png', sizeRatios: { width: 1, height: 1 } };
+const m7Static = { type: 'sprite', assetKey: 'w.png', sizeRatios: { width: 1, height: 1 } };
+const m10Static = { type: 'sprite', assetKey: 'w.png', sizeRatios: { width: 1, height: 1 } };
 
 const wSizeRatios = { width: 1.5 * 0.9, height: SPECIAL_SYMBOL_SIZE * 1.15 };
 const sSizeRatios = { width: 2.5, height: SPECIAL_SYMBOL_SIZE * 2.3 };

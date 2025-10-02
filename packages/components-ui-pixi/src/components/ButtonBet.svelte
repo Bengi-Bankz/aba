@@ -83,7 +83,7 @@
                         <Sprite
                             key="blackfont"
                             anchor={0.5}
-                            scale={.8}
+                            scale={0.65}
                         />
                         <Text
                             anchor={0.5}
@@ -103,7 +103,7 @@
                             width={sizes.width}
                             height={sizes.height}
                             anchor={0.5}
-                            scale={3.1}
+                            scale={0.65}
                         />
                         <Text
                             anchor={0.5}

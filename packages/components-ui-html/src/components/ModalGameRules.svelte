@@ -23,8 +23,7 @@
 
 <style>
 	:global(h2, h3, p, li) {
-		font-family: 'TradeWinds-Regular', sans-serif;
-		color: #ececec;
+		font-family: 'DollarBill',;
 	}
 	h2 {
 		font-size: 1.5rem;
@@ -91,7 +90,8 @@
 		<BaseContent maxWidth="100%">
 			<BaseScrollable type="column">
 				<div class="modal-rules-scroll">
-					<h2>Gladiator 5000X – Game Information</h2>
+					<h2>DEAF PRESIDENTS</h2>
+					<h2> Game Information</h2>
 
 					<section>
 						<h3>Theoretical RTP (Return to Player)</h3>
@@ -105,23 +105,23 @@
 					</section>
 
 					<section>
-						<h3>Bonus Feature</h3>
+						<h3>Bonus Features</h3>
 						<p>The bonus round is triggered by scatter symbols:</p>
 						<ul>
-							<li>4 Scatters → 8 Free Spins</li>
-							<li>5 Scatters → 10 Free Spins</li>
-							<li>6 Scatters → 12 Free Spins</li>
+							<li>4 Scatters → 8 Did Not Inhale Spins</li>
+							<li>5 Scatters → 10 Honest Abe Spins</li>
+							<li>6 Scatters → 12 Osama Killer Spins</li>
 						</ul>
 						<p>
 							Players can also purchase direct entry into the bonus feature
-							for <b>200× the stake</b>.
+							for <b>200×</b>.
 						</p>
 					</section>
 
 					<section>
 						<h3>Maximum Win</h3>
 						<p>
-							The maximum possible win is capped at <b>5,000× the stake</b>.
+							The maximum possible win is capped at <b>5,000× </b>.
 						</p>
 						<p><b>Max Win Base Game:</b> 5,000×</p>
 						<p><b>Max Win Bonus Mode:</b> 5,000×</p>
@@ -144,7 +144,7 @@
 							</li>
 							<li>
 								<img src={img13} alt="Bonus Buy" />
-								<b>Bonus Buy</b> – Instantly enters the bonus feature for 200× the stake.
+								<b>Bonus</b> – Instantly enters the bonus feature for 200×.
 							</li>
 							<li>
 								<img src={img16} alt="Menu" />

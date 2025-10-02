@@ -420,4 +420,12 @@ export default {
 		type: 'spriteSheet',
 		src: new URL('../../assets/sprites/trump/spritesheet.json', import.meta.url).href,
 	},
+	anticipation2: {
+		type: 'sprite',
+		src: new URL('../../assets/sprites/anticipation/anticipation2.png', import.meta.url).href,
+	},
+	anticipationScroll: {
+		type: 'sprite',
+		src: new URL('../../assets/fonts/scroll/scroll.png', import.meta.url).href,
+	},
 } as const;
