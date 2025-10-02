@@ -377,39 +377,143 @@ export default {
 		type: 'sprite',
 		src: new URL('../../static/assets/sprites/char-animate-1-8/8.png', import.meta.url).href,
 	},
-	// H1 character animation frames (14-21)
-	h1CharAnimate14: {
+	charAnimate9: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/14.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/9.png', import.meta.url).href,
 	},
-	h1CharAnimate15: {
+	charAnimate10: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/15.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/10.png', import.meta.url).href,
 	},
-	h1CharAnimate16: {
+	charAnimate11: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/16.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/11.png', import.meta.url).href,
 	},
-	h1CharAnimate17: {
+	charAnimate12: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/17.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/12.png', import.meta.url).href,
 	},
-	h1CharAnimate18: {
+	charAnimate13: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/18.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/13.png', import.meta.url).href,
 	},
-	h1CharAnimate19: {
+	charAnimate14: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/19.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/14.png', import.meta.url).href,
 	},
-	h1CharAnimate20: {
+	charAnimate15: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/20.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/15.png', import.meta.url).href,
 	},
-	h1CharAnimate21: {
+	charAnimate16: {
 		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-14-21/21.png', import.meta.url).href,
+		src: new URL('../../static/assets/sprites/char-animate-1-8/16.png', import.meta.url).href,
 	},
+	charAnimate17: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/17.png', import.meta.url).href,
+	},
+	charAnimate18: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/18.png', import.meta.url).href,
+	},
+	charAnimate19: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/19.png', import.meta.url).href,
+	},
+	charAnimate20: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/20.png', import.meta.url).href,
+	},
+	charAnimate21: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/21.png', import.meta.url).href,
+	},
+	charAnimate22: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/22.png', import.meta.url).href,
+	},
+	charAnimate23: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/23.png', import.meta.url).href,
+	},
+	charAnimate24: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/24.png', import.meta.url).href,
+	},
+	charAnimate25: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/25.png', import.meta.url).href,
+	},
+	charAnimate26: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/26.png', import.meta.url).href,
+	},
+	charAnimate27: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/27.png', import.meta.url).href,
+	},
+	charAnimate28: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/28.png', import.meta.url).href,
+	},
+	charAnimate29: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/29.png', import.meta.url).href,
+	},
+	charAnimate30: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/30.png', import.meta.url).href,
+	},
+	charAnimate31: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/31.png', import.meta.url).href,
+	},
+	charAnimate32: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/32.png', import.meta.url).href,
+	},
+	charAnimate33: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/33.png', import.meta.url).href,
+	},
+	charAnimate34: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/34.png', import.meta.url).href,
+	},
+	charAnimate35: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/35.png', import.meta.url).href,
+	},
+	charAnimate36: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/36.png', import.meta.url).href,
+	},
+	charAnimate37: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/37.png', import.meta.url).href,
+	},
+	charAnimate38: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/38.png', import.meta.url).href,
+	},
+	charAnimate39: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/39.png', import.meta.url).href,
+	},
+	charAnimate40: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/40.png', import.meta.url).href,
+	},
+	charAnimate41: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/41.png', import.meta.url).href,
+	},
+	charAnimate42: {
+		type: 'sprite',
+		src: new URL('../../static/assets/sprites/char-animate-1-8/42.png', import.meta.url).href,
+	},
+
 	globalMultiplierBackground: {
 		type: 'sprite',
 		src: new URL('../../static/assets/spines/globalMultiplier/multiframe2.webp', import.meta.url)
@@ -427,5 +531,25 @@ export default {
 	anticipationScroll: {
 		type: 'sprite',
 		src: new URL('../../assets/fonts/scroll/scroll.png', import.meta.url).href,
+	},
+	h1Animate: {
+		type: 'sprites',
+		src: new URL('../../static/assets/sprites/symbolsanimate/h1.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h2Animate: {
+		type: 'sprites',
+		src: new URL('../../static/assets/sprites/symbolsanimate/h2.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h3Animate: {
+		type: 'sprites',
+		src: new URL('../../static/assets/sprites/symbolsanimate/h3.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h4Animate: {
+		type: 'sprites',
+		src: new URL('../../static/assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
+		preload: true,
 	},
 } as const;

@@ -71,9 +71,9 @@
 									text={bookEventAmountToCurrencyString(countUpAmount)}
 									style={{
 										fontFamily: 'DollarBill',
-										fontSize: SYMBOL_SIZE * 7,
+										fontSize: SYMBOL_SIZE * 0.8,
 										align: 'center',
-										fontWeight: 'bold',
+										fontWeight: 'regular',
 										letterSpacing: 0,
 									}}
 								/>
@@ -86,10 +86,9 @@
 								text={bookEventAmountToCurrencyString(countUpAmount)}
 								style={{
 									fontFamily: 'DollarBill',
-									fontSize: SYMBOL_SIZE 
-									*2,
+									fontSize: SYMBOL_SIZE * 0.8,
 									align: 'center',
-									fontWeight: 'bold',
+									fontWeight: 'regular',
 									letterSpacing: 0,
 								}}
 							/>

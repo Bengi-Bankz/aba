@@ -41,6 +41,7 @@
     import FreeSpinOutro from './FreeSpinOutro.svelte';
     import Transition from './Transition.svelte';
     import CharacterAnimation from './CharacterAnimation.svelte';
+    import SymbolAnimationsTest from './SymbolAnimationsTest.svelte';
 
     const context = getContext();
 
@@ -82,8 +83,8 @@
             <!-- Character animation positioned to the side of the board -->
             <CharacterAnimation
                 x={context.stateLayoutDerived.mainLayout().width * 0.85}
-                y={context.stateLayoutDerived.mainLayout().height * 0.3}
-                scale={{ x: -0.71, y: 0.71 }}
+                y={context.stateLayoutDerived.mainLayout().height * 0.5}
+                scale={{ x: -0.35, y: 0.35 }}
             />
         </MainContainer>
 
@@ -124,6 +125,11 @@
         {/if}
         <FreeSpinOutro />
         <Transition />
+
+        <!-- Symbol Animations Test - positioned at top of screen -->
+        <MainContainer>
+            <SymbolAnimationsTest />
+        </MainContainer>
     {/if}
 </App>
 

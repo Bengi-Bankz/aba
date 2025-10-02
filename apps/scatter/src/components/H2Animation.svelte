@@ -16,18 +16,8 @@
 		alpha = 1,
 	}: Props = $props();
 
-	// Character animation frame asset keys (42 frames)
+	// H2 animation frame asset keys (frames 11-20)
 	const frameKeys = [
-		'charAnimate1',
-		'charAnimate2',
-		'charAnimate3',
-		'charAnimate4',
-		'charAnimate5',
-		'charAnimate6',
-		'charAnimate7',
-		'charAnimate8',
-		'charAnimate9',
-		'charAnimate10',
 		'charAnimate11',
 		'charAnimate12',
 		'charAnimate13',
@@ -38,40 +28,17 @@
 		'charAnimate18',
 		'charAnimate19',
 		'charAnimate20',
-		'charAnimate21',
-		'charAnimate22',
-		'charAnimate23',
-		'charAnimate24',
-		'charAnimate25',
-		'charAnimate26',
-		'charAnimate27',
-		'charAnimate28',
-		'charAnimate29',
-		'charAnimate30',
-		'charAnimate31',
-		'charAnimate32',
-		'charAnimate33',
-		'charAnimate34',
-		'charAnimate35',
-		'charAnimate36',
-		'charAnimate37',
-		'charAnimate38',
-		'charAnimate39',
-		'charAnimate40',
-		'charAnimate41',
-		'charAnimate42',
 	] as const;
 
 	let currentFrame = $state(0);
 	let intervalId: number | undefined;
 
-	// Animation speed: 2FPS (500ms per frame)
-	const frameDuration = 1000;
+	// Animation speed: 8 FPS (125ms per frame)
+	const frameDuration = 125;
 
 	function startAnimation() {
 		intervalId = setInterval(() => {
 			currentFrame = (currentFrame + 1) % frameKeys.length;
-			console.log('Frame:', currentFrame, 'Key:', frameKeys[currentFrame]);
 		}, frameDuration);
 	}
 

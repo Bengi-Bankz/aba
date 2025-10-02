@@ -37,13 +37,13 @@
 
 {#snippet multiplierSnippet()}
 	<BitmapText
-		scale={3}
-		anchor={0.5}
+		scale={0.8}
+			anchor={0.5}
 		text={`${totalMultiplier} X`}
 		style={{
 			fontFamily: 'DollarBill',
 			fontSize: SYMBOL_SIZE,
-			letterSpacing: -5,
+			letterSpacing: 2
 		}}
 	/>
 {/snippet}
@@ -54,7 +54,7 @@
 			x={context.stateGameDerived.boardLayout().width * 0.5}
 			y={context.stateGameDerived.boardLayout().height * 0.5}
 			key="tumble_multiplier"
-			width={context.stateGameDerived.boardLayout().width * 4}
+			width={context.stateGameDerived.boardLayout().width * 0.6}
 		>
 			<SpineTrack
 				trackIndex={0}
