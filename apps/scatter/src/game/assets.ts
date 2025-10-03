@@ -14,13 +14,25 @@ export default {
 			.href,
 		preload: true,
 	},
-	H1: {
-		type: 'spine',
-		src: {
-			atlas: new URL('../../assets/spines/symbols/symbols.atlas', import.meta.url).href,
-			skeleton: new URL('../../assets/spines/symbols/h1.json', import.meta.url).href,
-			scale: 2,
-		},
+	h1: {
+		type: 'sprites',
+		src: new URL('../../assets/sprites/symbolsanimate/h1.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h2: {
+		type: 'sprites',
+		src: new URL('../../assets/sprites/symbolsanimate/h2.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h3: {
+		type: 'sprites',
+		src: new URL('../../assets/sprites/symbolsanimate/h3.webp.json', import.meta.url).href,
+		preload: true,
+	},
+	h4: {
+		type: 'sprites',
+		src: new URL('../../assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
+		preload: true,
 	},
 	H2: {
 		type: 'spine',
@@ -344,175 +356,6 @@ export default {
 		src: new URL('../../assets/fonts/turbooff/turbooff.png', import.meta.url).href,
 		preload: true,
 	},
-	// Character animation frames
-	charAnimate1: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/1.png', import.meta.url).href,
-	},
-	charAnimate2: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/2.png', import.meta.url).href,
-	},
-	charAnimate3: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/3.png', import.meta.url).href,
-	},
-	charAnimate4: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/4.png', import.meta.url).href,
-	},
-	charAnimate5: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/5.png', import.meta.url).href,
-	},
-	charAnimate6: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/6.png', import.meta.url).href,
-	},
-	charAnimate7: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/7.png', import.meta.url).href,
-	},
-	charAnimate8: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/8.png', import.meta.url).href,
-	},
-	charAnimate9: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/9.png', import.meta.url).href,
-	},
-	charAnimate10: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/10.png', import.meta.url).href,
-	},
-	charAnimate11: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/11.png', import.meta.url).href,
-	},
-	charAnimate12: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/12.png', import.meta.url).href,
-	},
-	charAnimate13: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/13.png', import.meta.url).href,
-	},
-	charAnimate14: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/14.png', import.meta.url).href,
-	},
-	charAnimate15: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/15.png', import.meta.url).href,
-	},
-	charAnimate16: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/16.png', import.meta.url).href,
-	},
-	charAnimate17: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/17.png', import.meta.url).href,
-	},
-	charAnimate18: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/18.png', import.meta.url).href,
-	},
-	charAnimate19: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/19.png', import.meta.url).href,
-	},
-	charAnimate20: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/20.png', import.meta.url).href,
-	},
-	charAnimate21: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/21.png', import.meta.url).href,
-	},
-	charAnimate22: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/22.png', import.meta.url).href,
-	},
-	charAnimate23: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/23.png', import.meta.url).href,
-	},
-	charAnimate24: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/24.png', import.meta.url).href,
-	},
-	charAnimate25: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/25.png', import.meta.url).href,
-	},
-	charAnimate26: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/26.png', import.meta.url).href,
-	},
-	charAnimate27: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/27.png', import.meta.url).href,
-	},
-	charAnimate28: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/28.png', import.meta.url).href,
-	},
-	charAnimate29: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/29.png', import.meta.url).href,
-	},
-	charAnimate30: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/30.png', import.meta.url).href,
-	},
-	charAnimate31: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/31.png', import.meta.url).href,
-	},
-	charAnimate32: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/32.png', import.meta.url).href,
-	},
-	charAnimate33: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/33.png', import.meta.url).href,
-	},
-	charAnimate34: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/34.png', import.meta.url).href,
-	},
-	charAnimate35: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/35.png', import.meta.url).href,
-	},
-	charAnimate36: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/36.png', import.meta.url).href,
-	},
-	charAnimate37: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/37.png', import.meta.url).href,
-	},
-	charAnimate38: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/38.png', import.meta.url).href,
-	},
-	charAnimate39: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/39.png', import.meta.url).href,
-	},
-	charAnimate40: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/40.png', import.meta.url).href,
-	},
-	charAnimate41: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/41.png', import.meta.url).href,
-	},
-	charAnimate42: {
-		type: 'sprite',
-		src: new URL('../../static/assets/sprites/char-animate-1-8/42.png', import.meta.url).href,
-	},
 
 	globalMultiplierBackground: {
 		type: 'sprite',
@@ -534,22 +377,22 @@ export default {
 	},
 	h1Animate: {
 		type: 'sprites',
-		src: new URL('../../static/assets/sprites/symbolsanimate/h1.webp.json', import.meta.url).href,
+		src: new URL('../../assets/sprites/symbolsanimate/h1.webp.json', import.meta.url).href,
 		preload: true,
 	},
 	h2Animate: {
 		type: 'sprites',
-		src: new URL('../../static/assets/sprites/symbolsanimate/h2.webp.json', import.meta.url).href,
+		src: new URL('../../assets/sprites/symbolsanimate/h2.webp.json', import.meta.url).href,
 		preload: true,
 	},
 	h3Animate: {
 		type: 'sprites',
-		src: new URL('../../static/assets/sprites/symbolsanimate/h3.webp.json', import.meta.url).href,
+		src: new URL('../../assets/sprites/symbolsanimate/h3.webp.json', import.meta.url).href,
 		preload: true,
 	},
 	h4Animate: {
 		type: 'sprites',
-		src: new URL('../../static/assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
+		src: new URL('../../assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
 		preload: true,
 	},
 } as const;

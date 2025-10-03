@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Sprite } from 'pixi-svelte';
+	import * as PIXI from 'pixi.js';
 
 	type Props = {
 		x?: number;
@@ -18,16 +19,16 @@
 
 	// H1 animation frame asset keys (frames 1-10)
 	const frameKeys = [
-		'charAnimate1',
-		'charAnimate2',
-		'charAnimate3',
-		'charAnimate4',
-		'charAnimate5',
-		'charAnimate6',
-		'charAnimate7',
-		'charAnimate8',
-		'charAnimate9',
-		'charAnimate10',
+		'h1 (1).png',
+		'h1 (2).png',
+		'h1 (3).png',
+		'h1 (4).png',
+		'h1 (5).png',
+		'h1 (6).png',
+		'h1 (7).png',
+		'h1 (8).png',
+		'h1 (9).png',
+		'h1 (10).png',
 	] as const;
 
 	let currentFrame = $state(0);
@@ -44,6 +45,18 @@
 
 	// Auto-start animation when component mounts
 	onMount(() => {
+		// Check if sprite sheet assets are loaded
+		console.log('=== Sprite Sheet Loading Check ===');
+		console.log('h1 loaded:', PIXI.Assets.cache.get('h1'));
+		console.log('h2 loaded:', PIXI.Assets.cache.get('h2'));
+		console.log('h3 loaded:', PIXI.Assets.cache.get('h3'));
+		console.log('h4 loaded:', PIXI.Assets.cache.get('h4'));
+		console.log('h1Animate loaded:', PIXI.Assets.cache.get('h1Animate'));
+		console.log('h2Animate loaded:', PIXI.Assets.cache.get('h2Animate'));
+		console.log('h3Animate loaded:', PIXI.Assets.cache.get('h3Animate'));
+		console.log('h4Animate loaded:', PIXI.Assets.cache.get('h4Animate'));
+		console.log('===================================');
+
 		startAnimation();
 
 		// Cleanup interval on component destroy
