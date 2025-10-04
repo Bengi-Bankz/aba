@@ -20,7 +20,7 @@ export default {
 			buyBonus: true,
 			rtp: 0.97,
 			max_win: 5000.0,
-			description: 'I Didn\'t Inhale Spins - 4 guaranteed scatter symbols',
+			description: "I Didn't Inhale Spins - 4 guaranteed scatter symbols",
 		},
 		bonus_5_scatter: {
 			cost: 200,
