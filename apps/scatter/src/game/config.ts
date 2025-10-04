@@ -14,21 +14,29 @@ export default {
 			max_win: 5000.0,
 			description: 'default game entry type',
 		},
-		bonus: {
+		bonus_4_scatter: {
+			cost: 100,
+			feature: false,
+			buyBonus: true,
+			rtp: 0.97,
+			max_win: 5000.0,
+			description: 'I Didn\'t Inhale Spins - 4 guaranteed scatter symbols',
+		},
+		bonus_5_scatter: {
 			cost: 200,
 			feature: false,
 			buyBonus: true,
 			rtp: 0.97,
 			max_win: 5000.0,
-			description: 'by bonus 1',
+			description: 'Honestly Minting Spins - 5 guaranteed scatter symbols',
 		},
-		six_scatter_bonus: {
+		bonus_6_scatter: {
 			cost: 500,
 			feature: false,
 			buyBonus: true,
 			rtp: 0.97,
 			max_win: 5000.0,
-			description: 'by bonus 1',
+			description: 'Osama Killer Spins - 6 guaranteed scatter symbols',
 		},
 	},
 	symbols: {
@@ -1991,707 +1999,6 @@ export default {
 					name: 'H1',
 				},
 				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
 					name: 'L1',
 				},
 				{
@@ -3048,1516 +2355,6 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'S',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
 					name: 'H1',
 				},
 				{
@@ -4657,7 +2454,7 @@ export default {
 					name: 'H2',
 				},
 				{
-					name: 'H1',
+					name: 'H3',
 				},
 				{
 					name: 'H2',
@@ -4810,7 +2607,7 @@ export default {
 					name: 'H3',
 				},
 				{
-					name: 'H3',
+					name: 'M',
 				},
 				{
 					name: 'H4',
@@ -4852,7 +2649,7 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'S',
+					name: 'L1',
 				},
 				{
 					name: 'H4',
@@ -4963,7 +2760,7 @@ export default {
 					name: 'L3',
 				},
 				{
-					name: 'H1',
+					name: 'M',
 				},
 				{
 					name: 'H2',
@@ -5245,7 +3042,7 @@ export default {
 					name: 'L2',
 				},
 				{
-					name: 'S',
+					name: 'H4',
 				},
 				{
 					name: 'H4',
@@ -5278,7 +3075,7 @@ export default {
 					name: 'H2',
 				},
 				{
-					name: 'S',
+					name: 'H2',
 				},
 				{
 					name: 'L1',
@@ -5609,7 +3406,7 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'H4',
+					name: 'S',
 				},
 				{
 					name: 'L3',
@@ -5927,7 +3724,7 @@ export default {
 					name: 'H2',
 				},
 				{
-					name: 'L3',
+					name: 'S',
 				},
 				{
 					name: 'L1',
@@ -6014,7 +3811,7 @@ export default {
 					name: 'L3',
 				},
 				{
-					name: 'M',
+					name: 'L1',
 				},
 				{
 					name: 'L3',
@@ -6041,440 +3838,6 @@ export default {
 					name: 'L3',
 				},
 				{
-					name: 'M',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
 					name: 'L3',
 				},
 				{
@@ -6484,328 +3847,7 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
 					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
 				},
 				{
 					name: 'L2',
@@ -6816,31 +3858,31 @@ export default {
 			],
 			[
 				{
-					name: 'L3',
+					name: 'H3',
 				},
 				{
-					name: 'L3',
+					name: 'H4',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
-					name: 'H3',
+					name: 'H2',
 				},
 				{
-					name: 'L1',
+					name: 'H1',
 				},
 				{
-					name: 'L1',
+					name: 'H1',
 				},
 				{
-					name: 'H4',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'H3',
 				},
 				{
 					name: 'H3',
@@ -6852,70 +3894,109 @@ export default {
 					name: 'L2',
 				},
 				{
-					name: 'L1',
+					name: 'H3',
 				},
 				{
-					name: 'H3',
+					name: 'H2',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
-					name: 'H1',
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L2',
 				},
 				{
+					name: 'L2',
+				},
+				{
 					name: 'L1',
 				},
 				{
 					name: 'L1',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
-					name: 'H1',
+					name: 'H4',
 				},
 				{
-					name: 'H1',
+					name: 'S',
 				},
 				{
+					name: 'H2',
+				},
+				{
 					name: 'H1',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H4',
 				},
 				{
 					name: 'H4',
 				},
 				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
 					name: 'H4',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
 				},
 				{
+					name: 'L2',
+				},
+				{
 					name: 'L3',
 				},
 				{
-					name: 'L1',
+					name: 'L2',
 				},
 				{
-					name: 'L1',
+					name: 'L2',
 				},
 				{
 					name: 'H1',
 				},
 				{
-					name: 'H2',
+					name: 'H1',
 				},
 				{
-					name: 'H2',
+					name: 'H4',
+				},
+				{
+					name: 'L2',
 				},
 				{
 					name: 'H4',
 				},
 				{
-					name: 'H1',
+					name: 'H4',
 				},
 				{
 					name: 'H2',
@@ -6927,46 +4008,43 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
+					name: 'L1',
 				},
 				{
 					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'H2',
 				},
 				{
-					name: 'H3',
+					name: 'H2',
 				},
 				{
-					name: 'H1',
+					name: 'H2',
 				},
 				{
 					name: 'H1',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H1',
 				},
 				{
 					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H3',
 				},
 				{
-					name: 'H4',
+					name: 'L2',
 				},
 				{
 					name: 'H3',
@@ -6975,91 +4053,91 @@ export default {
 					name: 'H3',
 				},
 				{
-					name: 'H4',
+					name: 'H1',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'H2',
 				},
 				{
 					name: 'H2',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H4',
+					name: 'H3',
 				},
 				{
-					name: 'H4',
+					name: 'H2',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
-					name: 'L3',
+					name: 'H3',
 				},
 				{
 					name: 'L1',
 				},
 				{
-					name: 'H1',
+					name: 'L1',
 				},
 				{
-					name: 'H1',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'L2',
 				},
 				{
-					name: 'L1',
+					name: 'H1',
 				},
 				{
-					name: 'H2',
+					name: 'H1',
 				},
 				{
-					name: 'M',
+					name: 'H2',
 				},
 				{
 					name: 'L2',
 				},
 				{
-					name: 'L2',
+					name: 'H4',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H1',
 				},
 				{
-					name: 'L1',
+					name: 'H3',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
 					name: 'H4',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
-					name: 'L1',
+					name: 'H2',
 				},
 				{
-					name: 'L1',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
 					name: 'L1',
@@ -7068,82 +4146,82 @@ export default {
 					name: 'L1',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
-					name: 'H2',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
 					name: 'H2',
 				},
 				{
-					name: 'L1',
+					name: 'S',
 				},
 				{
 					name: 'H1',
 				},
 				{
-					name: 'H1',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
-					name: 'L3',
+					name: 'L2',
 				},
 				{
-					name: 'L3',
+					name: 'L2',
 				},
 				{
-					name: 'L1',
+					name: 'L3',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
-					name: 'H3',
+					name: 'H2',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H1',
+					name: 'L2',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
 				},
 				{
 					name: 'H3',
 				},
 				{
-					name: 'H2',
+					name: 'H4',
 				},
 				{
-					name: 'H2',
+					name: 'H3',
 				},
 				{
 					name: 'H3',
 				},
 				{
-					name: 'L3',
+					name: 'L1',
 				},
 				{
-					name: 'L3',
+					name: 'H2',
 				},
 				{
 					name: 'L1',
@@ -7155,19 +4233,22 @@ export default {
 					name: 'H4',
 				},
 				{
-					name: 'L1',
+					name: 'L2',
+				},
+				{
+					name: 'L2',
 				},
 				{
 					name: 'H2',
 				},
 				{
-					name: 'H4',
+					name: 'H2',
 				},
 				{
-					name: 'H1',
+					name: 'H3',
 				},
 				{
-					name: 'H1',
+					name: 'L3',
 				},
 				{
 					name: 'L1',
@@ -7176,39 +4257,54 @@ export default {
 					name: 'L1',
 				},
 				{
-					name: 'L3',
+					name: 'H1',
 				},
 				{
 					name: 'L1',
 				},
 				{
-					name: 'L1',
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H4',
 				},
 				{
 					name: 'L3',
 				},
 				{
-					name: 'H3',
+					name: 'L2',
 				},
 				{
-					name: 'H3',
+					name: 'H4',
 				},
 				{
 					name: 'H4',
 				},
 				{
-					name: 'H2',
+					name: 'L2',
+				},
+				{
+					name: 'L2',
 				},
 				{
 					name: 'H3',
 				},
 				{
-					name: 'H4',
+					name: 'H2',
 				},
 				{
-					name: 'H4',
+					name: 'H2',
+				},
+				{
+					name: 'H3',
 				},
 				{
+					name: 'H2',
+				},
+				{
 					name: 'L3',
 				},
 				{
@@ -7443,7 +4539,7 @@ export default {
 					name: 'L1',
 				},
 				{
-					name: 'M',
+					name: 'L1',
 				},
 				{
 					name: 'H3',
@@ -7458,7 +4554,7 @@ export default {
 					name: 'H3',
 				},
 				{
-					name: 'L3',
+					name: 'S',
 				},
 				{
 					name: 'L3',
@@ -7561,1516 +4657,6 @@ export default {
 				},
 				{
 					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-			],
-			[
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'M',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L3',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'H2',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H4',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'H1',
-				},
-				{
-					name: 'L1',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'H3',
-				},
-				{
-					name: 'L2',
-				},
-				{
-					name: 'L3',
 				},
 				{
 					name: 'L2',
@@ -9213,7 +4799,7 @@ export default {
 					name: 'H3',
 				},
 				{
-					name: 'H3',
+					name: 'S',
 				},
 				{
 					name: 'H4',
@@ -9829,6 +5415,763 @@ export default {
 				},
 				{
 					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+			],
+		],
+		freeSpins: [
+			[
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'S',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'S',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'H3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'H2',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L1',
+				},
+				{
+					name: 'H1',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L2',
+				},
+				{
+					name: 'H4',
+				},
+				{
+					name: 'L3',
+				},
+				{
+					name: 'L2',
 				},
 				{
 					name: 'L3',

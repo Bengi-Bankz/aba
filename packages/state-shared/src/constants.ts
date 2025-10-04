@@ -1,7 +1,7 @@
 const DEFAULT_BET_MODE_META = {
 	BASE: {
 		mode: 'BASE',
-		costMultiplier: 1.0,
+		costMultiplier: 1,
 		type: 'default',
 		parent: '',
 		children: '',
@@ -13,19 +13,49 @@ const DEFAULT_BET_MODE_META = {
 			button: '',
 		},
 		text: {
-			title: '',
-			dialog: '',
-			button: '',
+			title: 'BASE GAME',
+			dialog: 'Standard gameplay with natural scatter triggers.',
+			button: 'SPIN',
 			betAmountLabel: '',
-			tickerIdle: '',
-			tickerSpin: '',
+			tickerIdle: 'PLACE YOUR BET',
+			tickerSpin: 'SPINNING...',
 			bannerText: '',
 		},
 		maxWin: 8888,
 	},
 
-	BONUS: {
-		mode: 'BONUS',
+	BONUS_4_SCATTER: {
+		mode: 'BONUS_4_SCATTER',
+		costMultiplier: 100,
+		type: 'buy',
+		parent: '',
+		children: '',
+		assets: {
+			icon: 'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/icon_bonusbuy.webp',
+			dialogImage:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/bonus_image.webp',
+			dialogVolatility:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/volatility/volatility_04.webp',
+			volatility:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/volatility/volatility_white_04.webp',
+			button:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_8_97/betModes/button_buy.webp',
+		},
+		text: {
+			title: "I DIDN'T INHALE SPINS",
+			dialog:
+				'Triggers FREE SPINS with 4 GUARANTEED SCATTERS for 100x the bet amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
+			description: '4 guaranteed scatter symbols for free spins.',
+			button: 'BUY INHALE',
+			tickerIdle: 'PLACE YOUR BET',
+			tickerSpin: '4 SCATTER BONUS ACTIVATED',
+			bannerText: '4 GUARANTEED SCATTERS',
+		},
+		maxWin: 8888,
+	},
+
+	BONUS_5_SCATTER: {
+		mode: 'BONUS_5_SCATTER',
 		costMultiplier: 200,
 		type: 'buy',
 		parent: '',
@@ -42,19 +72,20 @@ const DEFAULT_BET_MODE_META = {
 				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_8_97/betModes/button_buy.webp',
 		},
 		text: {
-			title: 'BONUS',
+			title: 'HONESTLY MINTING SPINS',
 			dialog:
-				'Triggers FREE SPINS feature when activated for 200x the play amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
-			description: 'Each spin may have a random multiplier applied to winning lines.',
-			button: 'PURCHASE',
+				'Triggers FREE SPINS with 5 GUARANTEED SCATTERS for 200x the bet amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
+			description: '5 guaranteed scatter symbols for enhanced free spins.',
+			button: 'BUY MINTING',
 			tickerIdle: 'PLACE YOUR BET',
-			tickerSpin: 'BONUS BUY ACTIVATED',
-			bannerText: 'example banner text',
+			tickerSpin: '5 SCATTER BONUS ACTIVATED',
+			bannerText: '5 GUARANTEED SCATTERS',
 		},
+		maxWin: 8888,
 	},
 
-	SIX_SCATTER_BONUS: {
-		mode: 'SIX_SCATTER_BONUS',
+	BONUS_6_SCATTER: {
+		mode: 'BONUS_6_SCATTER',
 		costMultiplier: 500,
 		type: 'buy',
 		parent: '',
@@ -71,15 +102,16 @@ const DEFAULT_BET_MODE_META = {
 				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_8_97/betModes/button_super_buy.webp',
 		},
 		text: {
-			title: 'SUPER BONUS',
+			title: 'OSAMA KILLER SPINS',
 			dialog:
-				'Triggers FREE SPINS feature with 6 GUARANTEED SCATTERS for 500x the play amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
-			description: 'Guarantees 6 scatter symbols for maximum free spins potential.',
-			button: 'PURCHASE',
+				'Triggers FREE SPINS with 6 GUARANTEED SCATTERS for 500x the bet amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
+			description: 'Maximum 6 guaranteed scatter symbols for ultimate free spins potential.',
+			button: 'BUY KILLER',
 			tickerIdle: 'PLACE YOUR BET',
-			tickerSpin: 'SUPER BONUS BUY ACTIVATED',
+			tickerSpin: '6 SCATTER BONUS ACTIVATED',
 			bannerText: '6 GUARANTEED SCATTERS',
 		},
+		maxWin: 8888,
 	},
 };
 

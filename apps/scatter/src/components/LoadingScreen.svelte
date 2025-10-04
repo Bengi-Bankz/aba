@@ -6,10 +6,7 @@
 	import { getContext } from '../game/context';
 	import TransitionAnimation from './TransitionAnimation.svelte';
 	import PressToContinue from './PressToContinue.svelte';
-	import H1Animation from './H1Animation.svelte';
-	import H2Animation from './H2Animation.svelte';
-	import H3Animation from './H3Animation.svelte';
-	import H4Animation from './H4Animation.svelte';
+
 
 	type Props = {
 		onloaded: () => void;
@@ -40,37 +37,7 @@
 						<Sprite key="progressBarFrame.png" {...sizes} />
 					{/snippet}
 				</LoadingProgress>
-
-				<!-- H1-H4 Symbol Animations -->
-				<Container y={-150}>
-					<!-- H1 Animation -->
-					<H1Animation 
-						x={-300} 
-						y={0} 
-						scale={{ x: 0.4, y: 0.4 }} 
-					/>
-					
-					<!-- H2 Animation -->
-					<H2Animation 
-						x={-100} 
-						y={0} 
-						scale={{ x: 0.4, y: 0.4 }} 
-					/>
-					
-					<!-- H3 Animation -->
-					<H3Animation 
-						x={100} 
-						y={0} 
-						scale={{ x: 0.4, y: 0.4 }} 
-					/>
-					
-					<!-- H4 Animation -->
-					<H4Animation 
-						x={300} 
-						y={0} 
-						scale={{ x: 0.4, y: 0.4 }} 
-					/>
-				</Container>
+				
 			{/if}
 		</Container>
 	</MainContainer>

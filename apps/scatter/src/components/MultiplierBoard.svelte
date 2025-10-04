@@ -4,8 +4,7 @@
 		| { type: 'multiplierBoardHide' }
 		| { type: 'multiplierBoardInit' }
 		| { type: 'multiplierBoardReset' }
-		| { type: 'multiplierBoardAnimate' }
-		| { type: 'multiplierBoardMove' };
+		| { type: 'multiplierBoardAnimate' };
 </script>
 
 <script lang="ts">
@@ -26,8 +25,8 @@
 
 	const context = getContext();
 
-	let show = $state(false);
-	let unifiedBombs = $state<Array<{
+	// Define the bomb type explicitly
+	type BombType = {
 		id: number;
 		multiplierValue: number;
 		x: number;
@@ -36,15 +35,13 @@
 		backdropScale: number;
 		showBackdrop: boolean;
 		startTicking: boolean;
-	}>>([]);
+	};
+
+	let show = $state(false);
+	let unifiedBombs = $state<BombType[]>([]);
 	let completedBombs = $state<number[]>([]);
 	let currentAnimatingBombs = $state<number[]>([]);
 	let animationSequenceRunning = $state(false);
-
-	const boardCenter = $derived(() => ({
-		x: context.stateGameDerived.boardLayout().width * 0.5,
-		y: context.stateGameDerived.boardLayout().height * 0.5,
-	}));
 
 	const createMultiplierSymbol = ({
 		rawSymbol,
@@ -94,8 +91,8 @@
 		});
 	};
 
-	// Function to animate backdrop scale in 4 steps
-	const animateBackdrop = async (bomb: typeof unifiedBombs[0]): Promise<void> => {
+	// Function to animate backdrop scale in 4 steps with proper typing
+	const animateBackdrop = async (bomb: BombType): Promise<void> => {
 		const scaleSteps = [0.4, 0.9, 1.3, 1.8]; // 4 scaling steps
 		const stepDuration = 350; // ms per step
 		
@@ -123,7 +120,7 @@
 		multiplierBoardInit: () => {
 			console.log('🎯 MultiplierBoard INIT event received');
 			// Scan for M symbols and create unified bombs
-			const bombs: typeof unifiedBombs = [];
+			const bombs: BombType[] = [];
 			let bombId = 0;
 
 			context.stateGameDerived.boardRaw().forEach((rawSymbols, reelIndex) => {
@@ -192,19 +189,6 @@
 
 			console.log('🎉 All unified bomb animations completed!');
 			animationSequenceRunning = false;
-		},
-		multiplierBoardMove: async () => {
-			// Move all bombs to center (this happens after animation)
-			console.log('🎯 Moving unified bombs to center...');
-			
-			unifiedBombs = unifiedBombs.map(bomb => ({
-				...bomb,
-				x: boardCenter().x,
-				y: boardCenter().y,
-			}));
-			
-			// Small delay to allow visual positioning
-			await waitForTimeout(500);
 		},
 	});
 
