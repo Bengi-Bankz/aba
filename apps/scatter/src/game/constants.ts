@@ -94,7 +94,7 @@ export const HIGH_SYMBOLS = ['H1', 'H2', 'H3', 'H4', 'H5'];
 
 export const INITIAL_SYMBOL_STATE: SymbolState = 'static';
 
-const M_SIZE = 0.3;
+const M_SIZE = 0.5;
 const HIGH_SYMBOL_SIZE = 0.9;
 const LOW_SYMBOL_SIZE = 0.9;
 const SPECIAL_SYMBOL_SIZE = 0.8;

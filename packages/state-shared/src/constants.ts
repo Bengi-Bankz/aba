@@ -52,6 +52,35 @@ const DEFAULT_BET_MODE_META = {
 			bannerText: 'example banner text',
 		},
 	},
+
+	SIX_SCATTER_BONUS: {
+		mode: 'SIX_SCATTER_BONUS',
+		costMultiplier: 500,
+		type: 'buy',
+		parent: '',
+		children: '',
+		assets: {
+			icon: 'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/icon_super_bonusbuy.webp',
+			dialogImage:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/super_bonus_image.webp',
+			dialogVolatility:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/volatility/volatility_05.webp',
+			volatility:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_9_97/betModes/volatility/volatility_white_05.webp',
+			button:
+				'https://test-fart-cdn-bucket.s3.ap-southeast-2.amazonaws.com/1_8_97/betModes/button_super_buy.webp',
+		},
+		text: {
+			title: 'SUPER BONUS',
+			dialog:
+				'Triggers FREE SPINS feature with 6 GUARANTEED SCATTERS for 500x the play amount. The Global Multiplier can reach up to 64x and remains active for the duration of each spin.',
+			description: 'Guarantees 6 scatter symbols for maximum free spins potential.',
+			button: 'PURCHASE',
+			tickerIdle: 'PLACE YOUR BET',
+			tickerSpin: 'SUPER BONUS BUY ACTIVATED',
+			bannerText: '6 GUARANTEED SCATTERS',
+		},
+	},
 };
 
 const DEFAULT_GAME_RULE_META = {

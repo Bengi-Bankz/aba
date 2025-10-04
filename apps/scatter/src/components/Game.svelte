@@ -41,7 +41,6 @@
     import FreeSpinOutro from './FreeSpinOutro.svelte';
     import Transition from './Transition.svelte';
     import CharacterAnimation from './CharacterAnimation.svelte';
-    import SymbolAnimationsTest from './SymbolAnimationsTest.svelte';
 
     const context = getContext();
 
@@ -125,13 +124,8 @@
         {/if}
         <FreeSpinOutro />
         <Transition />
-
-        <!-- Symbol Animations Test - positioned at top of screen -->
-        <MainContainer>
-            <SymbolAnimationsTest />
-        </MainContainer>
     {/if}
-</App>
+ </App>
 
 <Modals>
     {#snippet version()}
