@@ -15,6 +15,7 @@
 
 	import { waitForResolve } from 'utils-shared/wait';
 	import { waitForTimeout } from 'utils-shared/wait';
+	import { Sprite } from 'pixi-svelte';
 
 	import MultiplierBoardBase from './MultiplierBoardBase.svelte';
 	import BoardContainer from './BoardContainer.svelte';
@@ -32,6 +33,9 @@
 		x: number;
 		y: number;
 		isActive: boolean;
+		backdropScale: number;
+		showBackdrop: boolean;
+		startTicking: boolean;
 	}>>([]);
 	let completedBombs = $state<number[]>([]);
 	let currentAnimatingBombs = $state<number[]>([]);
@@ -90,6 +94,23 @@
 		});
 	};
 
+	// Function to animate backdrop scale in 4 steps
+	const animateBackdrop = async (bomb: typeof unifiedBombs[0]): Promise<void> => {
+		const scaleSteps = [0.4, 0.9, 1.3, 1.8]; // 4 scaling steps
+		const stepDuration = 350; // ms per step
+		
+		bomb.showBackdrop = true;
+		
+		for (const scale of scaleSteps) {
+			bomb.backdropScale = scale;
+			await waitForTimeout(stepDuration);
+		}
+		
+		// Small pause before starting tick animation
+		await waitForTimeout(200);
+		bomb.startTicking = true;
+	};
+
 	context.eventEmitter.subscribeOnMount({
 		multiplierBoardShow: () => {
 			console.log('🎯 MultiplierBoard SHOW event received');
@@ -117,6 +138,9 @@
 							x: getSymbolX(reelIndex),
 							y: getSymbolY(symbolIndex - 1),
 							isActive: false,
+							backdropScale: 0.2,
+							showBackdrop: false,
+							startTicking: false,
 						});
 					}
 				});
@@ -151,9 +175,12 @@
 				const bomb = unifiedBombs[i];
 				console.log(`🎯 Animating bomb ${i + 1}/${unifiedBombs.length} (${bomb.multiplierValue}X) at position (${bomb.x}, ${bomb.y})`);
 				
-				// Scale bomb to 2x as requested
+				// Start backdrop animation first
 				bomb.isActive = true;
 				currentAnimatingBombs = [bomb.id];
+				
+				// Animate backdrop in 4 steps, then start ticking
+				await animateBackdrop(bomb);
 				
 				// Wait for this bomb to complete its full sequence
 				await waitForBombCompletion(bomb.id);
@@ -211,13 +238,28 @@
 		<!-- Render all unified bombs -->
 		{#each unifiedBombs as bomb (bomb.id)}
 			{#if bomb.isActive}
-				<UnifiedMultiplierBomb 
-					x={bomb.x}
-					y={bomb.y}
-					multiplierValue={bomb.multiplierValue}
-					autoStart={true}
-					onComplete={() => handleBombComplete(bomb.id)}
-				/>
+				<!-- Backdrop sprite that scales up in 4 steps -->
+				{#if bomb.showBackdrop}
+					<Sprite 
+						key="multitick"
+						x={bomb.x}
+						y={bomb.y}
+						anchor={{ x: 0.5, y: 0.5 }}
+						width={300 * bomb.backdropScale}
+						height={133 * bomb.backdropScale}
+					/>
+				{/if}
+				
+				<!-- Multiplier bomb animation on top -->
+				{#if bomb.startTicking}
+					<UnifiedMultiplierBomb 
+						x={bomb.x}
+						y={bomb.y}
+						multiplierValue={bomb.multiplierValue}
+						autoStart={true}
+						onComplete={() => handleBombComplete(bomb.id)}
+					/>
+				{/if}
 			{/if}
 		{/each}
 	</BoardContainer>

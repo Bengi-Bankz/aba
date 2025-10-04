@@ -305,6 +305,11 @@ export default {
 		src: new URL('../../assets/fonts/bluefont/stop.png', import.meta.url).href,
 		preload: true,
 	},
+	multitick: {
+		type: 'sprite',
+		src: new URL('../../assets/sprites/multi-tick/multitick.png', import.meta.url).href,
+		preload: true,
+	},
 	playbehind: {
 		type: 'sprite',
 		src: new URL('../../assets/fonts/playbehind/playbehind.png', import.meta.url).href,
