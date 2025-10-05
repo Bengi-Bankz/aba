@@ -34,6 +34,11 @@ export default {
 		src: new URL('../../assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
 		preload: true,
 	},
+	presidentsAnimate: {
+		type: 'sprites',
+		src: new URL('../../assets/sprites/presidentsanimate.json', import.meta.url).href,
+		preload: true,
+	},
 	H2: {
 		type: 'spine',
 		src: {

@@ -1,0 +1,324 @@
+{
+	"frames": {
+		"trump_0.png": {
+			"frame": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_1.png": {
+			"frame": { "x": 200, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_2.png": {
+			"frame": { "x": 400, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_3.png": {
+			"frame": { "x": 600, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_4.png": {
+			"frame": { "x": 800, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_5.png": {
+			"frame": { "x": 1000, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_6.png": {
+			"frame": { "x": 1200, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_7.png": {
+			"frame": { "x": 1400, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_8.png": {
+			"frame": { "x": 1600, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"trump_9.png": {
+			"frame": { "x": 1800, "y": 0, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_0.png": {
+			"frame": { "x": 0, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_1.png": {
+			"frame": { "x": 200, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_2.png": {
+			"frame": { "x": 400, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_3.png": {
+			"frame": { "x": 600, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_4.png": {
+			"frame": { "x": 800, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_5.png": {
+			"frame": { "x": 1000, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_6.png": {
+			"frame": { "x": 1200, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"lincoln_7.png": {
+			"frame": { "x": 1400, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_0.png": {
+			"frame": { "x": 1800, "y": 250, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_1.png": {
+			"frame": { "x": 0, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_2.png": {
+			"frame": { "x": 200, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_3.png": {
+			"frame": { "x": 400, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_4.png": {
+			"frame": { "x": 600, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_5.png": {
+			"frame": { "x": 800, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_6.png": {
+			"frame": { "x": 1000, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_7.png": {
+			"frame": { "x": 1200, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"nixon_8.png": {
+			"frame": { "x": 1400, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_0.png": {
+			"frame": { "x": 1600, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_1.png": {
+			"frame": { "x": 1800, "y": 500, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_2.png": {
+			"frame": { "x": 0, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_3.png": {
+			"frame": { "x": 200, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_4.png": {
+			"frame": { "x": 400, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_5.png": {
+			"frame": { "x": 600, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_6.png": {
+			"frame": { "x": 800, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_7.png": {
+			"frame": { "x": 1000, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"clinton_8.png": {
+			"frame": { "x": 1200, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"obama_0.png": {
+			"frame": { "x": 1400, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"obama_1.png": {
+			"frame": { "x": 1600, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		},
+		"obama_2.png": {
+			"frame": { "x": 1800, "y": 750, "w": 200, "h": 250 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 250 },
+			"sourceSize": { "w": 200, "h": 250 },
+			"pivot": { "x": 0.5, "y": 0.5 }
+		}
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "presidents.webp",
+		"format": "RGBA8888",
+		"size": { "w": 2000, "h": 1000 },
+		"scale": "1"
+	}
+}
