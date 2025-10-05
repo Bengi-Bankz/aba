@@ -353,20 +353,18 @@ export const SYMBOL_INFO_MAP = {
 	},
 	S: {
 		explosion,
-		postWinStatic: wStatic,
-		static: wStatic,
-		spin: wStatic,
+		postWinStatic: sStatic,
+		static: sStatic,
+		spin: sStatic,
 		win: {
-			type: 'spine',
-			assetKey: 'W',
-			animationName: 'wild_dynamite_land',
-			sizeRatios: sSizeRatios,
+			type: 'sprite',
+			assetKey: 's.png',
+			sizeRatios: { width: 1.5, height: 1.5 }, // Scaled up static symbol
 		},
 		land: {
-			type: 'spine',
-			assetKey: 'W',
-			animationName: 'wild_dynamite_land',
-			sizeRatios: sSizeRatios,
+			type: 'sprite',
+			assetKey: 's.png',
+			sizeRatios: { width: 1.5, height: 1.5 }, // Scaled up static symbol
 		},
 	},
 	M_2: {

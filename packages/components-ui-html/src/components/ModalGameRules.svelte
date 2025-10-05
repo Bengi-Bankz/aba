@@ -14,6 +14,9 @@
 	import img17 from '../../assets/17.png';
 	import img19 from '../../assets/19.png';
 	import img1 from '../../assets/1.png';
+	import img24 from '../../assets/24.png';
+	import img25 from '../../assets/25.png';
+	import img26 from '../../assets/26.png';
 
 	type Props = {
 		children: Snippet;
@@ -75,14 +78,34 @@
 
 	.bonus-images {
 		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin: 16px 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.scatter-row {
+		display: flex;
 		flex-wrap: wrap;
-		gap: 8px;
-		margin: 8px 0;
+		gap: 12px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bonus-row {
+		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
 
-	.bonus-images img {
-		height: 60px;
+	.scatter-row img {
+		height: 80px;
+		width: auto;
+	}
+
+	.bonus-row img {
+		height: 240px; /* 3 times larger than 80px */
 		width: auto;
 	}
 
@@ -97,8 +120,11 @@
 			height: 66px;
 			margin-right: 6px;
 		}
-		.bonus-images img {
-			height: 60px;
+		.scatter-row img {
+			height: 120px;
+		}
+		.bonus-row img {
+			height: 360px; /* 3 times larger than 120px */
 		}
 	}
 </style>
@@ -119,7 +145,9 @@
 							individual sessions may vary.
 						</p>
 						<p><b>RTP Base Game:</b> 97%</p>
-						<p><b>RTP Bonus Mode:</b> 97%</p>
+						<p><b>RTP Did Not Inhale Spins:</b> 97%</p>
+						<p><b>RTP Honest Abe Spins:</b> 97%</p>
+						<p><b>RTP Osama Killer Spins:</b> 97%</p>
 					</section>
 
 					<section>
@@ -129,25 +157,40 @@
 							<li>
 								4 Scatters → 8 Did Not Inhale Spins
 								<div class="bonus-images">
-									{#each Array(4) as _, i}
-										<img src={img1} alt="Scatter symbol {i + 1}" />
-									{/each}
+									<div class="scatter-row">
+										{#each Array(4) as _, i}
+											<img src={img1} alt="Scatter symbol {i + 1}" />
+										{/each}
+									</div>
+									<div class="bonus-row">
+										<img src={img24} alt="Did Not Inhale Spins" />
+									</div>
 								</div>
 							</li>
 							<li>
 								5 Scatters → 10 Honest Abe Spins
 								<div class="bonus-images">
-									{#each Array(5) as _, i}
-										<img src={img1} alt="Scatter symbol {i + 1}" />
-									{/each}
+									<div class="scatter-row">
+										{#each Array(5) as _, i}
+											<img src={img1} alt="Scatter symbol {i + 1}" />
+										{/each}
+									</div>
+									<div class="bonus-row">
+										<img src={img25} alt="Honest Abe Spins" />
+									</div>
 								</div>
 							</li>
 							<li>
 								6 Scatters → 12 Osama Killer Spins
 								<div class="bonus-images">
-									{#each Array(6) as _, i}
-										<img src={img1} alt="Scatter symbol {i + 1}" />
-									{/each}
+									<div class="scatter-row">
+										{#each Array(6) as _, i}
+											<img src={img1} alt="Scatter symbol {i + 1}" />
+										{/each}
+									</div>
+									<div class="bonus-row">
+										<img src={img26} alt="Osama Killer Spins" />
+									</div>
 								</div>
 							</li>
 						</ul>

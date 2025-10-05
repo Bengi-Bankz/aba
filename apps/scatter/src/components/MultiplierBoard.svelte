@@ -93,7 +93,7 @@
 
 	// Function to animate backdrop scale in 4 steps with proper typing
 	const animateBackdrop = async (bomb: BombType): Promise<void> => {
-		const scaleSteps = [0.4, 0.9, 1.3, 1.8]; // 4 scaling steps
+		const scaleSteps = [0.4, 0.9, 1.3, 2]; // 4 scaling steps
 		const stepDuration = 350; // ms per step
 		
 		bomb.showBackdrop = true;
@@ -230,7 +230,7 @@
 						y={bomb.y}
 						anchor={{ x: 0.5, y: 0.5 }}
 						width={300 * bomb.backdropScale}
-						height={133 * bomb.backdropScale}
+						height={300 * bomb.backdropScale}
 					/>
 				{/if}
 				
