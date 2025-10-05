@@ -1,5 +1,5 @@
-
 <script lang="ts">
+	import SpineSlot from './../../../pixi-svelte/src/lib/components/SpineSlot.svelte';
 	import type { Snippet } from 'svelte';
 
 	import { Popup } from 'components-shared';
@@ -13,6 +13,7 @@
 	import img16 from '../../assets/16.png';
 	import img17 from '../../assets/17.png';
 	import img19 from '../../assets/19.png';
+	import img1 from '../../assets/1.png';
 
 	type Props = {
 		children: Snippet;
@@ -72,6 +73,19 @@
 		display: none; /* Chrome, Safari */
 	}
 
+	.bonus-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin: 8px 0;
+		align-items: center;
+	}
+
+	.bonus-images img {
+		height: 60px;
+		width: auto;
+	}
+
 	@media (max-width: 700px) {
 		.modal-rules-scroll {
 			max-height: 80vh;
@@ -82,6 +96,9 @@
 		.button-list img {
 			height: 66px;
 			margin-right: 6px;
+		}
+		.bonus-images img {
+			height: 60px;
 		}
 	}
 </style>
@@ -109,9 +126,30 @@
 						<h3>Bonus Features</h3>
 						<p>The bonus round is triggered by scatter symbols:</p>
 						<ul>
-							<li>4 Scatters → 8 Did Not Inhale Spins</li>
-							<li>5 Scatters → 10 Honest Abe Spins</li>
-							<li>6 Scatters → 12 Osama Killer Spins</li>
+							<li>
+								4 Scatters → 8 Did Not Inhale Spins
+								<div class="bonus-images">
+									{#each Array(4) as _, i}
+										<img src={img1} alt="Scatter symbol {i + 1}" />
+									{/each}
+								</div>
+							</li>
+							<li>
+								5 Scatters → 10 Honest Abe Spins
+								<div class="bonus-images">
+									{#each Array(5) as _, i}
+										<img src={img1} alt="Scatter symbol {i + 1}" />
+									{/each}
+								</div>
+							</li>
+							<li>
+								6 Scatters → 12 Osama Killer Spins
+								<div class="bonus-images">
+									{#each Array(6) as _, i}
+										<img src={img1} alt="Scatter symbol {i + 1}" />
+									{/each}
+								</div>
+							</li>
 						</ul>
 						<p>
 							Players can also purchase direct entry into the bonus feature
@@ -122,10 +160,12 @@
 					<section>
 						<h3>Maximum Win</h3>
 						<p>
-							The maximum possible win is capped at <b>5,000× </b>.
+							The maximum possible win is capped at <b>10,000× </b>.
 						</p>
-						<p><b>Max Win Base Game:</b> 5,000×</p>
-						<p><b>Max Win Bonus Mode:</b> 5,000×</p>
+						<p><b>Max Win Base Game:</b> 10,000×</p>
+						<p><b>Max Win Did Not Inhale Spins:</b> 10,000×</p>
+						<p><b>Max Win Honest Abe Spins:</b> 10,000×</p>
+						<p><b>Max Win Osama Killer Spins:</b> 10,000×</p>
 					</section>
 
 					<section>
