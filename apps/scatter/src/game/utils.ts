@@ -83,7 +83,20 @@ export const getSymbolInfo = ({
 	state: SymbolState;
 }) => {
 	const symbolKey = getSymbolKey({ rawSymbol });
-	return SYMBOL_INFO_MAP[symbolKey][state];
+	const symbolInfoGroup = SYMBOL_INFO_MAP[symbolKey];
+	if (!symbolInfoGroup) {
+		console.error(`Symbol info missing for key: ${String(symbolKey)}`, { rawSymbol, state });
+		return null; // or return a default/fallback object
+	}
+	const info = symbolInfoGroup[state];
+	if (!info) {
+		console.error(`Symbol state info missing for key: ${String(symbolKey)}, state: ${state}`, {
+			rawSymbol,
+			state,
+		});
+		return null; // or return a default/fallback object
+	}
+	return info;
 };
 
 export const getSymbolBackgroundInfo = ({
@@ -95,8 +108,23 @@ export const getSymbolBackgroundInfo = ({
 }) => {
 	if (rawSymbol.name === 'M') {
 		const symbolKey = getSymbolKey({ rawSymbol }) as keyof typeof MULTIPLIER_BACKGROUND_INFO_MAP;
-		return MULTIPLIER_BACKGROUND_INFO_MAP[symbolKey][state];
+		const bgInfoGroup = MULTIPLIER_BACKGROUND_INFO_MAP[symbolKey];
+		if (!bgInfoGroup) {
+			console.error(`Multiplier background info missing for key: ${String(symbolKey)}`, {
+				rawSymbol,
+				state,
+			});
+			return null;
+		}
+		const bgInfo = bgInfoGroup[state];
+		if (!bgInfo) {
+			console.error(
+				`Multiplier background state info missing for key: ${String(symbolKey)}, state: ${state}`,
+				{ rawSymbol, state },
+			);
+			return null;
+		}
+		return bgInfo;
 	}
-
 	return null;
 };
