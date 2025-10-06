@@ -163,7 +163,7 @@
 										{/each}
 									</div>
 									<div class="bonus-row">
-										<img src={img24} alt="Did Not Inhale Spins" />
+										<img src={img26} alt="Did Not Inhale Spins" />
 									</div>
 								</div>
 							</li>
@@ -176,7 +176,7 @@
 										{/each}
 									</div>
 									<div class="bonus-row">
-										<img src={img25} alt="Honest Abe Spins" />
+										<img src={img24} alt="Honest Abe Spins" />
 									</div>
 								</div>
 							</li>
@@ -189,7 +189,7 @@
 										{/each}
 									</div>
 									<div class="bonus-row">
-										<img src={img26} alt="Osama Killer Spins" />
+										<img src={img25} alt="Osama Killer Spins" />
 									</div>
 								</div>
 							</li>
