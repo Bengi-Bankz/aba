@@ -35,7 +35,7 @@
 		font-weight: 600;
 	}
 	h3 {
-		font-size: 1.15rem;
+		font-size: 1.55rem;
 		margin-top: 16px;
 		font-weight: 500;
 	}
@@ -55,7 +55,7 @@
 		margin-bottom: 6px;
 	}
 	.button-list img {
-		height: 40px;
+		height: 96px;
 		vertical-align: middle;
 		margin-right: 8px;
 	}
