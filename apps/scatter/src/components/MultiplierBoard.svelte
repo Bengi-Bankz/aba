@@ -93,18 +93,25 @@
 
 	// Function to animate backdrop scale in 4 steps with proper typing
 	const animateBackdrop = async (bomb: BombType): Promise<void> => {
-		const scaleSteps = [0.4, 0.9, 1.3, 2]; // 4 scaling steps
-		const stepDuration = 350; // ms per step
-		
+		const frameCount = 15;
+		const startScale = 0.5;
+		const endScale = 2;
+		const stepDuration = 50; // ms per frame for a faster animation
+
+		// Generate 15 scale steps from 0.5 to 2
+		const scaleSteps = Array.from({ length: frameCount }, (_, i) =>
+			startScale + ((endScale - startScale) * i) / (frameCount - 1),
+		);
+
 		bomb.showBackdrop = true;
-		
+
 		for (const scale of scaleSteps) {
 			bomb.backdropScale = scale;
 			await waitForTimeout(stepDuration);
 		}
-		
+
 		// Small pause before starting tick animation
-		await waitForTimeout(200);
+		await waitForTimeout(100);
 		bomb.startTicking = true;
 	};
 
