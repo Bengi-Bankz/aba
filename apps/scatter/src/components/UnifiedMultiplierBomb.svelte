@@ -162,34 +162,44 @@
 	};
 </script>
 
-<Container x={props.x} y={props.y}>
-	{#if phase !== 'hidden' && phase !== 'complete'}
-		<Container scale={scale.current} rotation={rotation.current}>
-			<!-- Main bomb sprite - ALL USE SAME STATIC SYMBOL -->
-			<Sprite
-				key={currentSprite()}
-				anchor={0.5}
-				scale={0.8}
-				x={0}
-				y={0}
-			/>
-			
-			<!-- Multiplier text - HIDDEN until tickingUp phase, uses purple font -->
-			{#if showMultiplierText}
-				<Container scale={textScale.current}>
-					<BitmapText
-						anchor={0.5}
-						x={0}
-						y={0}
-						text={`${currentTickValue}X`}
-						style={{
-							fontFamily: 'purple',
-							fontSize: SYMBOL_SIZE * 0.4,
-							letterSpacing: -2,
-						}}
-					/>
-				</Container>
-			{/if}
-		</Container>
-	{/if}
-</Container>
+{#if assetError}
+    <div class="asset-error">
+        Failed to load asset: {assetError}
+    </div>
+{:else if !assetLoaded}
+    <div class="asset-loading">
+        Loading...
+    </div>
+{:else}
+    <Container x={props.x} y={props.y}>
+		{#if phase !== 'hidden' && phase !== 'complete'}
+			<Container scale={scale.current} rotation={rotation.current}>
+				<!-- Main bomb sprite - ALL USE SAME STATIC SYMBOL -->
+				<Sprite
+					key={currentSprite()}
+					anchor={0.5}
+					scale={0.8}
+					x={0}
+					y={0}
+				/>
+				
+				<!-- Multiplier text - HIDDEN until tickingUp phase, uses purple font -->
+				{#if showMultiplierText}
+					<Container scale={textScale.current}>
+						<BitmapText
+							anchor={0.5}
+							x={0}
+							y={0}
+							text={`${currentTickValue}X`}
+							style={{
+								fontFamily: 'DollarBill',
+								fontSize: SYMBOL_SIZE * 0.3,
+								letterSpacing: -2,
+							}}
+						/>
+					</Container>
+				{/if}
+			</Container>
+		{/if}
+	</Container>
+{/if}
