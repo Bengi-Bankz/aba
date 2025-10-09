@@ -13,7 +13,7 @@
 	const context = getContext();
 </script>
 
-<Container x={20} y={20}>
+<Container x={20} y={80}>
 	{@render props.gameName()}
 </Container>
 

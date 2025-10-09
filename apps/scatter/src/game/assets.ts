@@ -345,7 +345,11 @@ export default {
 		src: new URL('../../static/assets/fonts/gamelogo/gamelogo.png', import.meta.url).href,
 		preload: true,
 	},
-
+	trump: {
+		type: 'sprite',
+		src: new URL('../../static/assets/fonts/trump/trump.png', import.meta.url).href,
+		preload: true,
+	},
 	increase: {
 		type: 'sprite',
 		src: new URL('../../assets/fonts/increase/increase.png', import.meta.url).href,
@@ -364,45 +368,6 @@ export default {
 	turbooff: {
 		type: 'sprite',
 		src: new URL('../../assets/fonts/turbooff/turbooff.png', import.meta.url).href,
-		preload: true,
-	},
-
-	globalMultiplierBackground: {
-		type: 'sprite',
-		src: new URL('../../static/assets/spines/globalMultiplier/multiframe2.webp', import.meta.url)
-			.href,
-		preload: true,
-	},
-	trump: {
-		type: 'spriteSheet',
-		src: new URL('../../assets/sprites/trump/spritesheet.json', import.meta.url).href,
-	},
-	anticipation2: {
-		type: 'sprite',
-		src: new URL('../../assets/sprites/anticipation/anticipation2.png', import.meta.url).href,
-	},
-	anticipationScroll: {
-		type: 'sprite',
-		src: new URL('../../assets/fonts/scroll/scroll.png', import.meta.url).href,
-	},
-	h1Animate: {
-		type: 'sprites',
-		src: new URL('../../assets/sprites/symbolsanimate/h1.webp.json', import.meta.url).href,
-		preload: true,
-	},
-	h2Animate: {
-		type: 'sprites',
-		src: new URL('../../assets/sprites/symbolsanimate/h2.webp.json', import.meta.url).href,
-		preload: true,
-	},
-	h3Animate: {
-		type: 'sprites',
-		src: new URL('../../assets/sprites/symbolsanimate/h3.webp.json', import.meta.url).href,
-		preload: true,
-	},
-	h4Animate: {
-		type: 'sprites',
-		src: new URL('../../assets/sprites/symbolsanimate/h4.webp.json', import.meta.url).href,
 		preload: true,
 	},
 } as const;

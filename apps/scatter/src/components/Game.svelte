@@ -115,6 +115,13 @@
                     scale={{ x: 0.6, y: 0.6 }}
                 />
             {/snippet}
+            <Sprite
+                key="trump"
+                x={context.stateLayoutDerived.mainLayout().width / 2}
+                y={context.stateLayoutDerived.mainLayout().height / 2}
+                anchor={{ x: 0.5, y: 0.5 }}
+                scale={{ x: 0.6, y: 0.6 }}
+            />
         </UI>
 
         <Win />
