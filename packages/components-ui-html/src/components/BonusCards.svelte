@@ -10,6 +10,7 @@
 
 	type Props = {
 		list: BetModeData[];
+		label?: string;
 	};
 
 	const props: Props = $props();
@@ -52,7 +53,9 @@
 					disabled={stateBet.betAmount <= 0 ||
 						stateBet.balanceAmount < stateBet.betAmount * betModeData.costMultiplier}
 				>
-					<span style="font-size: 1rem; font-weight: bold;">{betModeData.text.button}</span>
+					<span style="font-size: 1rem; font-weight: bold;">
+						{props.label ?? betModeData.text.button}
+					</span>
 				</Button>
 			{/snippet}
 		</BonusCard>
